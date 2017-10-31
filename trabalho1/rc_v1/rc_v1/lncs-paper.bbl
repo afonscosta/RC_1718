@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{Xiao}
+Xiao, Z., Xiao, Y.:
+\newblock Security and privacy in cloud computing.
+\newblock IEEE Communications Surveys Tutorials \textbf{15}(2) (2013)  843--859
+
+\bibitem{POR}
+Juels, A., Kaliski, Jr., B.S.:
+\newblock Pors: Proofs of retrievability for large files.
+\newblock In: Proceedings of the 14th ACM Conference on Computer and
+  Communications Security. CCS '07, New York, NY, USA, ACM (2007)  584--597
+
+\bibitem{wiki:MAC}
+Wikipedia:
+\newblock Autenticador de mensagem.
+\newblock \url{https://pt.wikipedia.org/wiki/Autenticador_de_mensagem} (2017)
+  [Online; acedido a 30-Setembro-2017].
+
+\bibitem{hash-caract}
+Mathews, M.M., V, P.:
+\newblock Date time keyed - hmac.
+\newblock In: 2016 Online International Conference on Green Engineering and
+  Technologies (IC-GET). (2016)  1--5
+
+\bibitem{wiki:HMAC}
+Wikipedia:
+\newblock Hmac.
+\newblock \url{https://pt.wikipedia.org/wiki/HMAC} (2017) [Online; acedido a
+  30-Setembro-2017].
+
+\bibitem{HMAC}
+Krawczyk, H., Bellare, M., Canetti, R.:
+\newblock Hmac: Keyed-hashing for message authentication (1997)
+
+\bibitem{website:google-migration}
+Inc., G.:
+\newblock Migrating from amazon s3 to google cloud storage.
+\newblock \url{https://cloud.google.com/storage/docs/migrating} (2017) [Online;
+  acedido a 30-Setembro-2017].
+
+\bibitem{website:alibaba-cloud}
+Inc., A.:
+\newblock Signature mechanism.
+\newblock \url{https://www.alibabacloud.com/help/doc-detail/26051.htm} (2017)
+  [Online; acedido a 30-Setembro-2017].
+
+\bibitem{website:git}
+Git:
+\newblock 1.3 getting started - git basics.
+\newblock (\url{https://git-scm.com/book/en/v2/Getting-Started-Git-Basics})
+  [Online; acedido a 30-Setembro-2017].
+
+\bibitem{website:google-cloud-storage}
+Inc., G.:
+\newblock Using google cloud storage with big data.
+\newblock \url{https://cloud.google.com/storage/docs/working-with-big-data}
+  (2016) [Online; acedido a 30-Setembro-2017].
+
+\bibitem{website:amazon-s3}
+Inc., A.W.S.:
+\newblock How do i ensure data integrity of objects uploaded to or downloaded
+  from amazon s3?
+\newblock
+  \url{https://aws.amazon.com/premiumsupport/knowledge-center/data-integrity-s3/}
+  (2016) [Online; acedido a 30-Setembro-2017].
+
+\end{thebibliography}

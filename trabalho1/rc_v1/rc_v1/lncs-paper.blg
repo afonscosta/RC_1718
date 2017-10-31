@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: lncs-paper.aux
+The style file: splncs.bst
+Database file #1: ficheirodebibliografia.bib
+Warning--entry type for "HMAC" isn't style-file defined
+--line 48 of file ficheirodebibliografia.bib
+Warning--I didn't find a database entry for "Atheniese"
+Warning--there's no year in website:git
+You can't pop an empty literal stack for entry website:git
+while executing---line 2155 of file splncs.bst
+You've used 11 entries,
+            2062 wiz_defined-function locations,
+            552 strings with 5247 characters,
+and the built_in function-call counts, 2174 in all, are:
+= -- 220
+> -- 63
+< -- 3
++ -- 27
+- -- 16
+* -- 112
+:= -- 318
+add.period$ -- 19
+call.type$ -- 11
+change.case$ -- 11
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 107
+empty$ -- 240
+format.name$ -- 16
+if$ -- 531
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 3
+newline$ -- 57
+num.names$ -- 11
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 63
+stack$ -- 0
+substring$ -- 72
+swap$ -- 40
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 18
+width$ -- 13
+write$ -- 124
+(There was 1 error message)

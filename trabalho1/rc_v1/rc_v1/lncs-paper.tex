@@ -1,0 +1,273 @@
+\documentclass{llncs}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+
+% Comentar para not MAC Users
+%\usepackage[applemac]{inputenc}
+
+\usepackage{a4}
+%\usepackage[margin=3cm,nohead]{geometry}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\usepackage[bookmarks=false]{hyperref}
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+\mainmatter
+\title{Security and Privacy Challenges: Cloud}
+
+\titlerunning{Security and Privacy Challenges: Cloud}
+
+\author{Diogo Afonso Costa \and Daniel Maia \and Vitor Castro}
+
+\authorrunning{Diogo Afonso Costa \and Daniel Maia \and Vitor Castro}
+
+\institute{
+University of Minho, Department of  Informatics, 4710-057 Braga, Portugal\\
+e-mail: \{a78034,a77531,a77870\}@alunos.uminho.pt
+}
+
+\date{3 de outubro de 2017}
+
+\maketitle
+\begin{abstract}
+Desde a sua conceção nos anos 70, a Computação em Cloud tem vindo a tornar-se numa indústria de grande escala usufruída tanto pelas grandes empresas como para uso individual. Naturalmente, com este crescimento surgem várias preocupações, principalmente em relação à proteção dos dados bem como as informações pessoais dos seus utilizadores.
+\end{abstract}
+
+\section{Introdução}
+\textbf{Cloud computing} nasce da combinação da computação tradicional com a rede. A base deste modelo é a intenção de reduzir o processamento nos terminais tradicionais, passando este a ser feito na Cloud. Deste modo, os utilizadores têm à sua disposição grande poder computacional sem a necessidade de terem que comprar e manter um sistema poderoso.
+Naturalmente, da Cloud Computing deriva a \textbf{Cloud Storage}, que permitirá o acesso e utilização dos dados, aplicando a mesma lógica base da Cloud Computing. Assim, um grande número de dispositivos de armazenamento poderão estar conectados entre si, funcionando como um cluster, em que os dados estarão distribuídos.
+Este novo modelo traz vantagens e novos desafios, que serão abordados.
+
+
+\section{Cloud computing and cloud storage}
+
+\subsection{Principais vantagens de uma Cloud}
+\textbf{On-demand self-service:} cada utilizador tem à sua disposição a quantidade exata de poder computacional (uso de servidores ou de armazenamento) que necessita, sem ter que dar algo de volta ao cloud provider.
+
+\textbf{Broad network access:} os utilizadores não têm que se preocupar com as plataformas e dispositivos com que estão a transmitir os dados, uma vez que o canal de comunicação será a Internet com um mecanismo standard definido pela cloud. Esta capacidade permite o uso de vários dispositivos IoT que, não partilhando os mesmos protocolos e interfaces, conseguem comunicar.
+
+\textbf{Resource pooling:} capacidade de partilhar recursos e atribuir outros a cada um dos vários clientes, dependendo da sua necessidade atual, dinamicamente, como memória, largura de banda, etc.
+
+\textbf{Rapid elasticity:} facilidade de escalar a rede de processamento e armazenamento, o que se traduz numa virtual infinitude de capacidade, para o utilizador.
+
+\textbf{Measured servisse:} controlo de uso do serviço, o que permite um pagamento adequado às necessidades do utilizador mas também a recolha de dados de uso para o prestador de serviço.
+
+\subsection{Principais desafios à construção de uma Cloud confiável}
+\textbf{Outsourcing:} Perda de controlo da posse dos dados. A Cloud fornecedora de serviço deve ser confiável e providenciar toda a segurança possível, no processamento e armazenamento de dados. A confidencialidade, integridade e não violação dos dados deve ser garantida.
+
+\textbf{Multi-tenancy:} Como plataforma partilhada, a plataforma será partilhada com vários utilizadores, o que pode levar à colocação de dados no mesmo local físico que outros clientes, incorrendo no risco de um programa malicioso tentar manipular esses dados. É necessário, por isso, criar estratégias de proteção de partilha de dados.
+
+\textbf{Massive data and intense computation:} Os mecanismos de segurança normais não são suficientes quando tamanha quantidade de dados e computação está disponível. É preciso, por isso, criar novos protocolos e mecanismos de proteção.
+
+
+\section{Principais Desafios Associados}
+
+\subsection{Ecossistema de segurança e privacidade de uma Cloud}
+\textbf{Confidencialidade:} Dados estão disponíveis para o Cloud provider e só um sentido de responsabilidade protege o consumidor.
+
+\textbf{Integridade:} Não devem haver modificação de dados e, caso estas aconteçam, devem ser detetadas.
+
+\textbf{Disponibilidade:} Um serviço de Cloud deve estar sempre ativo, sob o risco de serviços importantes serem bloqueados.
+
+\textbf{Responsabilidade:} Em todos os acontecimentos de uma Cloud deverá ser possível identificar o responsável. Numa Cloud este processo pode ser especialmente difícil mas também importante, uma vez que em situações de ação maliciosa é necessário agir de forma localizada e precisa.
+
+\textbf{Preservação de privacidade:} privacidade está diferenciado da segurança porque este é um grande tema ao redor da Cloud e um dos seus maiores desafios.
+
+\subsection{Vulnerabilidades de uma Cloud}
+\textbf{Co-residence:} Partilha de uma mesma estrutura física por diferentes aplicações. Pode haver Cross-VM attack e Malicious SysAdmin.
+\textbf{Loss of Physical Control:} Os dados e serviços do cliente já não mais estão ao seu alcance, não podendo ser diretamente evitadas manipulação de dados ou software.
+\textbf{Bandwidth Under-provisioning:} Ataques DOS também se realizam em Clouds, sendo que a capacidade real da rede é bastante inferior à capacidade de todos os serviços da mesma subrede agregados.
+\textbf{Cloud Pricing Model:} Ataques que promovem a modificação do modelo de imposição de preços, de modo a que um utilizador/serviço pague realmente menos do que era suposto.
+
+\subsection{Cloud Integrity (foco de abordagem)}
+Integridade na Cloud implica que não deve acontecer manipulação de dados ou programas, quer por malware ou utilizadores nocivos e, caso esta aconteça, deve ser detetada.
+
+\subsubsection{Ameaças}
+\textbf{Data loss / Manipulation:} No armazenamento em Cloud são armazenados dados e, como é natural aos servidores existe um risco de perda ou modificação de dados, quer intencionalmente, quer acidentalmente. Erros de administração (restores, data migration, etc) ou  ataques propositados para causar a perda de controlo de dados.
+\textbf{Dishonest computation in remote servers:} Podem acontecer de na computação em Cloud, como os utilizadores não vêem o processamento, serem devolvidos valores/dados errados para um programa ou pedido.
+
+\subsubsection{Defesas}
+\textbf{Provable Data Possession:} Num ambiente de Cloud não é possível fazer o mesmo tipo de verificação que num tradicional, pois o custo de operações tradicionais seria muito grande em termos de computação (pois os dados armazenados são também eles muito grandes) e largura de banda. Deste modo, torna-se obrigatório falar de \textbf{Naive Method}, \textbf{Original Provable Data Possession} e \textbf{Proof of Retrievability}.
+
+
+\section{Propostas Relevantes na Área}
+\subsection{O método ingénuo}
+
+Um dos possíveis métodos que permite confirmar a integridade dos dados que são
+carregados/descarregados da cloud, isto é, se estes permanecem os mesmos ou foram
+alterados, passa por computar o valor da hash do ficheiro correspondente e
+confirmar se este é o mesmo na origem e no destino.
+
+Efetivamente, o processo pode ser descrito por passos mais detalhados \cite{Xiao} \cite{POR}. Se
+possuirmos um ficheiro F e uma chave aleatória k, podemos usar uma função de hash h
+para gerar um valor r que identifica unicamente aquele ficheiro no estado em que se
+encontra. De seguida o ficheiro pode ser "outsourced" (i.e., para a cloud). Sendo
+estes pré-requisitos satisfeitos o cliente pode a qualquer momento enviar a chave
+k, que foi usada para calcular o valor r, para o serviço onde o ficheiro foi
+armazenado e requerir uma nova computação da função h com k e F como argumentos. Se
+tudo correr de acordo com o previsto, o valor r' que resultará deste cálculo deverá
+ser igual a r, de onde concluímos que não houve alterações no ficheiro.
+
+Este método pode ser aprimorado \cite{Xiao} \cite{POR}, na prespectiva em que é possível para um mesmo
+ficheiro f ter vários valores de r correspondentes à chamada da função h com
+diferentes valores de k, ou seja, podemos efetuar múltiplos "checksums", totalmente
+independentes, guardando apenas diferentes chaves assim como valores de hash. Uma
+outra vantagem surge da forte prova que este método nos proporciona de que o
+ficheiro F se encontra realmente na cloud/servidor.
+
+Contudo, existe várias desvantagens que tornam este método muitas vezes
+impraticável \cite{Xiao} \cite{POR}.
+
+Primeiramente, é necessário que sejam armazenados do lado do cliente
+todos os valores hash (r) assim como as respetivas chaves (k), sendo o seu número
+proporcionalmente linear ao número de "checksums" que se pretende fazer. Imaginando
+que um determinado cliente está a recorrer a um serviço cloud é provável que o seu
+equipamento possua pouca capacidade de computação ou mesmo de memória, levando a
+que o armazenamento destas duas componentes possa ser um problema \cite{Xiao} \cite{POR}.
+
+Além disso, uma outra desvantagem significativa prende-se no facto de ser preciso
+fazer o processamento de todo o ficheiro F sempre que queremos confirmar se
+determinado número de hash corresponde ao que o cliente tem na sua posse. Para
+ficheiros com um tamanho considerável começa a ser notável o peso da computação
+necessária em todo o processo de confirmação da integridade dos dados quando estes
+se encontram "outsourced" \cite{Xiao} \cite{POR}.
+
+Mais ainda, quando procedemos a múltiplas verificações, o ficheiro é inteiramente
+computado todas as vezes que chamarmos a função de hash com uma nova chave. Obtemos
+assim um "overhead" totalmente indesejável \cite{Xiao} \cite{POR}.
+
+Existem algoritmos responsáveis pela verificação da integridade dos dados assim
+como por autenticar mensagens chamados "message authentication code" (MAC) \cite{wiki:MAC}
+, em que uma das suas
+variantes utiliza determinadas funções de hash criptográficas para o efeito,
+nomeadamente os "Hash-based Message Authentication Code" (HMAC).
+
+As funções de hash criptográficas são funções que devem respeitar cinco
+características \cite{hash-caract} \cite{wiki:HMAC}:
+\begin{enumerate}
+	\item Compressão - uma função de hash \textit{h} deve converter um input
+		\textit{x} de tamanho finito e arbitrário para um output de tamanho
+		fixo.
+	\item Facilidade na computação - \textit{h(x)} deve ser fácil de computar.
+	\item Resistência à pré-imagem - para todos os outputs deve ser inviável
+		que se consiga encontrar o input que originou determinado output.
+	\item Resistência à segunda pré-imagem - deve ser computacionalmente
+		inviável que dado um input \textit{x'} se consiga encontrar um input
+		\textit{x}, tal que \textit{h(x) = h(x')}.
+	\item Resistência à colisão - é computacionalmente inviável encontrar dois
+		inputs \textit{x} e \textit{x'} que tenham o mesmo output, i.e.
+		\textit{h(x) = h(x')}.
+\end{enumerate}
+
+Estes métodos caracterizam-se por terem sempre associadas chaves secretas de
+forma a identificar o legítimo emissor dos dados.
+
+O algoritmo HMAC \cite{HMAC} pode ser usado com qualquer função de hash criptográdica, por
+exemplo MD5 (HMAC-MD5) e SHA-1 (HMAC-SHA1). É de realçar que a segurança e integridade do HMAC depende
+de vários componentes que devem ser tidos em conta, nomeadamente, como a boa
+implementação do algoritmo em si, uma escolha aleatória da chave secreta, um
+mecanismo seguro de troca de chaves, uma atualização frequente das mesmas,
+assim como uma sua proteção cuidada. Além disso, o poder criptográfico do HMAC
+depende das propriedades da função de hash usada, sendo que uma função de hash
+que tenha sido demonstrada como vulnerável deve ser evitada, por forma a não
+comprometer a segurança do algoritmo.
+
+\subsection{PDP - Provable Data Possession}
+\emph{Provable Data Possession} (PDP) é um processo de verificação da integridade do armazenamento na cloud que assegura os utilizadores que os dados guardados nela estão seguros. Este é diferente de métodos tradicionais no modo em que permite verificação acedendo a pequenas porções de ficheiros em vez os percorrer na sua totalidade.\cite{Atheniese}
+O modelo base de PDP requere que os dados sejam pré-processados para que meta-dados sejam guardados pelo cliente para razões de verificação. Se o cliente necessitar de verificar a integridade dos dados, envia um \emph{challenge} ao servidor da \emph{cloud}, solicitando informação sobre um bloco aleatório de dados. O servidor, por sua vez, responde com uma mensagem baseada nos seus conteúdos. Comparando os meta-dados locais com a mensagem, é possível concluir o estado de integridade dos dados. Este modelo permite uma forma eficiente de guardar a integridade dos dados, no entanto, apenas suporta ficheiros estáticos, e devido à sua natureza probabilística, são possíveis falsos positivos.\cite{Atheniese}
+A partir desta base, é possível desenvolver formas mais especializadas de PDP, tais como o PDP Escalável, cuja encriptação que reduz o overhead de computação e permite (um número limitado) operações dinâmicas, à custa de restringir o número de clientes com capacidade de acesso. Ainda mais, todos os \emph{challenges} e respostas são pré-computados, limitando o número de possíveis casos, reduzindo a segurança por eles dada\cite{Atheniese}.
+Existe também o PDP Dinâmico, que suporta operações dinâmicas na totalidade (inserção, modificação e remoção de ficheiros), mas como resultado causa maior overhead de computação, armazenamento e comunicação com o sevidor. Apesar deste maior overhead, o PDP Dinâmico ainda é relativamente eficiente. Como exemplo, a geração de meta-dados de um ficheiro de 1 GB produz apenas 415 KB e 30 ms de overhead computacional\cite{Atheniese}.
+
+\subsection{POR - Proof of Retrievability}
+
+Atua de modo similar ao PDP. No caso, o POR tenta diminuir a quantidade de processamento e dados envolvidos, pela geração de uma key que codificará um determinado ficheiro F. De seguida, este ficheiro já encodificado será enviado para guardar na Cloud. São também adicionadas sentinelas, que são blocos indistinguíveis que, mais tarde, serão usadas para o controlo. O protocolo POR é ainda capaz de recuperar ficheiros pouco corrompidos. Só aplicável a ficheiros estáveis.
+
+\\
+-- fim do uso do T10-062..
+\\
+-- inicio do uso do literature\_survey¿
+\\
+
+O POR não obriga à manutenção da totalidade do ficheiro mas requere que, quando necessário, seja devolvida a informação que é pedida. Pode, para além da codificação do ficheiro original, ser mantida parte do ficheiro na máquina local. A grande vantagem do POR em relação ao PDP é que não necessita da devolução do ficheiro por inteiro, o que no caso de ficheiros muitos grandes é significativo. Como não é a totalidade do ficheiro verificada, esta verificação é probabilística.
+
+Quando se deseja efetuar a verificação, o utilizador pede à Cloud um conjunto de posições, que sabe serem sentinelas, e compara os valores devolvidos com aqueles que conhece. Caso tenham havido alterações, a sentinela terá sido também manipulada. Como pode acontecer de haverem mudanças que não tenham afetado as sentinelas, o protocolo também possui códigos de correção de erros, corrigindo ficheiros corrompidos.
+
+Ao POR, para além da redução do esforço computacional da Cloud, também se garante encriptação de dados. O downside desta encriptação é que é exigido ao computador do utilizador um esforço computacional que não é exigido no PDP.
+
+\textbf{Explicando um pouco melhor o sistema de sentinelas:}
+
+Existe uma fase de precomputação em que são computados M e Q valores. M são os valores das sentinelas e Q o valor encriptado do correspondente M.
+
+De seguida, existem dois cenários de perda de dados. No primeiro, um pequeno número de modificações foi feita e pode ser corrigida com os mecanismos de correção abordados anteriormente. No segundo, demasiadas alterações foram efetuadas e já não é possível corrigir, mas são detetadas essas alterações por falta de compatibilidade com as sentinelas especificadas. Um dos problemas do POR é que, como é probabilístico, não consegue determinar quantos bits são necessários serem modificados para que seja corrigido um erro. No extremo, pode toda a informação estar errada e apenas as sentinelas estarem de acordo com a especificação inicial, o que leva a uma insegurança no método.
+Este método tem também a particularidade de só poder usar as sentinelas uma vez, pois quando pede os resultados Q à Cloud, então é determinado que estes blocos são sentinelas e não o ficheiro em si.
+
+
+\section{Âmbitos de Aplicação}
+Os exemplos aplicacionais dentro da área da integridade dos dados relacionados
+com o método PDP e todos os seus derivados são escassos e muitas vezes talvez
+até mantidos em sigilo.
+
+No entanto, no campo do método \textit{naive} os exemplos são bastantes, ao
+contrário do que seria de esperar.
+De facto, o algoritmo HMAC é bastante usado em pedidos onde uma assinatura
+seja necessária, por exemplo quando é precisa uma autenticação. É importante
+perceber que neste contexto, assinatura significa algo que demonstra que quem
+está a realizar determinada ação é legítimo de a fazer.
+
+Assim sendo, e tomando como exemplo a Amazon Web Service (AWS), percebemos que
+os serviços disponibilizados têm à sua disposição assinaturas HMAC-SHA256. O
+processo é bastante simples. Primeiramente, o cliente elabora um
+\textit{resquest}. De seguida é criada a assinatura com base na HMAC-SHA e numa
+chave secreta que só o cliente e o respetivo servidor é que possuem. Depois
+é enviado para os servidores o \textit{request} juntamente com a devida
+assinatura. No servidor, é procurada a chave secreta e consequentemente
+computada a assinatura com base no \textit{request} recebido. Por fim as
+assinaturas são comparadas e o \textit{request} só é validado se estas foram
+iguais (Figura~\ref{fig:controller}).
+
+De facto, assim como a AWS também outras empresas multinacionais como é o caso
+da Google \cite{website:google-migration} ou da Alibaba Cloud
+\cite{website:alibaba-cloud} utilizam/disponibilizam este mecanismo de
+assinatura.
+
+Além disso, é de constatar que um grande número de empresas internacionais
+disponibilizam simples funções de hash criptográficas com o objetivo de
+verificar a integridade dos dados que são enviados ou descarregados das suas
+respetivas clouds.
+
+Nomeadamente, o Git é um dos sistemas que mais intrinsecamente tem implementado
+um sistema de verificação de integridade de dados \cite{website:git}. Efetivamente, todo e
+qualquer ficheiro que é guardado neste sistema é feito um checksum e a partir
+desse momento o ficheiro é tratado pelo seu código de hash e não pelo seu
+nome. Estando esta funcionalidade implementada até nos níveis mais baixo,
+possibilita a que nenhum documento seja alterado ou corrompido sem que o Git
+saiba. Para o efeito é usada a função de hash SHA-1. Esta função produz como
+resultado uma \textit{string} com quarenta caracteres, por isso é que
+constantemente nos cruzamos com \textit{strings} do tipo
+24b9da6552252987aa493b52f8696cd6d3b00373 quando usamos este sistema de gestão
+de versões.
+
+Assim como o Git muitas outras empresas utilizam o mesmo sistem de uma forma
+mais ou menos análoga, por exemplo, a Google Cloud Strorage
+\cite{website:google-cloud-storage}, a Amazon Simple Storage Service (Amazon
+S3) \cite{website:amazon-s3}, onde ambas utilizam a função de hash MD5 como
+forma de verificar a integridade dos dados quandos estes são carregados ou
+descarregados dos serviços cloud.
+
+\begin{figure}
+	\begin{center}
+		\includegraphics[scale=0.30]{hmac_aws.png}
+	\end{center}
+	\caption{\label{fig:controller}Exemplo de utilização do HMAC.}
+\end{figure}
+
+\section{Conclusão}
+Neste trabalho...
+
+\bibliographystyle{splncs}
+\bibliography{ficheirodebibliografia}
+
+\end{document}
