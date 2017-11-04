@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \usepackage{fancyvrb}
 \usepackage{amsmath}
+\usepackage[bookmarks=false]{hyperref}
 %\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
@@ -60,27 +61,103 @@ Resumo...
 
 \subsection{Exercício 2.a.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+Qual é o endereço IP da interface ativa do seu computador?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+O endereço IP é 192.168.100.216. 
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{imagens/ip_source_proof.png} 
+	\end{center}
+	\caption{\label{fig:ip_source}Identificação do endereço IP.}
+\end{figure} 
+
+% ------
 
 \subsection{Exercício 2.b.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Qual é o valor do campo protocolo? O que identifica?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+O campo protocolo tem o valor "ICMP (1)". ICMP significa \textit{Internet Control Message Protocol}. Este é utilizado para reportar erros no processamento de datagramas. Efetivamente, dentro dos possíveis erros temos, \textit{destination unreachable} (quando o datagrama não consegue alcançar o destino), \textit{time exceeded message} (quando um \textit{gateway} processa um datagrama e descobre que o \textit{TTL} é zero e tem que descartar o datagrama e consequentemente notificar o \textit{host}), \textit{echo request/reply} (quando são enviadas mensagens para funções de teste e controle da rede (\textit{request}), caso a máquina esteja ligada responde com um \textit{reply}) \cite{rfc792} \cite{wiki:ICMP_echo}. Como as mensagens ICMP encontram-se ao nível de rede, estas são também elas encapsuladas em datagramas IP que, consequentemente, usam o protocolo IP.
+
+Assim sendo, analisando a primeira mensagem ICMP, nomeadamente no separador do \textit{Internet Protocol Version 4}, percebemos que se trata de uma mensagem que vem num protocolo \textit{ICMP}. Além disso, é possível concluir que se trata de uma mensagem de \textit{echo request}, se observarmos o campo \textit{Type} no separador \textit{Internet Control Message Protocol}. Desta forma, pode-se concluir que o computador usado para a resolução deste trabalho está a tentar perceber se consegue estabelecer uma ligação com o \textit{host} marco.uminho.pt e para isso usa mensagens \textit{ICMP} do tipo \textit{echo request}.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/icmp_1.png} 
+	\end{center}
+	\caption{\label{fig:icmp_1}Identificação do campo \textit{Protocol}.}
+\end{figure} 
+
+% ------
 
 \subsection{Exercício 2.c.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Quantos bytes tem o cabeçalho IP(v4)? Quantos bytes tem o campo de dados (payload) do datagrama? Como se calcula o tamanho do payload?  
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+	
+O cabeçalho IPv4 tem 20 bytes.
+
+O campo de dados (payload) do datagrama tem 40 bytes.
+
+O cálculo do payload é feito retirando o tamanho do cabeçalho ao tamanho total do datagrama (60 bytes). Desta forma, basta fazer \(60 - 20 = 40 bytes\).
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/icmp_size.png} 
+	\end{center}
+	\caption{\label{fig:icmp_size}Identificação do tamanho do \textit{header} e do \textit{payload}.}
+\end{figure} 
+
+% ------
 
 \subsection{Exercício 2.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+O datagrama IP foi fragmentado? Justifique.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+A fragmentação acontece quando o tamanho total do datagrama excede o \textit{MTU} disponível. Tendo em conta que por defeito o \textit{traceroute} usa 60 bytes por datagrama e tem-se um \textit{MTU} disponível de 1500 bytes, podemos conjeturar que não haverá fragmentação.
+	
+A verificação se um datagrama foi ou não fragmentado é feita com base em dois valores, o \textit{fragment offset} (indica o \textit{offset} em que o datagrama atual encaixa no datagrama original) e a \textit{flag more fragments} (indica se existe mais fragmentos). Neste datagrama em específico o \textit{fragment offset} = 0 e a \textit{flag more fragments} = 0. Desta forma, tendo em conta o \textit{fragment offset}, sabe-se que se o datagrama foi fragmentado então ele é necessariamente o primeiro. Além disso, se analisarmos a \textit{flag more fragments} concluímos que para além do datagrama atual não existe mais nenhum associado a este. 
+
+Assim sendo, conjugando a informação dos dois parâmetros percebe-se que se o datagrama é o primeiro e não existe mais nenhum associado, então este é único e não foi fragmentado.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/icmp_frag.png} 
+	\end{center}
+	\caption{\label{fig:icmp_frag}Fragmentação.}
+\end{figure} 
+
+% ------
 
 \subsection{Exercício 2.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Ordene os pacotes capturados de acordo com o endereço IP fonte (e.g., selecionando o cabeçalho da coluna Source), e analise a sequência de tráfego ICMP gerado a partir do endereço IP atribuído à sua máquina. Para a sequência de mensagens ICMP enviadas pelo seu computador, indique que campos do cabeçalho IP variam de pacote para pacote.  
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+Os campos que vêm os seus valores alterados correspondem à \textit{identification}, \textit{header checksum} e \textit{time to live (TTL)}. 
+
+A \emph{identificação} muda pois este campo identifica unicamente cada datagrama e visto que estes são sempre diferentes então o campo também o será.
+
+O \textit{header checksum} permite verificar que determinado header foi ou não corrompido. Desta forma o \textit{checksum} identifica um determinado \textit{header} num determinado estado. Assim sendo, o \textit{checksum} muda pois este campo utiliza no seu algoritmo todas as palavras de 16 bits do \textit{header} \cite{rfc792}. Efetivamente, sabendo que o \textit{header}, propriamente dito, muda de datagrama para datagrama então o seu \textit{checksum} também vai mudar.
+
+%ACABAR O TTL -----------------------------------------------------------
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \subsection{Exercício 2.f.}
@@ -234,20 +311,8 @@ According to Table~\ref{tab:TabelaExemplo}...
 \section{Conclusions}
 Neste trabalho...
 
-%UNCOMMENT para a bibliografia 
-%% ficheirodebibliografia.bib
-%\bibliography{ficheirodebibliografia}
-
-%ou inserir directamente os v‡rios \bibitem 
-\begin{thebibliography}{1}
-\bibitem{Zadeh65}
-Zadeh, L.:
-\newblock {Fuzzy sets} (1965)
-
-\bibitem{Nguyen99}
-Nguyen, H., Walker, E.:
-\newblock {First course in fuzzy logic}.
-\newblock {Boca Raton: Chapman and Hall/CRC Press} (1999)
-\end{thebibliography}
+%BIBLIOGRAFIA
+\bibliographystyle{splncs}
+\bibliography{ficheirodebibliografia}
 
 \end{document}
