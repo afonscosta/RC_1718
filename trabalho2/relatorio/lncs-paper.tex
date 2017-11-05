@@ -265,7 +265,6 @@ Após estes datagramas é possível identificar um segundo conjunto de datagramas d
 	\label{fig:field_change}
 \end{figure}
 
-\pagebreak
 % Exercicio 3 --------------------
 
 \subsection{Exercício 3.a.}
@@ -285,6 +284,7 @@ O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maxi
 	\end{center}
 	\caption{\label{fig:icmp_frag}A MTU é menor do que o tamanho do pacote.}
 \end{figure} 
+
 
 \subsection{Exercício 3.b.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
@@ -307,15 +307,20 @@ A informação de que o datagrama foi fragmentado é dada através da \textit{flag m
 \subsection{Exercício 3.c.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
-
+Imprima o segundo fragmento do datagrama IP original. Que informação do cabeçalho IP indica que não se trata do 1º fragmento? Há mais fragmentos? O que nos permite afirmar isso?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Sabe-se que este não é o primeiro segmento pois o datagrama em questão tem \textit{fragment offset} = 1480. Isto significa que, no datagrama original, este segmento começará a partir do byte 1480 do datagrama. Analisando a \textit{flag more fragments}, percebe-se existem mais fragmentos, visto que esta é igual a 1.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/packet_second.png} 
+	\end{center}
+	\caption{\label{fig:icmp_frag}As flags e o fragment offset confirmam que é o segundo fragmento.}
+\end{figure} 
 
 \subsection{Exercício 3.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
