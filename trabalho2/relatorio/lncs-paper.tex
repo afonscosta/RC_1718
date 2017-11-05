@@ -265,6 +265,7 @@ Após estes datagramas é possível identificar um segundo conjunto de datagramas d
 	\label{fig:field_change}
 \end{figure}
 
+\pagebreak
 % Exercicio 3 --------------------
 
 \subsection{Exercício 3.a.}
@@ -287,17 +288,12 @@ O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maxi
 
 \subsection{Exercício 3.b.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
-
-\subsection{Exercício 3.c.}
-\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
 Imprima o primeiro fragmento do datagrama IP segmentado. Que informação no cabeçalho indica que o datagrama foi fragmentado? Que informação no cabeçalho IP indica que se trata do primeiro fragmento? Qual é o tamanho deste datagrama IP?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A informação de que o datagrama foi fragmentado é dada através da \textit{flag more fragments} que se encontra a 1 em conjugação com o campo \textit{fragment offset}, que neste caso se encontra a 0. Desta forma, podemos concluir que este datagrama é efetivamente o primeiro (\textit{fragment offset} = 0) de um PDU fragmentado (\textit{flag more fragments} = 1).
+A informação de que o datagrama foi fragmentado é dada através da \textit{flag more fragments} que se encontra a 1 em conjugação com o campo \textit{fragment offset}, que neste caso se encontra a 0. Desta forma, podemos concluir que este datagrama é efetivamente o primeiro (\textit{fragment offset} = 0) de um PDU fragmentado (\textit{flag more fragments} = 1). Este é um datagrama IP de 1480 bytes (MTU de 1500 bytes, dos quais 20 bytes servem de \textit{header}). 
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -307,6 +303,19 @@ A informação de que o datagrama foi fragmentado é dada através da \textit{flag m
 	\end{center}
 	\caption{\label{fig:icmp_frag}As flags e o fragment offset confirmam que é o primeiro fragmento.}
 \end{figure} 
+
+\subsection{Exercício 3.c.}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
 
 \subsection{Exercício 3.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
