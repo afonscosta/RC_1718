@@ -282,7 +282,7 @@ O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maxi
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/packet_frag.png} 
 	\end{center}
-	\caption{\label{fig:icmp_frag}A MTU é menor do que o pacote.}
+	\caption{\label{fig:icmp_frag}A MTU é menor do que o tamanho do pacote.}
 \end{figure} 
 
 \subsection{Exercício 3.b.}
@@ -292,8 +292,21 @@ O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maxi
 
 \subsection{Exercício 3.c.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Imprima o primeiro fragmento do datagrama IP segmentado. Que informação no cabeçalho indica que o datagrama foi fragmentado? Que informação no cabeçalho IP indica que se trata do primeiro fragmento? Qual é o tamanho deste datagrama IP?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+A informação de que o datagrama foi fragmentado é dada através da \textit{flag more fragments} que se encontra a 1 em conjugação com o campo \textit{fragment offset}, que neste caso se encontra a 0. Desta forma, podemos concluir que este datagrama é efetivamente o primeiro (\textit{fragment offset} = 0) de um PDU fragmentado (\textit{flag more fragments} = 1).
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/packet_first.png} 
+	\end{center}
+	\caption{\label{fig:icmp_frag}As flags e o fragment offset confirmam que é o primeiro fragmento.}
+\end{figure} 
 
 \subsection{Exercício 3.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
