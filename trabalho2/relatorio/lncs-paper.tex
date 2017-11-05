@@ -269,8 +269,21 @@ Após estes datagramas é possível identificar um segundo conjunto de datagramas d
 
 \subsection{Exercício 3.a.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Localize a primeira mensagem ICMP. Porque é que houve necessidade de fragmentar o pacote inicial?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maximum Transmission Unit} disponível é de apenas 1500 bytes e, como tal, o pacote inicial tem de ser fragmentado para que este possa ser transmitido na rede.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/packet_frag.png} 
+	\end{center}
+	\caption{\label{fig:icmp_frag}A MTU é menor do que o pacote.}
+\end{figure} 
 
 \subsection{Exercício 3.b.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
