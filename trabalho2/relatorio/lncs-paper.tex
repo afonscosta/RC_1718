@@ -324,8 +324,34 @@ Sabe-se que este não é o primeiro segmento pois o datagrama em questão tem \text
 
 \subsection{Exercício 3.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Quantos fragmentos foram criados a partir do datagrama original? Como se detecta o último fragmento correspondente ao datagrama original?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+Analisando o parâmetro \textit{identification} dos datagramas capturados pelo \textit{Wireshark}, percebe-se que existem três datagramas com o mesmo valor o que revela que pertencem ao mesmo PDU (\textit{identification} = 0xa813). Desta forma podemos concluir que o datagrama foi fragmentado duas vezes resultando em três fragmentos.
+	
+A deteção do último fragmento é feita através da análise da \textit{flag more fragments}. Se esta estiver a 1 então existem mais segmentos. Caso contrário, o segmento em questão é o último.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/packet_first.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/packet_second.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/packet_third.png}
+	\end{subfigure}
+	\caption{Encontrando vários fragmentos com a mesma \textit{identification}, é possível saber a sua ordem através do \textit{fragment offset} e flags.}
+	\label{fig:field_change}
+\end{figure}
 
 \subsection{Exercício 3.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
