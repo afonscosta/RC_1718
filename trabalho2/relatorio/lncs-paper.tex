@@ -355,7 +355,19 @@ A deteção do último fragmento é feita através da análise da \textit{flag more fr
 
 \subsection{Exercício 3.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Indique, resumindo, os campos que mudam no cabeçalho IP entre os diferentes fragmentos, e explique a forma como essa informação permite reconstruir o datagrama original. 
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+Os campos que mudam são \textit{Total Length, more fragments} e \textit{Fragment offset}. 
+
+No primeiro fragmento, o \textit{Total Length} é igual ao MTU menos o \textit{Header Length}, a flag \textit{more fragments} é igual a 1 e o \textit{Fragment offset} é igual a 0.
+
+Entre o primeiro fragmento e o último fragmento não inclusives, o \textit{Total Length} é igual ao MTU menos o \textit{Header Length}, a flag \textit{more fragments} é igual a 1 e o \textit{Fragment offset} é igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o n-ésimo fragmento do datagrama (n = 1, 2, ...).
+
+No último fragmento, o \textit{Total Length} é menor ou igual ao MTU, a flag \textit{more fragments} é igual a 0 e o \textit{Fragment offset} é igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o número de fragmentos do datagrama.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 
