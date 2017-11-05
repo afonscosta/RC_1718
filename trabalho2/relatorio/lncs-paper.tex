@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \usepackage{fancyvrb}
 \usepackage{amsmath}
+\usepackage{subcaption}
 \usepackage[bookmarks=false]{hyperref}
 %\renewcommand{\baselinestretch}{1.5}
 
@@ -156,19 +157,113 @@ A \emph{identificação} muda pois este campo identifica unicamente cada datagrama
 
 O \textit{header checksum} permite verificar que determinado header foi ou não corrompido. Desta forma o \textit{checksum} identifica um determinado \textit{header} num determinado estado. Assim sendo, o \textit{checksum} muda pois este campo utiliza no seu algoritmo todas as palavras de 16 bits do \textit{header} \cite{rfc792}. Efetivamente, sabendo que o \textit{header}, propriamente dito, muda de datagrama para datagrama então o seu \textit{checksum} também vai mudar.
 
-%ACABAR O TTL -----------------------------------------------------------
+O \textit{TTL} muda pois a máquina que está a ser usada está a tentar contactar o \textit{host} marco.uminho.pt. Começa por tentar com \(TTL = 1\) e o pacote é descartado. Desta forma, vai aumentado o \textit{TTL} até conseguir chegar ao \textit{host} pretendido.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_TTL_1.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_TTL_2.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_TTL_3.png}
+	\end{subfigure}
+	\caption{Campos que mudam.}
+	\label{fig:field_change}
+\end{figure}
+
+% ------
 
 \subsection{Exercício 2.f.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Observa algum padrão nos valores do campo de Identificação do datagrama IP e TTL? 
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+O campo da indentificação corresponde a um valor que é incrementado e que identifica unicamente o datagrama em questão. Por exemplo, se o primeiro datagrama tiver \textit{Identification} 0xb224 (45604), então o datagrama seguinte terá o valor 0xb225 (45605). 
+
+O TTL corresponde a uma variável que vai sendo decrementada sempre que é intersetada por um \textit{router}. Visto que na primeira mensagem o TTL é 1, o datagrama é descartado imediatamente no primeiro \textit{router}. Deste modo, é enviado, de seguida, um novo datagrama com TTL a 2 com a esperança de que este chegue desta vez ao destino. Caso não chegue, então no próximo datagrama o TTL será aumentado, e assim sucessivamente, até chegar ao destino.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+A relação entre \textit{TTL} pode ser observada na figura ~\ref{fig:field_change}.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_1_id.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_2_id.png}
+	\end{subfigure}
+	\caption{Identificação.}
+	\label{fig:field_id}
+\end{figure}
+
+% ------
 
 \subsection{Exercício 2.g.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Ordene o tráfego capturado por endereço destino e encontre a série de respostas ICMP TTL exceeded enviadas ao seu computador. Qual é o valor do campo TTL? Esse valor permanece constante para todas as mensagens de resposta ICMP TTL exceeded enviados ao seu host? Porquê? 
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+O IP 192.168.100.254 referencia a interface do primeiro router de acesso (visto ter o três primeiros campos iguais ao da máquina em que os testes estão a ser feitos e o último utiliza um número convencionado para ser utilizado para identificar a interface IP do router dentro da rede 192.168.100, na qual a máquina de testes se encontra).
+
+Desta forma, quando analisamos os datagramas do 192.168.100.254 percebemos que estes têm todos o \textit{TTL} = 64. O \textit{TTL} toma um valor exageradamente elevado, devido ao desconhecimento que este tem da distância a que o \textit{host} de destino se encontra. Por defeito, este router quando não tem informação da distância a que o \textit{host} de destino se encontra envia datagramas com \textit{TTL} = 64 e por isso todas os seus datagramas tem \textit{TTL} igual.
+
+Além disso, é possível concluir que as três mensagens recebidas deste router com \textit{ICMP \textit{TTL} exceeded} são a resposta ao envio feito pela máquina de testes de três datagramas de \textit{echo (ping) request} com \textit{TTL} apenas de 1. Estes datagramas chegaram ao \textit{router} de acesso e ficaram com o \textit{TTL} a 0 e a exceção veio enviado de no datagrama \textit{ICMP \textit{TTL} exceeded}.
+
+Após estes datagramas é possível identificar um segundo conjunto de datagramas desta vez da interface IP 193.136.19.254. Pelo mesmo raciocínio podemos assumir que o IP desta interface identifica um \textit{router}. Este novo \textit{router} envia datagramas com \textit{TTL} = 254 (constante). Este valor é considerável pela mesma razão explicitada anteriormente. Estes datagramas são a resposta a 3 datagramas enviados pela máquina de testes com \textit{TTL} = 2, o que nos leva a concluir que é o segundo router por qual o nosso datagrama teve de passar para chegar ao marco.uminho.pt.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_1_TTL64_router.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_2_TTL64_router.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_3_TTL64_router.png}
+	\end{subfigure}
+	\caption{Router de acesso com \textit{TTL} = 64.}
+	\label{fig:field_change}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_1_TTL254_router.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_2_TTL254_router.png}
+	\end{subfigure}%
+	\begin{subfigure}{.4\textwidth}
+		\centering
+		\includegraphics[width=0.98\linewidth]{./imagens/icmp_3_TTL254_router.png}
+	\end{subfigure}
+	\caption{Segundo router com \textit{TTL} = 254.}
+	\label{fig:field_change}
+\end{figure}
 
 % Exercicio 3 --------------------
 
