@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.9.30)  5 NOV 2017 11:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.9.30)  6 NOV 2017 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -427,6 +427,18 @@ LaTeX Warning: Label `fig:field_change' multiply defined.
 
 LaTeX Warning: Label `fig:field_change' multiply defined.
 
+
+LaTeX Warning: Label `fig:icmp_frag' multiply defined.
+
+
+LaTeX Warning: Label `fig:icmp_frag' multiply defined.
+
+
+LaTeX Warning: Label `fig:icmp_frag' multiply defined.
+
+
+LaTeX Warning: Label `fig:field_change' multiply defined.
+
 )
 \openout1 = `lncs-paper.aux'.
 
@@ -770,118 +782,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--272
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
 [6 <./imagens/icmp_1_id.png (PNG copy)> <./imagens/icmp_2_id.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+<./imagens/packet_frag.png, id=113, 840.89156pt x 523.20468pt>
+File: ./imagens/packet_frag.png Graphic file (type png)
+<use ./imagens/packet_frag.png>
+Package pdftex.def Info: ./imagens/packet_frag.png  used on input line 283. on 
+input line 283.
+Package pdftex.def Info: Requested size: 294.31645pt x 183.12437pt on input lin
+e 283.
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
-
+Overfull \hbox (12.36635pt too wide) in paragraph at lines 292--293
+[]\T1/ptm/m/n/10 Imprima o primeiro frag-mento do data-grama IP seg-men-tado. Q
+ue in-for-mação no cabeçalho
  []
 
 [7 <./imagens/icmp_1_TTL64_router.png (PNG copy)> <./imagens/icmp_2_TTL64_route
 r.png (PNG copy)> <./imagens/icmp_3_TTL64_router.png (PNG copy)> <./imagens/icm
 p_1_TTL254_router.png (PNG copy)> <./imagens/icmp_2_TTL254_router.png (PNG copy
-)> <./imagens/icmp_3_TTL254_router.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+)> <./imagens/icmp_3_TTL254_router.png (PNG copy)> <./imagens/packet_frag.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
+<./imagens/packet_first.png, id=126, 838.63312pt x 521.69907pt>
+File: ./imagens/packet_first.png Graphic file (type png)
+<use ./imagens/packet_first.png>
+Package pdftex.def Info: ./imagens/packet_first.png  used on input line 302. on
+ input line 302.
+Package pdftex.def Info: Requested size: 293.52599pt x 182.5974pt on input line
+ 302.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
 
  []
 
@@ -891,132 +841,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--313
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
+<./imagens/packet_second.png, id=127, 837.1275pt x 523.20468pt>
+File: ./imagens/packet_second.png Graphic file (type png)
+<use ./imagens/packet_second.png>
+Package pdftex.def Info: ./imagens/packet_second.png  used on input line 320. o
+n input line 320.
+Package pdftex.def Info: Requested size: 292.99901pt x 183.12437pt on input lin
+e 320.
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+
+ []
+
+[8 <./imagens/packet_first.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
-
+Overfull \hbox (12.24646pt too wide) in paragraph at lines 332--333
+[]\T1/ptm/m/n/10 Analisando o parâmetro \T1/ptm/m/it/10 iden-ti-fi-ca-tion \T1/
+ptm/m/n/10 dos data-gra-mas cap-tura-dos pelo \T1/ptm/m/it/10 Wire-shark\T1/ptm
+/m/n/10 , percebe-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--322
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
+File: ./imagens/packet_first.png Graphic file (type png)
+<use ./imagens/packet_first.png>
+Package pdftex.def Info: ./imagens/packet_first.png  used on input line 342. on
+ input line 342.
+Package pdftex.def Info: Requested size: 141.6464pt x 88.1145pt on input line 3
+42.
+File: ./imagens/packet_second.png Graphic file (type png)
+<use ./imagens/packet_second.png>
+Package pdftex.def Info: ./imagens/packet_second.png  used on input line 346. o
+n input line 346.
+Package pdftex.def Info: Requested size: 141.6464pt x 88.52847pt on input line 
+346.
+<./imagens/packet_third.png, id=138, 848.4197pt x 521.69907pt>
+File: ./imagens/packet_third.png Graphic file (type png)
+<use ./imagens/packet_third.png>
+Package pdftex.def Info: ./imagens/packet_third.png  used on input line 350. on
+ input line 350.
+Package pdftex.def Info: Requested size: 141.6464pt x 87.09557pt on input line 
+350.
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--329
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
-
+Overfull \hbox (72.26335pt too wide) in paragraph at lines 340--352
+ []$[]$$[]$$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
-
- []
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
@@ -1025,18 +911,206 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+[9 <./imagens/packet_second.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./imagens/packet_third.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--389
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 442--443
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 444--445
 
  []
 
@@ -1045,24 +1119,24 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
  (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
- [11]
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 491.
+ [13]
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 491.
  (./lncs-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 413.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 491.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 491.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 491.
  ) 
 Here is how much of TeX's memory you used:
- 7889 strings out of 492990
- 117051 string characters out of 6138688
- 209163 words of memory out of 5000000
- 11196 multiletter control sequences out of 15000+600000
+ 7915 strings out of 492990
+ 117689 string characters out of 6138688
+ 209315 words of memory out of 5000000
+ 11212 multiletter control sequences out of 15000+600000
  30545 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,7n,40p,905b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1073,10 +1147,10 @@ msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on lncs-paper.pdf (12 pages, 7301245 bytes).
+Output written on lncs-paper.pdf (14 pages, 7528970 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 231 compressed objects within 3 object streams
- 142 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 293 PDF objects out of 1000 (max. 8388607)
+ 244 compressed objects within 3 object streams
+ 148 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
