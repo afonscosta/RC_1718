@@ -26,6 +26,12 @@ Através do exemplo a cima podemos concluir que não é necessário que este ten
 	prints
 
 ---
+---
+---
+---
+---
+
+2.a. Execute o comando netstat –rn por forma a poder consultar a tabela de encaminhamento unicast (IPv4). Inclua no seu relatório as tabelas de encaminhamento obtidas; interprete as várias entradas de cada tabela. Se necessário, consulte o manual respetivo ( man netstat ).
 
 
 
