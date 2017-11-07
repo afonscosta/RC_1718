@@ -378,35 +378,177 @@ O datagrama analisado AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 \subsection{Exercício 2.1.a}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Indique que endereços IP e máscaras de rede foram atribuídos pelo CORE a cada equipamento. Para simplificar, pode incluir uma imagem que ilustre de forma clara a topologia definida e o endereçamento usado.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+A máscara de rede utilizada é 255.255.255.0. Isto deve-se a facto de todos os IPv4 atribuídos aos diferentes componentes da rede terem /24 como quantidade de bits que identificam a rede.
+
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/rede.png} 
+	\end{center}
+	\caption{\label{fig:rede}Topologia da rede.}
+\end{figure} 
 
 \subsection{Exercício 2.1.b}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Tratam-se de endereços públicos ou privados? Porquê?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+Tratam-se de endereços privados pois o primeiro octeto é 00001010, que em decimal representa 10. Sendo este o primeiro octeto podemos afirmar que é um endereço IP privado visto que pertence ao conjunto de prefixos que identificam um endereçamento privado. Os conjuntos de endereços privados são os seguintes: 
+
+\begin{itemize}
+	\item Start address: 10.0.0.0 $\,\to\,$ End Address: 10.255.255.255
+	\item Start address: 172.16.0.0 $\,\to\,$ End Address: 172.31.255.255
+	\item Start address: 192.168.0.0 $\,\to\,$ End Address: 192.168.255.255
+	\item Start address: 169.254.0.0 $\,\to\,$ End Address: 169.254.255.255
+\end{itemize}
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+Pela observação da topologia da rede ~\ref{fig:rede}.
 
 \subsection{Exercício 2.1.c}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Porque razão não é atribuído um endereço IP aos switches?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+Na topologia em questão se vier um pacote com destino ao PC7, este vem com endereço de destino de 10.0.9.20/24. Para tal, o pacote vem do \textit{router} R e chega ao \textit{router} Rd. O \textit{router} Rd aplica a NetMask 255.255.255.0 ao endereço de destino e obtém 10.0.9.0. Consegue fazer match no endereço 10.0.9.1 e envia o pacote para o SW4. Ao chegar ao SW4, este avalia o endereço MAC de destino e duas situações podem acontecer. Se este tiver nos seus registos o endereço, então envia diretamente ao host especificado. Caso não tenha ainda essa informação envia para todos os hosts a ele ligados.
+
+Efetivamente, os \textit{switcts} não operam ao nível de rede e como tal a camada de rede, nomeadamente o IP, é completamente transparente para estes dispositivos.
+
+Através do exemplo a cima podemos concluir que não é necessário que este tenha IP pois os pacotes são enviados para o \textit{switch} com base no IP da interface de saída do \textit{router}. Após o datagrama chegar ao \textit{switch} este quanto muito usa endereços MAC por forma a fazer \textit{forward} do datagrama para o \textit{host} respetivo.
 
 \subsection{Exercício 2.1.d}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Usando o comando ping certifique-se que existe conectividade IP entre os laptops dos vários departamentos e os servidores do departamento D (basta certificar-se da conectividade de um laptop por departamento).
+
+\pagebreak
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC1_S1.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC1_S2.png}
+	\end{subfigure}
+	\caption{Teste de conectividade entre PC1 e os servidores S1 (à esquerda) e S2 (à direita).}
+	\label{fig:pc1_s}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC3_S1.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC3_S2.png}
+	\end{subfigure}
+	\caption{Teste de conectividade entre PC3 e os servidores S1 (à esquerda) e S2 (à direita).}
+	\label{fig:pc3_s}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC5_S1.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC5_S2.png}
+	\end{subfigure}
+	\caption{Teste de conectividade entre PC5 e os servidores S1 (à esquerda) e S2 (à direita).}
+	\label{fig:pc5_s}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC7_S1.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/PC7_S2.png}
+	\end{subfigure}
+	\caption{Teste de conectividade entre PC7 e os servidores S1 (à esquerda) e S2 (à direita).}
+	\label{fig:pc7_s}
+\end{figure}
+
+Tendo em conta os resultados do comando \textit{ping} pode-se afirmar que existe conetividade entre os \textit{hosts} dos diferentes departamentos e os servidores do departamento D.
 
 \subsection{Exercício 2.1.e}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Verifique se existe conectividade IP do router de acesso para os servidores S1 e S2.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/R_S1.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{./imagens/R_S2.png}
+	\end{subfigure}
+	\caption{Teste de conectividade entre R e os servidores S1 (à esquerda) e S2 (à direita).}
+	\label{fig:r_s}
+\end{figure}
+
+Tendo em conta os resultados obtidos em ~\ref{fig:r_s}, podemos afirmar que exite conetividade entre o \textit{router} R e os servidores S1 e S2.
+
 
 % Exercicio 2 --------------------
 
 \subsection{Exercício 2.2.a}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Execute o comando netstat ¿rn por forma a poder consultar a tabela de encaminhamento unicast (IPv4). Inclua no seu relatório as tabelas de encaminhamento obtidas; interprete as várias entradas de cada tabela. Se necessário, consulte o manual respetivo ( man netstat ).
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+A primeira linha na tabela de endereçamento do PC3 representa a rota por defeito, isto é, quando entre no PC3 um datagrama com um IP que não faz \textit{match} com nenhum IP da coluna \textit{Destination} então este é reencaminhado para o \textit{router} de acesso, ou seja, 10.0.7.1 ficando este responsável pelo seu encaminhamento. Denotando que a primeira linha, por ser um endereço estático, tem a menor prioridade. Esta linha faz \textit{match} com qualquer endereço pois tem uma \textit{Genmask} igual a 0.0.0.0. Efetivamente, quando chega à máquina PC3, por exemplo,  um datagrama com o IP 10.0.8.20, este é comparado com todas as linhas da tabela. Posteriormente é aplicada a máscara obtendo-se 0.0.0.0. O resultado é depois comparado com o campo \textit{Destination} e faz match. De seguida é enviado para o router de acesso explicitado pelo campo \textit{Gateway}
+
+A segunda linha é responsável por encaminhar, através da própria máquina, o trânsito local, ou seja, o prórprio PC3 encaminha os datagramas para \textit{hosts} vizinhos. Deste modo, todos os datagramas que tiverem como prefixo de rede 10.0.7 vão fazer match na segunda linha, isto porque, chegando por exemplo o datagrama com o IP 10.0.7.21, é aplicada a máscara 255.255.255.0 e resulta a \textit{destination} 10.0.7.0. Posteriormente é enviado para o endereço dito no \textit{Gateway}, 0.0.0.0, ou seja, fica responsável por encaminhar este datagrama a própria máquina. Este processo de encaminhamento resulta pois os \textit{hosts} tem conhecimento da topologia da rede local.
+
+A tabela de encaminhamento do \textit{router} Rb não incluí rotas por defeito pois todas as rotas existentes na rede encontram-se identificadas na tabela à partida.
+
+Através da análise da topologia na rede criada com o CORE percebemos que o \textit{router} Rb deverá ser responsável por encaminhar para a rede 10.0.0.0, 10.0.1.0, e 10.0.7.0. A tabela de encaminhamento confirma as nossas suspeitas, pois todas as linhas que têm os endereços IP atrás indicados têm como \textit{Gateway} 0.0.0.0, que significa que o próprio \textit{router} fica responsável por encaminhar esses datagramas.
+
+Todas as outras redes existentes encontram-se na tabela com o endereço de encaminhamento apropriado. Nomeadamente, caso os datagramas tenham como destino a rede 10.0.x.0, em que x={2,3,6,8,9,10}, estes são reencaminhados para uma das duas redes a que o \textit{router} Rb tem acesso, isto é, 10.0.0.1 ou 10.0.1.2. Estas entradas em espicífico na tabela têm a \textit{flag} G no campo \textit{Flags}, visto não ser um encaminhamento direto.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{./imagens/netstatPC3.png}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{./imagens/netstatRb.png}
+	\end{subfigure}
+	\caption{Tabelas de encaminhamento do PC3 (à esquerda) e do Rb (à direita).}
+	\label{fig:r_s}
+\end{figure}
 
 \subsection{Exercício 2.2.b}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
