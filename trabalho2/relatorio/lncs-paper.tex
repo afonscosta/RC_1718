@@ -282,7 +282,7 @@ O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maxi
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/packet_frag.png} 
 	\end{center}
-	\caption{\label{fig:icmp_frag}A MTU é menor do que o tamanho do pacote.}
+	\caption{\label{fig:packet_frag}A MTU é menor do que o tamanho do pacote.}
 \end{figure} 
 
 
@@ -301,7 +301,7 @@ A informação de que o datagrama foi fragmentado é dada através da \textit{flag m
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/packet_first.png} 
 	\end{center}
-	\caption{\label{fig:icmp_frag}As flags e o fragment offset confirmam que é o primeiro fragmento.}
+	\caption{\label{fig:packet_first}As flags e o fragment offset confirmam que é o primeiro fragmento.}
 \end{figure} 
 
 \subsection{Exercício 3.c.}
@@ -319,7 +319,7 @@ Sabe-se que este não é o primeiro segmento pois o datagrama em questão tem \text
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/packet_second.png} 
 	\end{center}
-	\caption{\label{fig:icmp_frag}As flags e o fragment offset confirmam que é o segundo fragmento.}
+	\caption{\label{fig:packet_second}As flags e o fragment offset confirmam que é o segundo fragmento.}
 \end{figure} 
 
 \subsection{Exercício 3.d.}
@@ -350,7 +350,7 @@ A deteção do último fragmento é feita através da análise da \textit{flag more fr
 		\includegraphics[width=0.98\linewidth]{./imagens/packet_third.png}
 	\end{subfigure}
 	\caption{Encontrando vários fragmentos com a mesma \textit{identification}, é possível saber a sua ordem através do \textit{fragment offset} e flags.}
-	\label{fig:field_change}
+	\label{fig:field_packet}
 \end{figure}
 
 \subsection{Exercício 3.e.}
@@ -369,6 +369,8 @@ Entre o primeiro fragmento e o último fragmento não inclusives, o \textit{Total 
 No último fragmento, o \textit{Total Length} é menor ou igual ao MTU, a flag \textit{more fragments} é igual a 0 e o \textit{Fragment offset} é igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o número de fragmentos do datagrama.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+O datagrama analisado AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+~\ref{fig:field_packet} 
 
 
 \pagebreak
