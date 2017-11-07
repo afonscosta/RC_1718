@@ -1,0 +1,8 @@
+1 -
+
+b)  Inicialmente, é feito o envio de um pacote com o TTL = 1, que não recebe resposta porque o TTL é exceeded e isto acontece ate o TTL for igual a 3. Depois podemos também ver que há envio de vários pacotes com o TTL = 1 (isto é porque pode haver um pacote que se perca ou uma falha no sistema atuando assim como uma redundância). Depois vemos que a partir que o TTL = 3 o TTL é incrementado a TTL= 8 e as replies são feitas com TTL = 62 constantemente. Quando o TTL é excedido a resposta é enviada pelo nodo onde o TTL chegou igual a 0.
+O tamanho do pacote é 74 bytes mas a mensagem tem 60 bytes de tamanho sendo que 14 bytes são para o header do nível 2. Nesta mensagem de 60 bytes estão incluídos 20 bytes de header length (variáveis de acordo com o protocolo IPv4) e nos 40 bytes restantes temos o ICMP header e ICMP payload, sendo Data resultante de 32 bytes. Vemos que a mensagem de 32 bytes aumentou em 42 bytes até o nível 2 de rede. 
+
+c)  O TTL mínimo necessário para alcançar o destino n4 é 3. Isto é confirmado pelo wireshark, que mostra que as tentativas com TTL menor que 3 resultou em TTL exceeded.
+
+d)  O Round-Trip Time é igual à soma do tempo de envio com o tempo de resposta. Logo, fazendo a soma das médias dos tempos, temos um resultado de Round-Trip Time médio de 0.00015 s (tempo de ida/request) + 0.00005 s (tempo de volta/reply) = 0.00020 s. É de notar que tanto o tempo de request como o de reply se mantêm relativamente constantes.
