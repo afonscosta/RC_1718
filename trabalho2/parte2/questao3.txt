@@ -1,0 +1,32 @@
+3.1) Considere que dispõe apenas do endereço de rede IP 172.16.0.0/16, defina um novo esquema de endereçamento para as redes dos departamentos (mantendo a rede de acesso e core inalteradas) e atribua endereços às interfaces dos vários sistemas envolvidos. Deve justificar as opções usadas.
+
+R: Ra - Definimos o IP como 172.16.1.1/24 na interface eth2 (ligação ao Departamento A). A escolha do terceiro octeto a 1 reside no facto de querermos identificar aquele subnet como a número um (como assim) e 1 no quarto octeto reside no facto de ser o primeiro dispositivo/host. o /24 é posto porque não é suposto alterar a subnet (depois melhora-se o português).
+   Propagou-se então os endereços da subnetting para os PC's do departamento. No caso do PC1 recebeu o endereço IP 172.16.1.2/24 e o PC2 recebeu o endereço IP 172.16.1.3/24.
+
+   Rb - Repetiu-se o processo mas com 172.16.2.1/24 para a interface do router. Propagou-se o IP da subnetting para os PC3 e PC4 com os IP 172.16.2.2/24 e 172.16.2.3/24, respetivamente.
+   
+   Rc - O mesmo mas com 172.16.3.1/24 para a interface do router. Propagou-se o IP da subnetting para os PC5 e PC6 com os IP 172.16.3.2/24 e 172.16.3.3/24, respetivamente.
+   
+   Rd - O mesmo com 172.16.4.1/24. Propagou-se para PC7, PC8, S1 e S2 172.16.4.2/24, 172.16.4.3/24, 172.16.4.4/24 e 172.16.4.5/24, respetivamente.
+
+
+
+--------------
+
+
+3.2) Qual a máscara de rede que usou (em formato decimal)? Quantos hosts IP pode interligar em cada departamento? Justifique.
+
+R: Máscara da rede core de IP em decimal é 255.255.0.0
+   Máscara das subredes de IP em decimal é 255.255.255.0
+   Nº de hosts possíveis é 2^8 - 2 = 254
+
+16 bits para rede. Logo, Máscara IP da rede em binário: 11111111.11111111.00000000.00000000
+16 bits para rede e 8 bits para subnet. Logo, Máscara IP das subredes em binário: 11111111.11111111.11111111.000000000
+
+Dispomos de 32 - (16 + 8) = 8 bits para endereçar os hosts IP em cada departamento. Como 00000000 e 11111111 estão reservados, temos 2^8 - 2 endereços possíveis.
+
+-------------
+
+3.3) Garanta e verifique que conectividade IP entre as várias redes locais da organização MIEI-RC é mantida.
+
+R: 
