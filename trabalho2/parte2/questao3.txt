@@ -29,4 +29,4 @@ Dispomos de 32 - (16 + 8) = 8 bits para endereçar os hosts IP em cada departame
 
 3.3) Garanta e verifique que conectividade IP entre as várias redes locais da organização MIEI-RC é mantida.
 
-R: 
+R: Confirma-se que se pode fazer ping de cada subrede se pode ligar a cada uma das outras subredes locais.
