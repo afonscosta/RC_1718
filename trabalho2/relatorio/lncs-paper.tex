@@ -369,7 +369,7 @@ Entre o primeiro fragmento e o último fragmento não inclusives, o \textit{Total 
 No último fragmento, o \textit{Total Length} é menor ou igual ao MTU, a flag \textit{more fragments} é igual a 0 e o \textit{Fragment offset} é igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o número de fragmentos do datagrama.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
-O datagrama analisado AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado.
 ~\ref{fig:field_packet} 
 
 
@@ -421,7 +421,7 @@ Porque razão não é atribuído um endereço IP aos switches?
 
 Na topologia em questão se vier um pacote com destino ao PC7, este vem com endereço de destino de 10.0.9.20/24. Para tal, o pacote vem do \textit{router} R e chega ao \textit{router} Rd. O \textit{router} Rd aplica a NetMask 255.255.255.0 ao endereço de destino e obtém 10.0.9.0. Consegue fazer match no endereço 10.0.9.1 e envia o pacote para o SW4. Ao chegar ao SW4, este avalia o endereço MAC de destino e duas situações podem acontecer. Se este tiver nos seus registos o endereço, então envia diretamente ao host especificado. Caso não tenha ainda essa informação envia para todos os hosts a ele ligados.
 
-Efetivamente, os \textit{switcts} não operam ao nível de rede e como tal a camada de rede, nomeadamente o IP, é completamente transparente para estes dispositivos.
+Efetivamente, os \textit{switches} não operam ao nível de rede e como tal a camada de rede, nomeadamente o IP, é completamente transparente para estes dispositivos.
 
 Através do exemplo a cima podemos concluir que não é necessário que este tenha IP pois os pacotes são enviados para o \textit{switch} com base no IP da interface de saída do \textit{router}. Após o datagrama chegar ao \textit{switch} este quanto muito usa endereços MAC por forma a fazer \textit{forward} do datagrama para o \textit{host} respetivo.
 
