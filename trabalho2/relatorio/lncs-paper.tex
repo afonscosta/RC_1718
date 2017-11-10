@@ -45,18 +45,63 @@ Resumo...
 
 \subsection{Exercício 1.b.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Registe e analise o tráfego ICMP enviado por n1 e o tráfego ICMP recebido como resposta. Comente os resultados face ao comportamento esperado.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+Inicialmente, é feito o envio de um pacote com o TTL = 1, que não recebe resposta porque \textit{time exceeded message}, que acontece quando um datagrama chega a um \textit{gateway} com TTL = 0 (será neste ponto que será enviada uma resposta para a fonte do pacote, notificando da situação). Então, o TTL é progressivamente incrementado até ser igual a 3, sendo que aí já recebe mensagem de resposta. É também possíver verificar que há envio de vários pacotes com o TTL = 1 e TTL = 2, prevenindo a perda de um pacote ou uma falha no sistema, atuando assim como uma redundância. Depois vemos que a partir que o TTL = 3 o TTL é incrementado a TTL= 8 e as replies são feitas com TTL = 62 constantemente, por definição.
+
+O tamanho do pacote é 74 bytes mas a mensagem tem 60 bytes de tamanho sendo que 14 bytes são para o header do nível 2. Nesta mensagem de 60 bytes estão incluídos 20 bytes de header length (variáveis de acordo com o protocolo IPv4) e nos 40 bytes restantes temos o ICMP header (8 bytes) e ICMP payload (32 bytes), sendo Data resultante de 32 bytes. Vemos que a mensagem de 32 bytes aumentou em 42 bytes até o nível 2 de rede.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{imagens/ttlexceeded.png} 
+	\end{center}
+	\caption{\label{fig:ip_source}TTL excedido.}
+\end{figure} 
+
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{imagens/bytesdata.png} 
+	\end{center}
+	\caption{\label{fig:ip_source}Tamanho do pacote e divisão.}
+\end{figure} 
 
 \subsection{Exercício 1.c.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Qual deve ser o valor inicial mínimo do campo TTL para alcançar o destino n4? Verifique na prática que a sua resposta está correta.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+O TTL mínimo necessário para alcançar o destino n4 é 3. Isto é confirmado pelo \textit{wireshark}, que mostra que as tentativas com TTL menor que 3 resultou em \textit{time exceeded message}.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{imagens/ttlexceededmessage.png} 
+	\end{center}
+	\caption{\label{fig:ip_source}Mensagem com ICMP retornando TLL excedido.}
+\end{figure} 
 
 \subsection{Exercício 1.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Qual o valor médio do tempo de ida-e-volta (Round-Trip Time) obtido?
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+O Round-Trip Time é igual à soma do tempo de envio com o tempo de resposta. Logo, fazendo a soma das médias dos tempos, temos um resultado de Round-Trip Time médio de 0.00015 s (tempo de ida/request) + 0.00005 s (tempo de volta/reply) = 0.00020 s. É de notar que tanto o tempo de request como o de reply se mantêm relativamente constantes. Também se pode analisar este tempo recorrendo ao tempo relativo entre duas mensagens da mesma source.
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{imagens/roundtime.png} 
+	\end{center}
+	\caption{\label{fig:ip_source}Round-Trip Time.}
+\end{figure} 
 
 % Exercicio 2 --------------------
 
