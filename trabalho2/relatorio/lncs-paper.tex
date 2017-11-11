@@ -586,7 +586,7 @@ Todas as outras redes existentes encontram-se na tabela com o endereço de encami
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=0.95\linewidth]{./imagens/netstatPC3.png}
-	\end{subfigure}%
+	\end{subfigure}
 	\begin{subfigure}{.5\textwidth}
 		\centering
 		\includegraphics[width=0.95\linewidth]{./imagens/netstatRb.png}
@@ -623,7 +623,23 @@ Todas as outras redes existentes encontram-se na tabela com o endereço de encami
 Considere que dispõe apenas do endereço de rede IP 172.16.0.0/16, defina um novo esquema de endereçamento para as redes dos departamentos (mantendo a rede de acesso e core inalteradas) e atribua endereços às interfaces dos vários sistemas envolvidos. Deve justificar as opções usadas.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+\par A partir do endereço dado, decidiu-se criar um conjunto de subredes de endereço 172.16.0.0/24, dando 8 bits para criação de subredes e 8 bits para criação de \textit{hosts} dentro de cada subrede, de modo a maximizar a flexibilidade da rede. Prosseguimos então à redefenição do esquema de endereçamento:
+\begin{itemize}
+\item \textbf{Ra}: Definimos o IP como 172.16.1.1/24 na interface eth2 (ligação ao Departamento A).
+
+\item \textbf{Rb}: 
+
+\item \textbf{Rc}: 
+
+\item \textbf{Rd}: 
+
+\end{itemize}
+
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
 
 \subsection{Exercício 3.2}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
@@ -632,9 +648,11 @@ Qual a máscara de rede que usou (em formato decimal)? Quantos hosts IP pode inte
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A máscara da rede IP é 255.255.0.0 , sendo a máscara para cada subrede 255.255.255.0 . Isto permite-nos 8 bits para endereçar os \textit{hosts} de cada departamento. Como os \textit{hosts} 172.16.x.0 e 172.16.x.255 estão reservados como o identificador da rede e acesso de \textit{broadcast}, respetivamente, dispomos de 2^8 - 2 = 254 \textit{hosts} por departamento. 
+A máscara da rede IP é 255.255.0.0 , sendo a máscara para cada subrede 255.255.255.0 . Isto permite-nos 8 bits para endereçar os \textit{hosts} de cada departamento. Como os \textit{hosts} 172.16.x.0/24 e 172.16.x.255/24 estão reservados como o identificador da subrede e acesso de \textit{broadcast}, respetivamente, dispomos de 2^8 - 2 = 254 \textit{hosts} por departamento. 
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
 
 \subsection{Exercício 3.3}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
@@ -644,7 +662,7 @@ Garanta e verifique que conectividade IP entre as várias redes locais da organiz
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 %Confirma-se que se pode fazer ping de cada subrede se pode ligar a cada uma das outras subredes locais.
-%Às tantas ponho só imagens aqui.
+%Às tantas põe-se só imagens aqui.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\ %Depois se calhar retira-se este
 
