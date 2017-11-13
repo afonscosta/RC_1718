@@ -627,13 +627,13 @@ Considere que dispõe apenas do endereço de rede IP 172.16.0.0/16, defina um novo
 
 \par A partir do endereço dado, decidiu-se criar um conjunto de subredes de endereço 172.16.0.0/24, dando 8 bits para criação de subredes e 8 bits para criação de \textit{hosts} dentro de cada subrede, de modo a maximizar a flexibilidade da rede. Prosseguimos então à redefenição do esquema de endereçamento:
 \begin{itemize}
-\item \textbf{Ra}: Definimos o IP como 172.16.1.1/24 na interface eth2 (ligação ao Departamento A).
+\item \textbf{Ra}: Definimos o IP como 172.16.1.1/24 na interface eth2 (ligação ao Departamento A). A escolha do terceiro octeto a 1 reside no facto de este ter sido a primeira subrede a ser endereçada e 1 no quarto octeto reside no facto de ser o primeiro dispositivo/host da subrede. Propagou-se então os endereços da subnetting para os PC's do departamento. No caso do PC1 recebeu o endereço IP 172.16.1.2/24 e o PC2 recebeu o endereço IP 172.16.1.3/24.
 
-\item \textbf{Rb}: 
+\item \textbf{Rb}: Repetiu-se o processo mas com 172.16.2.1/24 para a interface do router. A escolha do terceiro octeto a 2 reside no facto de este ter sido a segunda subrede a ser endereçada. Propagou-se o IP da subnetting para os PC3 e PC4 com os IP 172.16.2.2/24 e 172.16.2.3/24, respetivamente.
 
-\item \textbf{Rc}: 
+\item \textbf{Rc}: Repetiu-se o processo mas com 172.16.3.1/24 para a interface do router. A escolha do terceiro octeto a 3 reside no facto de este ter sido a terceira subrede a ser endereçada. Propagou-se o IP da subnetting para os PC5 e PC6 com os IP 172.16.3.2/24 e 172.16.3.3/24, respetivamente.
 
-\item \textbf{Rd}: 
+\item \textbf{Rd}: Repetiu-se o processo mas com 172.16.4.1/24 para a interface do router. A escolha do terceiro octeto a 4 reside no facto de este ter sido a quarta subrede a ser endereçada. Propagou-se para PC7, PC8, S1 e S2 172.16.4.2/24, 172.16.4.3/24, 172.16.4.4/24 e 172.16.4.5/24, respetivamente.
 
 \end{itemize}
 
