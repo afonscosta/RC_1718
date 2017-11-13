@@ -606,19 +606,31 @@ Ao remover a rota 0.0.0.0 o router fica sem saber o que fazer quando encontra pa
 		\centering
 		\includegraphics[width=0.95\linewidth]{./imagens/posExternos.png}
 	\end{subfigure}
-	\caption{Tabelas de encaminhamento do PC3 (Ã  esquerda) e do Rb (Ã  direita).}
+	\caption{Conexão com a rede local mantida, com o exterior perdida.}
 	\label{fig:r_s}
 \end{figure}
 
-\subsection{ExercÃ­cio 2.2.d}
+\subsection{ExercÃ­cio 2.2.d e 2.2.e}
 \subsubsection{QuestÃ£o}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{RealizaÃ§Ã£o}\rule[-10pt]{0pt}{10pt}\\
 
-\subsection{ExercÃ­cio 2.2.e}
-\subsubsection{QuestÃ£o}\rule[-10pt]{0pt}{10pt}\\
+Adicione as rotas estáticas necessárias para restaurar a conectividade para	o servidor S1, por forma a contornar a restrição imposta na	alínea c). Utilize para	o efeito o comando route add e registe os comandos que usou.
+
+Teste a	nova política de encaminhamento garantindo que o servidor está novamente acessível,	utilizando para	o efeito o comando ping. Registe a nova	tabela de encaminhamento do servidor.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+Foram adicionadas as rotas correspondentes aos comandos: \textbf{route add -net 10.0.6.0 netmask 255.255.255.0 gw 10.0.9.1} , \textbf{route add -net 10.0.7.0 netmask 255.255.255.0 gw 10.0.9.1} , \textbf{route add -net 10.0.8.0 netmask 255.255.255.0 gw 10.0.9.1} . Estas rotas foram adicionadas de forma a que a conexão entre departamentos fosse restabelecida, uma vez que se registou o destinatário de cada um e se implicou a resposta através do \textit{gateway} do departamento Rd.
+
+É possível ver o processo de retirada da \textit{route} 0.0.0.0 (default) e adição das estáticas correspondentes a cada um dos departamentos.
+
 \subsubsection{RealizaÃ§Ã£o}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/restauro.png} 
+	\end{center}
+	\caption{\label{fig:packet_third}A conexão é restabelecida com a nova tabela de reencaminhamento.}
+\end{figure} 
+
+
 
 % Exercicio 3 --------------------
 
