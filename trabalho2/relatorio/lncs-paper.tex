@@ -39,22 +39,22 @@ e-mail: \{a78034,a77531,a77870\}@alunos.uminho.pt
 Resumo...
 \end{abstract}
 
-\section{IntroduÁ„o}
+\section{Introdu√ß√£o}
 
-\section{Parte I - Datagramas e FragmentaÁ„o}
+\section{Parte I - Datagramas e Fragmenta√ß√£o}
 
-\subsection{ExercÌcio 1.b.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 1.b.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Registe e analise o tr·fego ICMP enviado por n1 e o tr·fego ICMP recebido como resposta. Comente os resultados face ao comportamento esperado.
+Registe e analise o tr√°fego ICMP enviado por n1 e o tr√°fego ICMP recebido como resposta. Comente os resultados face ao comportamento esperado.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Inicialmente, È feito o envio de um pacote com o TTL = 1, que n„o recebe resposta porque \textit{time exceeded message}, que acontece quando um datagrama chega a um \textit{gateway} com TTL = 0 (ser· neste ponto que ser· enviada uma resposta para a fonte do pacote, notificando da situaÁ„o). Ent„o, o TTL È progressivamente incrementado atÈ ser igual a 3, sendo que aÌ j· recebe mensagem de resposta. … tambÈm possÌver verificar que h· envio de v·rios pacotes com o TTL = 1 e TTL = 2, prevenindo a perda de um pacote ou uma falha no sistema, atuando assim como uma redund‚ncia. Depois vemos que a partir que o TTL = 3 o TTL È incrementado a TTL= 8 e as replies s„o feitas com TTL = 62 constantemente, por definiÁ„o.
+Inicialmente, √© feito o envio de um pacote com o TTL = 1, que n√£o recebe resposta porque \textit{time exceeded message}, que acontece quando um datagrama chega a um \textit{gateway} com TTL = 0 (ser√° neste ponto que ser√° enviada uma resposta para a fonte do pacote, notificando da situa√ß√£o). Ent√£o, o TTL √© progressivamente incrementado at√© ser igual a 3, sendo que a√≠ j√° recebe mensagem de resposta. √â tamb√©m poss√≠ver verificar que h√° envio de v√°rios pacotes com o TTL = 1 e TTL = 2, prevenindo a perda de um pacote ou uma falha no sistema, atuando assim como uma redund√¢ncia. Depois vemos que a partir que o TTL = 3 o TTL √© incrementado a TTL= 8 e as replies s√£o feitas com TTL = 62 constantemente, por defini√ß√£o.
 
-O tamanho do pacote È 74 bytes mas a mensagem tem 60 bytes de tamanho sendo que 14 bytes s„o para o header do nÌvel 2. Nesta mensagem de 60 bytes est„o incluÌdos 20 bytes de header length (vari·veis de acordo com o protocolo IPv4) e nos 40 bytes restantes temos o ICMP header (8 bytes) e ICMP payload (32 bytes), sendo Data resultante de 32 bytes. Vemos que a mensagem de 32 bytes aumentou em 42 bytes atÈ o nÌvel 2 de rede.
+O tamanho do pacote √© 74 bytes mas a mensagem tem 60 bytes de tamanho sendo que 14 bytes s√£o para o header do n√≠vel 2. Nesta mensagem de 60 bytes est√£o inclu√≠dos 20 bytes de header length (vari√°veis de acordo com o protocolo IPv4) e nos 40 bytes restantes temos o ICMP header (8 bytes) e ICMP payload (32 bytes), sendo Data resultante de 32 bytes. Vemos que a mensagem de 32 bytes aumentou em 42 bytes at√© o n√≠vel 2 de rede.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/ttlexceeded.png} 
@@ -66,19 +66,19 @@ O tamanho do pacote È 74 bytes mas a mensagem tem 60 bytes de tamanho sendo que 
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/bytesdata.png} 
 	\end{center}
-	\caption{\label{fig:ip_source}Tamanho do pacote e divis„o.}
+	\caption{\label{fig:ip_source}Tamanho do pacote e divis√£o.}
 \end{figure} 
 
-\subsection{ExercÌcio 1.c.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 1.c.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Qual deve ser o valor inicial mÌnimo do campo TTL para alcanÁar o destino n4? Verifique na pr·tica que a sua resposta est· correta.
+Qual deve ser o valor inicial m√≠nimo do campo TTL para alcan√ßar o destino n4? Verifique na pr√°tica que a sua resposta est√° correta.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O TTL mÌnimo necess·rio para alcanÁar o destino n4 È 3. Isto È confirmado pelo \textit{wireshark}, que mostra que as tentativas com TTL menor que 3 resultou em \textit{time exceeded message}.
+O TTL m√≠nimo necess√°rio para alcan√ßar o destino n4 √© 3. Isto √© confirmado pelo \textit{wireshark}, que mostra que as tentativas com TTL menor que 3 resultou em \textit{time exceeded message}.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/ttlexceededmessage.png} 
@@ -86,16 +86,16 @@ O TTL mÌnimo necess·rio para alcanÁar o destino n4 È 3. Isto È confirmado pelo \
 	\caption{\label{fig:ip_source}Mensagem com ICMP retornando TLL excedido.}
 \end{figure} 
 
-\subsection{ExercÌcio 1.d.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 1.d.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Qual o valor mÈdio do tempo de ida-e-volta (Round-Trip Time) obtido?
+Qual o valor m√©dio do tempo de ida-e-volta (Round-Trip Time) obtido?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O Round-Trip Time È igual ‡ soma do tempo de envio com o tempo de resposta. Logo, fazendo a soma das mÈdias dos tempos, temos um resultado de Round-Trip Time mÈdio de 0.00015 s (tempo de ida/request) + 0.00005 s (tempo de volta/reply) = 0.00020 s. … de notar que tanto o tempo de request como o de reply se mantÍm relativamente constantes. TambÈm se pode analisar este tempo recorrendo ao tempo relativo entre duas mensagens da mesma source.
+O Round-Trip Time √© igual √† soma do tempo de envio com o tempo de resposta. Logo, fazendo a soma das m√©dias dos tempos, temos um resultado de Round-Trip Time m√©dio de 0.00015 s (tempo de ida/request) + 0.00005 s (tempo de volta/reply) = 0.00020 s. √â de notar que tanto o tempo de request como o de reply se mant√™m relativamente constantes. Tamb√©m se pode analisar este tempo recorrendo ao tempo relativo entre duas mensagens da mesma source.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/roundtime.png} 
@@ -105,106 +105,106 @@ O Round-Trip Time È igual ‡ soma do tempo de envio com o tempo de resposta. Logo
 
 % Exercicio 2 --------------------
 
-\subsection{ExercÌcio 2.a.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
-Qual È o endereÁo IP da interface ativa do seu computador?
+\subsection{Exerc√≠cio 2.a.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
+Qual √© o endere√ßo IP da interface ativa do seu computador?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-O endereÁo IP È 192.168.100.216. 
+O endere√ßo IP √© 192.168.100.216. 
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/ip_source_proof.png} 
 	\end{center}
-	\caption{\label{fig:ip_source}IdentificaÁ„o do endereÁo IP.}
+	\caption{\label{fig:ip_source}Identifica√ß√£o do endere√ßo IP.}
 \end{figure} 
 
 % ------
 
-\subsection{ExercÌcio 2.b.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.b.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Qual È o valor do campo protocolo? O que identifica?
+Qual √© o valor do campo protocolo? O que identifica?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O campo protocolo tem o valor "ICMP (1)". ICMP significa \textit{Internet Control Message Protocol}. Este È utilizado para reportar erros no processamento de datagramas. Efetivamente, dentro dos possÌveis erros temos, \textit{destination unreachable} (quando o datagrama n„o consegue alcanÁar o destino), \textit{time exceeded message} (quando um \textit{gateway} processa um datagrama e descobre que o \textit{TTL} È zero e tem que descartar o datagrama e consequentemente notificar o \textit{host}), \textit{echo request/reply} (quando s„o enviadas mensagens para funÁıes de teste e controle da rede (\textit{request}), caso a m·quina esteja ligada responde com um \textit{reply}) \cite{rfc792} \cite{wiki:ICMP_echo}. Como as mensagens ICMP encontram-se ao nÌvel de rede, estas s„o tambÈm elas encapsuladas em datagramas IP que, consequentemente, usam o protocolo IP.
+O campo protocolo tem o valor "ICMP (1)". ICMP significa \textit{Internet Control Message Protocol}. Este √© utilizado para reportar erros no processamento de datagramas. Efetivamente, dentro dos poss√≠veis erros temos, \textit{destination unreachable} (quando o datagrama n√£o consegue alcan√ßar o destino), \textit{time exceeded message} (quando um \textit{gateway} processa um datagrama e descobre que o \textit{TTL} √© zero e tem que descartar o datagrama e consequentemente notificar o \textit{host}), \textit{echo request/reply} (quando s√£o enviadas mensagens para fun√ß√µes de teste e controle da rede (\textit{request}), caso a m√°quina esteja ligada responde com um \textit{reply}) \cite{rfc792} \cite{wiki:ICMP_echo}. Como as mensagens ICMP encontram-se ao n√≠vel de rede, estas s√£o tamb√©m elas encapsuladas em datagramas IP que, consequentemente, usam o protocolo IP.
 
-Assim sendo, analisando a primeira mensagem ICMP, nomeadamente no separador do \textit{Internet Protocol Version 4}, percebemos que se trata de uma mensagem que vem num protocolo \textit{ICMP}. AlÈm disso, È possÌvel concluir que se trata de uma mensagem de \textit{echo request}, se observarmos o campo \textit{Type} no separador \textit{Internet Control Message Protocol}. Desta forma, pode-se concluir que o computador usado para a resoluÁ„o deste trabalho est· a tentar perceber se consegue estabelecer uma ligaÁ„o com o \textit{host} marco.uminho.pt e para isso usa mensagens \textit{ICMP} do tipo \textit{echo request}.
+Assim sendo, analisando a primeira mensagem ICMP, nomeadamente no separador do \textit{Internet Protocol Version 4}, percebemos que se trata de uma mensagem que vem num protocolo \textit{ICMP}. Al√©m disso, √© poss√≠vel concluir que se trata de uma mensagem de \textit{echo request}, se observarmos o campo \textit{Type} no separador \textit{Internet Control Message Protocol}. Desta forma, pode-se concluir que o computador usado para a resolu√ß√£o deste trabalho est√° a tentar perceber se consegue estabelecer uma liga√ß√£o com o \textit{host} marco.uminho.pt e para isso usa mensagens \textit{ICMP} do tipo \textit{echo request}.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/icmp_1.png} 
 	\end{center}
-	\caption{\label{fig:icmp_1}IdentificaÁ„o do campo \textit{Protocol}.}
+	\caption{\label{fig:icmp_1}Identifica√ß√£o do campo \textit{Protocol}.}
 \end{figure} 
 
 % ------
 
-\subsection{ExercÌcio 2.c.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.c.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Quantos bytes tem o cabeÁalho IP(v4)? Quantos bytes tem o campo de dados (payload) do datagrama? Como se calcula o tamanho do payload?  
+Quantos bytes tem o cabe√ßalho IP(v4)? Quantos bytes tem o campo de dados (payload) do datagrama? Como se calcula o tamanho do payload?  
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 	
-O cabeÁalho IPv4 tem 20 bytes.
+O cabe√ßalho IPv4 tem 20 bytes.
 
 O campo de dados (payload) do datagrama tem 40 bytes.
 
-O c·lculo do payload È feito retirando o tamanho do cabeÁalho ao tamanho total do datagrama (60 bytes). Desta forma, basta fazer \(60 - 20 = 40 bytes\).
+O c√°lculo do payload √© feito retirando o tamanho do cabe√ßalho ao tamanho total do datagrama (60 bytes). Desta forma, basta fazer \(60 - 20 = 40 bytes\).
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/icmp_size.png} 
 	\end{center}
-	\caption{\label{fig:icmp_size}IdentificaÁ„o do tamanho do \textit{header} e do \textit{payload}.}
+	\caption{\label{fig:icmp_size}Identifica√ß√£o do tamanho do \textit{header} e do \textit{payload}.}
 \end{figure} 
 
 % ------
 
-\subsection{ExercÌcio 2.d.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.d.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 O datagrama IP foi fragmentado? Justifique.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A fragmentaÁ„o acontece quando o tamanho total do datagrama excede o \textit{MTU} disponÌvel. Tendo em conta que por defeito o \textit{traceroute} usa 60 bytes por datagrama e tem-se um \textit{MTU} disponÌvel de 1500 bytes, podemos conjeturar que n„o haver· fragmentaÁ„o.
+A fragmenta√ß√£o acontece quando o tamanho total do datagrama excede o \textit{MTU} dispon√≠vel. Tendo em conta que por defeito o \textit{traceroute} usa 60 bytes por datagrama e tem-se um \textit{MTU} dispon√≠vel de 1500 bytes, podemos conjeturar que n√£o haver√° fragmenta√ß√£o.
 	
-A verificaÁ„o se um datagrama foi ou n„o fragmentado È feita com base em dois valores, o \textit{fragment offset} (indica o \textit{offset} em que o datagrama atual encaixa no datagrama original) e a \textit{flag more fragments} (indica se existe mais fragmentos). Neste datagrama em especÌfico o \textit{fragment offset} = 0 e a \textit{flag more fragments} = 0. Desta forma, tendo em conta o \textit{fragment offset}, sabe-se que se o datagrama foi fragmentado ent„o ele È necessariamente o primeiro. AlÈm disso, se analisarmos a \textit{flag more fragments} concluÌmos que para alÈm do datagrama atual n„o existe mais nenhum associado a este. 
+A verifica√ß√£o se um datagrama foi ou n√£o fragmentado √© feita com base em dois valores, o \textit{fragment offset} (indica o \textit{offset} em que o datagrama atual encaixa no datagrama original) e a \textit{flag more fragments} (indica se existe mais fragmentos). Neste datagrama em espec√≠fico o \textit{fragment offset} = 0 e a \textit{flag more fragments} = 0. Desta forma, tendo em conta o \textit{fragment offset}, sabe-se que se o datagrama foi fragmentado ent√£o ele √© necessariamente o primeiro. Al√©m disso, se analisarmos a \textit{flag more fragments} conclu√≠mos que para al√©m do datagrama atual n√£o existe mais nenhum associado a este. 
 
-Assim sendo, conjugando a informaÁ„o dos dois par‚metros percebe-se que se o datagrama È o primeiro e n„o existe mais nenhum associado, ent„o este È ˙nico e n„o foi fragmentado.
+Assim sendo, conjugando a informa√ß√£o dos dois par√¢metros percebe-se que se o datagrama √© o primeiro e n√£o existe mais nenhum associado, ent√£o este √© √∫nico e n√£o foi fragmentado.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/icmp_frag.png} 
 	\end{center}
-	\caption{\label{fig:icmp_frag}FragmentaÁ„o.}
+	\caption{\label{fig:icmp_frag}Fragmenta√ß√£o.}
 \end{figure} 
 
 % ------
 
-\subsection{ExercÌcio 2.e.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.e.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Ordene os pacotes capturados de acordo com o endereÁo IP fonte (e.g., selecionando o cabeÁalho da coluna Source), e analise a sequÍncia de tr·fego ICMP gerado a partir do endereÁo IP atribuÌdo ‡ sua m·quina. Para a sequÍncia de mensagens ICMP enviadas pelo seu computador, indique que campos do cabeÁalho IP variam de pacote para pacote.  
+Ordene os pacotes capturados de acordo com o endere√ßo IP fonte (e.g., selecionando o cabe√ßalho da coluna Source), e analise a sequ√™ncia de tr√°fego ICMP gerado a partir do endere√ßo IP atribu√≠do √† sua m√°quina. Para a sequ√™ncia de mensagens ICMP enviadas pelo seu computador, indique que campos do cabe√ßalho IP variam de pacote para pacote.  
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Os campos que vÍm os seus valores alterados correspondem ‡ \textit{identification}, \textit{header checksum} e \textit{time to live (TTL)}. 
+Os campos que v√™m os seus valores alterados correspondem √† \textit{identification}, \textit{header checksum} e \textit{time to live (TTL)}. 
 
-A \emph{identificaÁ„o} muda pois este campo identifica unicamente cada datagrama e visto que estes s„o sempre diferentes ent„o o campo tambÈm o ser·.
+A \emph{identifica√ß√£o} muda pois este campo identifica unicamente cada datagrama e visto que estes s√£o sempre diferentes ent√£o o campo tamb√©m o ser√°.
 
-O \textit{header checksum} permite verificar que determinado header foi ou n„o corrompido. Desta forma o \textit{checksum} identifica um determinado \textit{header} num determinado estado. Assim sendo, o \textit{checksum} muda pois este campo utiliza no seu algoritmo todas as palavras de 16 bits do \textit{header} \cite{rfc792}. Efetivamente, sabendo que o \textit{header}, propriamente dito, muda de datagrama para datagrama ent„o o seu \textit{checksum} tambÈm vai mudar.
+O \textit{header checksum} permite verificar que determinado header foi ou n√£o corrompido. Desta forma o \textit{checksum} identifica um determinado \textit{header} num determinado estado. Assim sendo, o \textit{checksum} muda pois este campo utiliza no seu algoritmo todas as palavras de 16 bits do \textit{header} \cite{rfc792}. Efetivamente, sabendo que o \textit{header}, propriamente dito, muda de datagrama para datagrama ent√£o o seu \textit{checksum} tamb√©m vai mudar.
 
-O \textit{TTL} muda pois a m·quina que est· a ser usada est· a tentar contactar o \textit{host} marco.uminho.pt. ComeÁa por tentar com \(TTL = 1\) e o pacote È descartado. Desta forma, vai aumentado o \textit{TTL} atÈ conseguir chegar ao \textit{host} pretendido.
+O \textit{TTL} muda pois a m√°quina que est√° a ser usada est√° a tentar contactar o \textit{host} marco.uminho.pt. Come√ßa por tentar com \(TTL = 1\) e o pacote √© descartado. Desta forma, vai aumentado o \textit{TTL} at√© conseguir chegar ao \textit{host} pretendido.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}[h]
 	\centering
@@ -226,20 +226,20 @@ O \textit{TTL} muda pois a m·quina que est· a ser usada est· a tentar contactar 
 
 % ------
 
-\subsection{ExercÌcio 2.f.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.f.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Observa algum padr„o nos valores do campo de IdentificaÁ„o do datagrama IP e TTL? 
+Observa algum padr√£o nos valores do campo de Identifica√ß√£o do datagrama IP e TTL? 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O campo da indentificaÁ„o corresponde a um valor que È incrementado e que identifica unicamente o datagrama em quest„o. Por exemplo, se o primeiro datagrama tiver \textit{Identification} 0xb224 (45604), ent„o o datagrama seguinte ter· o valor 0xb225 (45605). 
+O campo da indentifica√ß√£o corresponde a um valor que √© incrementado e que identifica unicamente o datagrama em quest√£o. Por exemplo, se o primeiro datagrama tiver \textit{Identification} 0xb224 (45604), ent√£o o datagrama seguinte ter√° o valor 0xb225 (45605). 
 
-O TTL corresponde a uma vari·vel que vai sendo decrementada sempre que È intersetada por um \textit{router}. Visto que na primeira mensagem o TTL È 1, o datagrama È descartado imediatamente no primeiro \textit{router}. Deste modo, È enviado, de seguida, um novo datagrama com TTL a 2 com a esperanÁa de que este chegue desta vez ao destino. Caso n„o chegue, ent„o no prÛximo datagrama o TTL ser· aumentado, e assim sucessivamente, atÈ chegar ao destino.
+O TTL corresponde a uma vari√°vel que vai sendo decrementada sempre que √© intersetada por um \textit{router}. Visto que na primeira mensagem o TTL √© 1, o datagrama √© descartado imediatamente no primeiro \textit{router}. Deste modo, √© enviado, de seguida, um novo datagrama com TTL a 2 com a esperan√ßa de que este chegue desta vez ao destino. Caso n√£o chegue, ent√£o no pr√≥ximo datagrama o TTL ser√° aumentado, e assim sucessivamente, at√© chegar ao destino.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-A relaÁ„o entre \textit{TTL} pode ser observada na figura ~\ref{fig:field_change}.
+A rela√ß√£o entre \textit{TTL} pode ser observada na figura ~\ref{fig:field_change}.
 
 \begin{figure}[h]
 	\centering
@@ -251,28 +251,28 @@ A relaÁ„o entre \textit{TTL} pode ser observada na figura ~\ref{fig:field_change
 		\centering
 		\includegraphics[width=0.98\linewidth]{./imagens/icmp_2_id.png}
 	\end{subfigure}
-	\caption{IdentificaÁ„o.}
+	\caption{Identifica√ß√£o.}
 	\label{fig:field_id}
 \end{figure}
 
 % ------
 
-\subsection{ExercÌcio 2.g.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.g.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Ordene o tr·fego capturado por endereÁo destino e encontre a sÈrie de respostas ICMP TTL exceeded enviadas ao seu computador. Qual È o valor do campo TTL? Esse valor permanece constante para todas as mensagens de resposta ICMP TTL exceeded enviados ao seu host? PorquÍ? 
+Ordene o tr√°fego capturado por endere√ßo destino e encontre a s√©rie de respostas ICMP TTL exceeded enviadas ao seu computador. Qual √© o valor do campo TTL? Esse valor permanece constante para todas as mensagens de resposta ICMP TTL exceeded enviados ao seu host? Porqu√™? 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O IP 192.168.100.254 referencia a interface do primeiro router de acesso (visto ter o trÍs primeiros campos iguais ao da m·quina em que os testes est„o a ser feitos e o ˙ltimo utiliza um n˙mero convencionado para ser utilizado para identificar a interface IP do router dentro da rede 192.168.100, na qual a m·quina de testes se encontra).
+O IP 192.168.100.254 referencia a interface do primeiro router de acesso (visto ter o tr√™s primeiros campos iguais ao da m√°quina em que os testes est√£o a ser feitos e o √∫ltimo utiliza um n√∫mero convencionado para ser utilizado para identificar a interface IP do router dentro da rede 192.168.100, na qual a m√°quina de testes se encontra).
 
-Desta forma, quando analisamos os datagramas do 192.168.100.254 percebemos que estes tÍm todos o \textit{TTL} = 64. O \textit{TTL} toma um valor exageradamente elevado, devido ao desconhecimento que este tem da dist‚ncia a que o \textit{host} de destino se encontra. Por defeito, este router quando n„o tem informaÁ„o da dist‚ncia a que o \textit{host} de destino se encontra envia datagramas com \textit{TTL} = 64 e por isso todas os seus datagramas tem \textit{TTL} igual.
+Desta forma, quando analisamos os datagramas do 192.168.100.254 percebemos que estes t√™m todos o \textit{TTL} = 64. O \textit{TTL} toma um valor exageradamente elevado, devido ao desconhecimento que este tem da dist√¢ncia a que o \textit{host} de destino se encontra. Por defeito, este router quando n√£o tem informa√ß√£o da dist√¢ncia a que o \textit{host} de destino se encontra envia datagramas com \textit{TTL} = 64 e por isso todas os seus datagramas tem \textit{TTL} igual.
 
-AlÈm disso, È possÌvel concluir que as trÍs mensagens recebidas deste router com \textit{ICMP \textit{TTL} exceeded} s„o a resposta ao envio feito pela m·quina de testes de trÍs datagramas de \textit{echo (ping) request} com \textit{TTL} apenas de 1. Estes datagramas chegaram ao \textit{router} de acesso e ficaram com o \textit{TTL} a 0 e a exceÁ„o veio enviado de no datagrama \textit{ICMP \textit{TTL} exceeded}.
+Al√©m disso, √© poss√≠vel concluir que as tr√™s mensagens recebidas deste router com \textit{ICMP \textit{TTL} exceeded} s√£o a resposta ao envio feito pela m√°quina de testes de tr√™s datagramas de \textit{echo (ping) request} com \textit{TTL} apenas de 1. Estes datagramas chegaram ao \textit{router} de acesso e ficaram com o \textit{TTL} a 0 e a exce√ß√£o veio enviado de no datagrama \textit{ICMP \textit{TTL} exceeded}.
 
-ApÛs estes datagramas È possÌvel identificar um segundo conjunto de datagramas desta vez da interface IP 193.136.19.254. Pelo mesmo raciocÌnio podemos assumir que o IP desta interface identifica um \textit{router}. Este novo \textit{router} envia datagramas com \textit{TTL} = 254 (constante). Este valor È consider·vel pela mesma raz„o explicitada anteriormente. Estes datagramas s„o a resposta a 3 datagramas enviados pela m·quina de testes com \textit{TTL} = 2, o que nos leva a concluir que È o segundo router por qual o nosso datagrama teve de passar para chegar ao marco.uminho.pt.
+Ap√≥s estes datagramas √© poss√≠vel identificar um segundo conjunto de datagramas desta vez da interface IP 193.136.19.254. Pelo mesmo racioc√≠nio podemos assumir que o IP desta interface identifica um \textit{router}. Este novo \textit{router} envia datagramas com \textit{TTL} = 254 (constante). Este valor √© consider√°vel pela mesma raz√£o explicitada anteriormente. Estes datagramas s√£o a resposta a 3 datagramas enviados pela m√°quina de testes com \textit{TTL} = 2, o que nos leva a concluir que √© o segundo router por qual o nosso datagrama teve de passar para chegar ao marco.uminho.pt.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}[h]
 	\centering
@@ -312,73 +312,73 @@ ApÛs estes datagramas È possÌvel identificar um segundo conjunto de datagramas d
 
 % Exercicio 3 --------------------
 
-\subsection{ExercÌcio 3.a.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3.a.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Localize a primeira mensagem ICMP. Porque È que houve necessidade de fragmentar o pacote inicial?
+Localize a primeira mensagem ICMP. Porque √© que houve necessidade de fragmentar o pacote inicial?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maximum Transmission Unit} disponÌvel È de apenas 1500 bytes e, como tal, o pacote inicial tem de ser fragmentado para que este possa ser transmitido na rede.
+O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maximum Transmission Unit} dispon√≠vel √© de apenas 1500 bytes e, como tal, o pacote inicial tem de ser fragmentado para que este possa ser transmitido na rede.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/packet_frag.png} 
 	\end{center}
-	\caption{\label{fig:packet_frag}A MTU È menor do que o tamanho do pacote.}
+	\caption{\label{fig:packet_frag}A MTU √© menor do que o tamanho do pacote.}
 \end{figure} 
 
 
-\subsection{ExercÌcio 3.b.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3.b.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Imprima o primeiro fragmento do datagrama IP segmentado. Que informaÁ„o no cabeÁalho indica que o datagrama foi fragmentado? Que informaÁ„o no cabeÁalho IP indica que se trata do primeiro fragmento? Qual È o tamanho deste datagrama IP?
+Imprima o primeiro fragmento do datagrama IP segmentado. Que informa√ß√£o no cabe√ßalho indica que o datagrama foi fragmentado? Que informa√ß√£o no cabe√ßalho IP indica que se trata do primeiro fragmento? Qual √© o tamanho deste datagrama IP?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A informaÁ„o de que o datagrama foi fragmentado È dada atravÈs da \textit{flag more fragments} que se encontra a 1 em conjugaÁ„o com o campo \textit{fragment offset}, que neste caso se encontra a 0. Desta forma, podemos concluir que este datagrama È efetivamente o primeiro (\textit{fragment offset} = 0) de um PDU fragmentado (\textit{flag more fragments} = 1). Este È um datagrama IP de 1480 bytes (MTU de 1500 bytes, dos quais 20 bytes servem de \textit{header}). 
+A informa√ß√£o de que o datagrama foi fragmentado √© dada atrav√©s da \textit{flag more fragments} que se encontra a 1 em conjuga√ß√£o com o campo \textit{fragment offset}, que neste caso se encontra a 0. Desta forma, podemos concluir que este datagrama √© efetivamente o primeiro (\textit{fragment offset} = 0) de um PDU fragmentado (\textit{flag more fragments} = 1). Este √© um datagrama IP de 1480 bytes (MTU de 1500 bytes, dos quais 20 bytes servem de \textit{header}). 
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/packet_first.png} 
 	\end{center}
-	\caption{\label{fig:packet_first}As flags e o fragment offset confirmam que È o primeiro fragmento.}
+	\caption{\label{fig:packet_first}As flags e o fragment offset confirmam que √© o primeiro fragmento.}
 \end{figure} 
 
-\subsection{ExercÌcio 3.c.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3.c.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Imprima o segundo fragmento do datagrama IP original. Que informaÁ„o do cabeÁalho IP indica que n„o se trata do 1∫ fragmento? H· mais fragmentos? O que nos permite afirmar isso?
+Imprima o segundo fragmento do datagrama IP original. Que informa√ß√£o do cabe√ßalho IP indica que n√£o se trata do 1¬∫ fragmento? H√° mais fragmentos? O que nos permite afirmar isso?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Sabe-se que este n„o È o primeiro segmento pois o datagrama em quest„o tem \textit{fragment offset} = 1480. Isto significa que, no datagrama original, este segmento comeÁar· a partir do byte 1480 do datagrama. Analisando a \textit{flag more fragments}, percebe-se existem mais fragmentos, visto que esta È igual a 1.
+Sabe-se que este n√£o √© o primeiro segmento pois o datagrama em quest√£o tem \textit{fragment offset} = 1480. Isto significa que, no datagrama original, este segmento come√ßar√° a partir do byte 1480 do datagrama. Analisando a \textit{flag more fragments}, percebe-se existem mais fragmentos, visto que esta √© igual a 1.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/packet_second.png} 
 	\end{center}
-	\caption{\label{fig:packet_second}As flags e o fragment offset confirmam que È o segundo fragmento.}
+	\caption{\label{fig:packet_second}As flags e o fragment offset confirmam que √© o segundo fragmento.}
 \end{figure} 
 
-\subsection{ExercÌcio 3.d.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3.d.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Quantos fragmentos foram criados a partir do datagrama original? Como se detecta o ˙ltimo fragmento correspondente ao datagrama original?
+Quantos fragmentos foram criados a partir do datagrama original? Como se detecta o √∫ltimo fragmento correspondente ao datagrama original?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Analisando o par‚metro \textit{identification} dos datagramas capturados pelo \textit{Wireshark}, percebe-se que existem trÍs datagramas com o mesmo valor o que revela que pertencem ao mesmo PDU (\textit{identification} = 0xa813). Desta forma podemos concluir que o datagrama foi fragmentado duas vezes resultando em trÍs fragmentos.
+Analisando o par√¢metro \textit{identification} dos datagramas capturados pelo \textit{Wireshark}, percebe-se que existem tr√™s datagramas com o mesmo valor o que revela que pertencem ao mesmo PDU (\textit{identification} = 0xa813). Desta forma podemos concluir que o datagrama foi fragmentado duas vezes resultando em tr√™s fragmentos.
 	
-A deteÁ„o do ˙ltimo fragmento È feita atravÈs da an·lise da \textit{flag more fragments}. Se esta estiver a 1 ent„o existem mais segmentos. Caso contr·rio, o segmento em quest„o È o ˙ltimo.
+A dete√ß√£o do √∫ltimo fragmento √© feita atrav√©s da an√°lise da \textit{flag more fragments}. Se esta estiver a 1 ent√£o existem mais segmentos. Caso contr√°rio, o segmento em quest√£o √© o √∫ltimo.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}[h]
 	\centering
@@ -394,41 +394,41 @@ A deteÁ„o do ˙ltimo fragmento È feita atravÈs da an·lise da \textit{flag more fr
 		\centering
 		\includegraphics[width=0.98\linewidth]{./imagens/packet_third.png}
 	\end{subfigure}
-	\caption{Encontrando v·rios fragmentos com a mesma \textit{identification}, È possÌvel saber a sua ordem atravÈs do \textit{fragment offset} e flags.}
+	\caption{Encontrando v√°rios fragmentos com a mesma \textit{identification}, √© poss√≠vel saber a sua ordem atrav√©s do \textit{fragment offset} e flags.}
 	\label{fig:field_packet}
 \end{figure}
 
-\subsection{ExercÌcio 3.e.}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3.e.}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Indique, resumindo, os campos que mudam no cabeÁalho IP entre os diferentes fragmentos, e explique a forma como essa informaÁ„o permite reconstruir o datagrama original. 
+Indique, resumindo, os campos que mudam no cabe√ßalho IP entre os diferentes fragmentos, e explique a forma como essa informa√ß√£o permite reconstruir o datagrama original. 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Os campos que mudam s„o \textit{Total Length, more fragments} e \textit{Fragment offset}. 
+Os campos que mudam s√£o \textit{Total Length, more fragments} e \textit{Fragment offset}. 
 
-No primeiro fragmento, o \textit{Total Length} È igual ao MTU menos o \textit{Header Length}, a flag \textit{more fragments} È igual a 1 e o \textit{Fragment offset} È igual a 0.
+No primeiro fragmento, o \textit{Total Length} √© igual ao MTU menos o \textit{Header Length}, a flag \textit{more fragments} √© igual a 1 e o \textit{Fragment offset} √© igual a 0.
 
-Entre o primeiro fragmento e o ˙ltimo fragmento n„o inclusives, o \textit{Total Length} È igual ao MTU menos o \textit{Header Length}, a flag \textit{more fragments} È igual a 1 e o \textit{Fragment offset} È igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o n-Èsimo fragmento do datagrama (n = 1, 2, ...).
+Entre o primeiro fragmento e o √∫ltimo fragmento n√£o inclusives, o \textit{Total Length} √© igual ao MTU menos o \textit{Header Length}, a flag \textit{more fragments} √© igual a 1 e o \textit{Fragment offset} √© igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o n-√©simo fragmento do datagrama (n = 1, 2, ...).
 
-No ˙ltimo fragmento, o \textit{Total Length} È menor ou igual ao MTU, a flag \textit{more fragments} È igual a 0 e o \textit{Fragment offset} È igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o n˙mero de fragmentos do datagrama.
+No √∫ltimo fragmento, o \textit{Total Length} √© menor ou igual ao MTU, a flag \textit{more fragments} √© igual a 0 e o \textit{Fragment offset} √© igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o n√∫mero de fragmentos do datagrama.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado.
 ~\ref{fig:field_packet} 
 
 
 \pagebreak
-\section{Parte II - EndereÁamento e Encaminhamento IP}
+\section{Parte II - Endere√ßamento e Encaminhamento IP}
 
-\subsection{ExercÌcio 2.1.a}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.1.a}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Indique que endereÁos IP e m·scaras de rede foram atribuÌdos pelo CORE a cada equipamento. Para simplificar, pode incluir uma imagem que ilustre de forma clara a topologia definida e o endereÁamento usado.
+Indique que endere√ßos IP e m√°scaras de rede foram atribu√≠dos pelo CORE a cada equipamento. Para simplificar, pode incluir uma imagem que ilustre de forma clara a topologia definida e o endere√ßamento usado.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A m·scara de rede utilizada È 255.255.255.0. Isto deve-se a facto de todos os IPv4 atribuÌdos aos diferentes componentes da rede terem /24 como quantidade de bits que identificam a rede.
+A m√°scara de rede utilizada √© 255.255.255.0. Isto deve-se a facto de todos os IPv4 atribu√≠dos aos diferentes componentes da rede terem /24 como quantidade de bits que identificam a rede.
 
 \begin{figure}
 	\begin{center}
@@ -437,14 +437,14 @@ A m·scara de rede utilizada È 255.255.255.0. Isto deve-se a facto de todos os IP
 	\caption{\label{fig:rede}Topologia da rede.}
 \end{figure} 
 
-\subsection{ExercÌcio 2.1.b}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.1.b}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Tratam-se de endereÁos p˙blicos ou privados? PorquÍ?
+Tratam-se de endere√ßos p√∫blicos ou privados? Porqu√™?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Tratam-se de endereÁos privados pois o primeiro octeto È 00001010, que em decimal representa 10. Sendo este o primeiro octeto podemos afirmar que È um endereÁo IP privado visto que pertence ao conjunto de prefixos que identificam um endereÁamento privado. Os conjuntos de endereÁos privados s„o os seguintes: 
+Tratam-se de endere√ßos privados pois o primeiro octeto √© 00001010, que em decimal representa 10. Sendo este o primeiro octeto podemos afirmar que √© um endere√ßo IP privado visto que pertence ao conjunto de prefixos que identificam um endere√ßamento privado. Os conjuntos de endere√ßos privados s√£o os seguintes: 
 
 \begin{itemize}
 	\item Start address: 10.0.0.0 $\,\to\,$ End Address: 10.255.255.255
@@ -453,27 +453,27 @@ Tratam-se de endereÁos privados pois o primeiro octeto È 00001010, que em decima
 	\item Start address: 169.254.0.0 $\,\to\,$ End Address: 169.254.255.255
 \end{itemize}
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Pela observaÁ„o da topologia da rede ~\ref{fig:rede}.
+Pela observa√ß√£o da topologia da rede ~\ref{fig:rede}.
 
-\subsection{ExercÌcio 2.1.c}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.1.c}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Porque raz„o n„o È atribuÌdo um endereÁo IP aos switches?
+Porque raz√£o n√£o √© atribu√≠do um endere√ßo IP aos switches?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Na topologia em quest„o se vier um pacote com destino ao PC7, este vem com endereÁo de destino de 10.0.9.20/24. Para tal, o pacote vem do \textit{router} R e chega ao \textit{router} Rd. O \textit{router} Rd aplica a NetMask 255.255.255.0 ao endereÁo de destino e obtÈm 10.0.9.0. Consegue fazer match no endereÁo 10.0.9.1 e envia o pacote para o SW4. Ao chegar ao SW4, este avalia o endereÁo MAC de destino e duas situaÁıes podem acontecer. Se este tiver nos seus registos o endereÁo, ent„o envia diretamente ao host especificado. Caso n„o tenha ainda essa informaÁ„o envia para todos os hosts a ele ligados.
+Na topologia em quest√£o se vier um pacote com destino ao PC7, este vem com endere√ßo de destino de 10.0.9.20/24. Para tal, o pacote vem do \textit{router} R e chega ao \textit{router} Rd. O \textit{router} Rd aplica a NetMask 255.255.255.0 ao endere√ßo de destino e obt√©m 10.0.9.0. Consegue fazer match no endere√ßo 10.0.9.1 e envia o pacote para o SW4. Ao chegar ao SW4, este avalia o endere√ßo MAC de destino e duas situa√ß√µes podem acontecer. Se este tiver nos seus registos o endere√ßo, ent√£o envia diretamente ao host especificado. Caso n√£o tenha ainda essa informa√ß√£o envia para todos os hosts a ele ligados.
 
-Efetivamente, os \textit{switches} n„o operam ao nÌvel de rede e como tal a camada de rede, nomeadamente o IP, È completamente transparente para estes dispositivos.
+Efetivamente, os \textit{switches} n√£o operam ao n√≠vel de rede e como tal a camada de rede, nomeadamente o IP, √© completamente transparente para estes dispositivos.
 
-AtravÈs do exemplo a cima podemos concluir que n„o È necess·rio que este tenha IP pois os pacotes s„o enviados para o \textit{switch} com base no IP da interface de saÌda do \textit{router}. ApÛs o datagrama chegar ao \textit{switch} este quanto muito usa endereÁos MAC por forma a fazer \textit{forward} do datagrama para o \textit{host} respetivo.
+Atrav√©s do exemplo a cima podemos concluir que n√£o √© necess√°rio que este tenha IP pois os pacotes s√£o enviados para o \textit{switch} com base no IP da interface de sa√≠da do \textit{router}. Ap√≥s o datagrama chegar ao \textit{switch} este quanto muito usa endere√ßos MAC por forma a fazer \textit{forward} do datagrama para o \textit{host} respetivo.
 
-\subsection{ExercÌcio 2.1.d}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.1.d}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Usando o comando ping certifique-se que existe conectividade IP entre os laptops dos v·rios departamentos e os servidores do departamento D (basta certificar-se da conectividade de um laptop por departamento).
+Usando o comando ping certifique-se que existe conectividade IP entre os laptops dos v√°rios departamentos e os servidores do departamento D (basta certificar-se da conectividade de um laptop por departamento).
 
 \pagebreak
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
@@ -488,7 +488,7 @@ Usando o comando ping certifique-se que existe conectividade IP entre os laptops
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC1_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC1 e os servidores S1 (‡ esquerda) e S2 (‡ direita).}
+	\caption{Teste de conectividade entre PC1 e os servidores S1 (√† esquerda) e S2 (√† direita).}
 	\label{fig:pc1_s}
 \end{figure}
 
@@ -502,7 +502,7 @@ Usando o comando ping certifique-se que existe conectividade IP entre os laptops
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC3_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC3 e os servidores S1 (‡ esquerda) e S2 (‡ direita).}
+	\caption{Teste de conectividade entre PC3 e os servidores S1 (√† esquerda) e S2 (√† direita).}
 	\label{fig:pc3_s}
 \end{figure}
 
@@ -516,7 +516,7 @@ Usando o comando ping certifique-se que existe conectividade IP entre os laptops
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC5_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC5 e os servidores S1 (‡ esquerda) e S2 (‡ direita).}
+	\caption{Teste de conectividade entre PC5 e os servidores S1 (√† esquerda) e S2 (√† direita).}
 	\label{fig:pc5_s}
 \end{figure}
 
@@ -530,14 +530,14 @@ Usando o comando ping certifique-se que existe conectividade IP entre os laptops
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC7_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC7 e os servidores S1 (‡ esquerda) e S2 (‡ direita).}
+	\caption{Teste de conectividade entre PC7 e os servidores S1 (√† esquerda) e S2 (√† direita).}
 	\label{fig:pc7_s}
 \end{figure}
 
 Tendo em conta os resultados do comando \textit{ping} pode-se afirmar que existe conetividade entre os \textit{hosts} dos diferentes departamentos e os servidores do departamento D.
 
-\subsection{ExercÌcio 2.1.e}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.1.e}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Verifique se existe conectividade IP do router de acesso para os servidores S1 e S2.
 
@@ -553,7 +553,7 @@ Verifique se existe conectividade IP do router de acesso para os servidores S1 e
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/R_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre R e os servidores S1 (‡ esquerda) e S2 (‡ direita).}
+	\caption{Teste de conectividade entre R e os servidores S1 (√† esquerda) e S2 (√† direita).}
 	\label{fig:r_s}
 \end{figure}
 
@@ -562,24 +562,24 @@ Tendo em conta os resultados obtidos em ~\ref{fig:r_s}, podemos afirmar que exit
 
 % Exercicio 2 --------------------
 
-\subsection{ExercÌcio 2.2.a}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.2.a}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Execute o comando netstat ørn por forma a poder consultar a tabela de encaminhamento unicast (IPv4). Inclua no seu relatÛrio as tabelas de encaminhamento obtidas; interprete as v·rias entradas de cada tabela. Se necess·rio, consulte o manual respetivo ( man netstat ).
+Execute o comando netstat ¬ørn por forma a poder consultar a tabela de encaminhamento unicast (IPv4). Inclua no seu relat√≥rio as tabelas de encaminhamento obtidas; interprete as v√°rias entradas de cada tabela. Se necess√°rio, consulte o manual respetivo ( man netstat ).
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A primeira linha na tabela de endereÁamento do PC3 representa a rota por defeito, isto È, quando entre no PC3 um datagrama com um IP que n„o faz \textit{match} com nenhum IP da coluna \textit{Destination} ent„o este È reencaminhado para o \textit{router} de acesso, ou seja, 10.0.7.1 ficando este respons·vel pelo seu encaminhamento. Denotando que a primeira linha, por ser um endereÁo est·tico, tem a menor prioridade. Esta linha faz \textit{match} com qualquer endereÁo pois tem uma \textit{Genmask} igual a 0.0.0.0. Efetivamente, quando chega ‡ m·quina PC3, por exemplo,  um datagrama com o IP 10.0.8.20, este È comparado com todas as linhas da tabela. Posteriormente È aplicada a m·scara obtendo-se 0.0.0.0. O resultado È depois comparado com o campo \textit{Destination} e faz match. De seguida È enviado para o router de acesso explicitado pelo campo \textit{Gateway}
+A primeira linha na tabela de endere√ßamento do PC3 representa a rota por defeito, isto √©, quando entre no PC3 um datagrama com um IP que n√£o faz \textit{match} com nenhum IP da coluna \textit{Destination} ent√£o este √© reencaminhado para o \textit{router} de acesso, ou seja, 10.0.7.1 ficando este respons√°vel pelo seu encaminhamento. Denotando que a primeira linha, por ser um endere√ßo est√°tico, tem a menor prioridade. Esta linha faz \textit{match} com qualquer endere√ßo pois tem uma \textit{Genmask} igual a 0.0.0.0. Efetivamente, quando chega √† m√°quina PC3, por exemplo,  um datagrama com o IP 10.0.8.20, este √© comparado com todas as linhas da tabela. Posteriormente √© aplicada a m√°scara obtendo-se 0.0.0.0. O resultado √© depois comparado com o campo \textit{Destination} e faz match. De seguida √© enviado para o router de acesso explicitado pelo campo \textit{Gateway}
 
-A segunda linha È respons·vel por encaminhar, atravÈs da prÛpria m·quina, o tr‚nsito local, ou seja, o prÛrprio PC3 encaminha os datagramas para \textit{hosts} vizinhos. Deste modo, todos os datagramas que tiverem como prefixo de rede 10.0.7 v„o fazer match na segunda linha, isto porque, chegando por exemplo o datagrama com o IP 10.0.7.21, È aplicada a m·scara 255.255.255.0 e resulta a \textit{destination} 10.0.7.0. Posteriormente È enviado para o endereÁo dito no \textit{Gateway}, 0.0.0.0, ou seja, fica respons·vel por encaminhar este datagrama a prÛpria m·quina. Este processo de encaminhamento resulta pois os \textit{hosts} tem conhecimento da topologia da rede local.
+A segunda linha √© respons√°vel por encaminhar, atrav√©s da pr√≥pria m√°quina, o tr√¢nsito local, ou seja, o pr√≥rprio PC3 encaminha os datagramas para \textit{hosts} vizinhos. Deste modo, todos os datagramas que tiverem como prefixo de rede 10.0.7 v√£o fazer match na segunda linha, isto porque, chegando por exemplo o datagrama com o IP 10.0.7.21, √© aplicada a m√°scara 255.255.255.0 e resulta a \textit{destination} 10.0.7.0. Posteriormente √© enviado para o endere√ßo dito no \textit{Gateway}, 0.0.0.0, ou seja, fica respons√°vel por encaminhar este datagrama a pr√≥pria m√°quina. Este processo de encaminhamento resulta pois os \textit{hosts} tem conhecimento da topologia da rede local.
 
-A tabela de encaminhamento do \textit{router} Rb n„o incluÌ rotas por defeito pois todas as rotas existentes na rede encontram-se identificadas na tabela ‡ partida.
+A tabela de encaminhamento do \textit{router} Rb n√£o inclu√≠ rotas por defeito pois todas as rotas existentes na rede encontram-se identificadas na tabela √† partida.
 
-AtravÈs da an·lise da topologia na rede criada com o CORE percebemos que o \textit{router} Rb dever· ser respons·vel por encaminhar para a rede 10.0.0.0, 10.0.1.0, e 10.0.7.0. A tabela de encaminhamento confirma as nossas suspeitas, pois todas as linhas que tÍm os endereÁos IP atr·s indicados tÍm como \textit{Gateway} 0.0.0.0, que significa que o prÛprio \textit{router} fica respons·vel por encaminhar esses datagramas.
+Atrav√©s da an√°lise da topologia na rede criada com o CORE percebemos que o \textit{router} Rb dever√° ser respons√°vel por encaminhar para a rede 10.0.0.0, 10.0.1.0, e 10.0.7.0. A tabela de encaminhamento confirma as nossas suspeitas, pois todas as linhas que t√™m os endere√ßos IP atr√°s indicados t√™m como \textit{Gateway} 0.0.0.0, que significa que o pr√≥prio \textit{router} fica respons√°vel por encaminhar esses datagramas.
 
-Todas as outras redes existentes encontram-se na tabela com o endereÁo de encaminhamento apropriado. Nomeadamente, caso os datagramas tenham como destino a rede 10.0.x.0, em que x={2,3,6,8,9,10}, estes s„o reencaminhados para uma das duas redes a que o \textit{router} Rb tem acesso, isto È, 10.0.0.1 ou 10.0.1.2. Estas entradas em espicÌfico na tabela tÍm a \textit{flag} G no campo \textit{Flags}, visto n„o ser um encaminhamento direto.
+Todas as outras redes existentes encontram-se na tabela com o endere√ßo de encaminhamento apropriado. Nomeadamente, caso os datagramas tenham como destino a rede 10.0.x.0, em que x={2,3,6,8,9,10}, estes s√£o reencaminhados para uma das duas redes a que o \textit{router} Rb tem acesso, isto √©, 10.0.0.1 ou 10.0.1.2. Estas entradas em espic√≠fico na tabela t√™m a \textit{flag} G no campo \textit{Flags}, visto n√£o ser um encaminhamento direto.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}[h]
 	\centering
@@ -591,86 +591,86 @@ Todas as outras redes existentes encontram-se na tabela com o endereÁo de encami
 		\centering
 		\includegraphics[width=0.95\linewidth]{./imagens/netstatRb.png}
 	\end{subfigure}
-	\caption{Tabelas de encaminhamento do PC3 (‡ esquerda) e do Rb (‡ direita).}
+	\caption{Tabelas de encaminhamento do PC3 (√† esquerda) e do Rb (√† direita).}
 	\label{fig:r_s}
 \end{figure}
 
-\subsection{ExercÌcio 2.2.b}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.2.b}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-\subsection{ExercÌcio 2.2.c}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.2.c}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-\subsection{ExercÌcio 2.2.d}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.2.d}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-\subsection{ExercÌcio 2.2.e}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2.2.e}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 % Exercicio 3 --------------------
 
-\subsection{ExercÌcio 3.1}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3.1}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Considere que dispıe apenas do endereÁo de rede IP 172.16.0.0/16, defina um novo esquema de endereÁamento para as redes dos departamentos (mantendo a rede de acesso e core inalteradas) e atribua endereÁos ‡s interfaces dos v·rios sistemas envolvidos. Deve justificar as opÁıes usadas.
+Considere que disp√µe apenas do endere√ßo de rede IP 172.16.0.0/16, defina um novo esquema de endere√ßamento para as redes dos departamentos (mantendo a rede de acesso e core inalteradas) e atribua endere√ßos √†s interfaces dos v√°rios sistemas envolvidos. Deve justificar as op√ß√µes usadas.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 
-\par A partir do endereÁo dado, decidiu-se criar um conjunto de subredes de endereÁo 172.16.0.0/24, dando 8 bits para criaÁ„o de subredes e 8 bits para criaÁ„o de \textit{hosts} dentro de cada subrede, de modo a maximizar a flexibilidade da rede. Prosseguimos ent„o ‡ redefeniÁ„o do esquema de endereÁamento:
+\par A partir do endere√ßo dado, decidiu-se criar um conjunto de subredes de endere√ßo 172.16.0.0/24, dando 8 bits para cria√ß√£o de subredes e 8 bits para cria√ß√£o de \textit{hosts} dentro de cada subrede, de modo a maximizar a flexibilidade da rede. Prosseguimos ent√£o √† redefeni√ß√£o do esquema de endere√ßamento:
 \begin{itemize}
-\item \textbf{Ra}: Definimos o IP como 172.16.1.1/24 na interface eth2 (ligaÁ„o ao Departamento A). A escolha do terceiro octeto a 1 reside no facto de este ter sido a primeira subrede a ser endereÁada e 1 no quarto octeto reside no facto de ser o primeiro dispositivo/host da subrede. Propagou-se ent„o os endereÁos da subnetting para os PC's do departamento. No caso do PC1 recebeu o endereÁo IP 172.16.1.2/24 e o PC2 recebeu o endereÁo IP 172.16.1.3/24.
+\item \textbf{Ra}: Definimos o IP como 172.16.1.1/24 na interface eth2 (liga√ß√£o ao Departamento A). A escolha do terceiro octeto a 1 reside no facto de este ter sido a primeira subrede a ser endere√ßada e 1 no quarto octeto reside no facto de ser o primeiro dispositivo/host da subrede. Propagou-se ent√£o os endere√ßos da subnetting para os PC's do departamento. No caso do PC1 recebeu o endere√ßo IP 172.16.1.2/24 e o PC2 recebeu o endere√ßo IP 172.16.1.3/24.
 
-\item \textbf{Rb}: Repetiu-se o processo mas com 172.16.2.1/24 para a interface do router. A escolha do terceiro octeto a 2 reside no facto de este ter sido a segunda subrede a ser endereÁada. Propagou-se o IP da subnetting para os PC3 e PC4 com os IP 172.16.2.2/24 e 172.16.2.3/24, respetivamente.
+\item \textbf{Rb}: Repetiu-se o processo mas com 172.16.2.1/24 para a interface do router. A escolha do terceiro octeto a 2 reside no facto de este ter sido a segunda subrede a ser endere√ßada. Propagou-se o IP da subnetting para os PC3 e PC4 com os IP 172.16.2.2/24 e 172.16.2.3/24, respetivamente.
 
-\item \textbf{Rc}: Repetiu-se o processo mas com 172.16.3.1/24 para a interface do router. A escolha do terceiro octeto a 3 reside no facto de este ter sido a terceira subrede a ser endereÁada. Propagou-se o IP da subnetting para os PC5 e PC6 com os IP 172.16.3.2/24 e 172.16.3.3/24, respetivamente.
+\item \textbf{Rc}: Repetiu-se o processo mas com 172.16.3.1/24 para a interface do router. A escolha do terceiro octeto a 3 reside no facto de este ter sido a terceira subrede a ser endere√ßada. Propagou-se o IP da subnetting para os PC5 e PC6 com os IP 172.16.3.2/24 e 172.16.3.3/24, respetivamente.
 
-\item \textbf{Rd}: Repetiu-se o processo mas com 172.16.4.1/24 para a interface do router. A escolha do terceiro octeto a 4 reside no facto de este ter sido a quarta subrede a ser endereÁada. Propagou-se para PC7, PC8, S1 e S2 172.16.4.2/24, 172.16.4.3/24, 172.16.4.4/24 e 172.16.4.5/24, respetivamente.
+\item \textbf{Rd}: Repetiu-se o processo mas com 172.16.4.1/24 para a interface do router. A escolha do terceiro octeto a 4 reside no facto de este ter sido a quarta subrede a ser endere√ßada. Propagou-se para PC7, PC8, S1 e S2 172.16.4.2/24, 172.16.4.3/24, 172.16.4.4/24 e 172.16.4.5/24, respetivamente.
 
 \end{itemize}
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 
 
-\subsection{ExercÌcio 3.2}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3.2}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Qual a m·scara de rede que usou (em formato decimal)? Quantos hosts IP pode interligar em cada departamento? Justifique.
-
-\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-
-A m·scara da rede IP È 255.255.0.0 , sendo a m·scara para cada subrede 255.255.255.0 . Isto permite-nos 8 bits para endereÁar os \textit{hosts} de cada departamento. Como os \textit{hosts} 172.16.x.0/24 e 172.16.x.255/24 est„o reservados como o identificador da subrede e acesso de \textit{broadcast}, respetivamente, dispomos de 2^8 - 2 = 254 \textit{hosts} por departamento. 
-
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
-
-
-
-\subsection{ExercÌcio 3.3}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
-
-Garanta e verifique que conectividade IP entre as v·rias redes locais da organizaÁ„o MIEI-RC È mantida.
+Qual a m√°scara de rede que usou (em formato decimal)? Quantos hosts IP pode interligar em cada departamento? Justifique.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Recorrendo ao comando \textit{ping}, verificou-se que a conetividade IP das subredes da organizaÁ„o e confirmou-se que cada subrede se pode ligar a cada uma das outras subredes locais.
+A m√°scara da rede IP √© 255.255.0.0 , sendo a m√°scara para cada subrede 255.255.255.0 . Isto permite-nos 8 bits para endere√ßar os \textit{hosts} de cada departamento. Como os \textit{hosts} 172.16.x.0/24 e 172.16.x.255/24 est√£o reservados como o identificador da subrede e acesso de \textit{broadcast}, respetivamente, dispomos de 2\^{}8 - 2 = 254 \textit{hosts} por departamento. 
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\ 
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsection{Exerc√≠cio 3.3}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
+
+Garanta e verifique que conectividade IP entre as v√°rias redes locais da organiza√ß√£o MIEI-RC √© mantida.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+Recorrendo ao comando \textit{ping}, verificou-se que a conetividade IP das subredes da organiza√ß√£o e confirmou-se que cada subrede se pode ligar a cada uma das outras subredes locais.
+
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\ 
 
 
 \begin{figure}
 	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/exercicio3.3.png} 
+	\includegraphics[scale=0.35]{./imagens/exercicio3_3.png} 
 	\end{center}
-	\caption{\label{fig:ping}As subredes mantÍm a capacidade de enviar pacotes entre si.}
+	\caption{\label{fig:ping}As subredes mant√™m a capacidade de enviar pacotes entre si.}
 \end{figure} 
 
 
@@ -681,9 +681,9 @@ Recorrendo ao comando \textit{ping}, verificou-se que a conetividade IP das subr
 % LIXO --------------------------------------------------------------
 % ------------------------------------------------------------------- 
 
-%UNCOMMENT se necessário
+%UNCOMMENT se necess‚Ä°rio
 %De acordo com o ilustrado na Figura~\ref{fig:controller}
-%% Exemplo para inserção de uma figura
+%% Exemplo para inser¬ç‚Äπo de uma figura
 %\begin{figure}
 %\begin{center}
 %\includegraphics[scale=0.40]{figura.pdf} 
