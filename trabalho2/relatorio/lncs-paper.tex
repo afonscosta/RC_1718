@@ -559,7 +559,7 @@ Tendo em conta os resultados obtidos em ~\ref{fig:r_s}, podemos afirmar que exit
 
 
 % Exercicio 2 --------------------
-
+ 
 \subsection{Exerc√≠cio 2.2.a}
 \subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
@@ -600,8 +600,27 @@ Todas as outras redes existentes encontram-se na tabela com o endere√ßo de encam
 
 \subsection{Exerc√≠cio 2.2.c}
 \subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
+
+Admita que,	por	questıes administrativas, a	rota por defeito (0.0.0.0 ou default) deve ser retirada	definitivamente	da tabela de encaminhamento	do servidor S1 localizado no departamento D. Use o comando route delete para o efeito. Que implicaÁıes tem esta medida para os utilizadores	da empresa que acedem aos servidores. Justifique.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+Ao remover a rota 0.0.0.0 o router fica sem saber o que fazer quando encontra pacotes que n„o fazem match com os elementos que tem na tabela de endereÁamento. Como seria de esperar, os utilizadores que est„o no mesmo departamento (ligados ‡ mesma subnet) tÍm conhecimento da topologia local e, por isso, n„o sofrem em nada com esta situaÁ„o. No entanto, relativamente aos utilizadores externos ao departamento e que pretendem fazer um acesso ao servidor, todos os pacotes acabam como perdidos. O que acontece È que o servidor os recebe mas, sem a rota por defeito, n„o consegue dar resposta.
+
 \subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{./imagens/posDeleteRotaDefeito.png}
+	\end{subfigure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.95\linewidth]{./imagens/posExternos.png}
+	\end{subfigure}
+	\caption{Tabelas de encaminhamento do PC3 (√† esquerda) e do Rb (√† direita).}
+	\label{fig:r_s}
+\end{figure}
 
 \subsection{Exerc√≠cio 2.2.d}
 \subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
