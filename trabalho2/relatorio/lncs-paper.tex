@@ -372,29 +372,18 @@ Quantos fragmentos foram criados a partir do datagrama original? Como se detecta
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Analisando o parâmetro \textit{identification} dos datagramas capturados pelo \textit{Wireshark}, percebe-se que existem três datagramas com o mesmo valor o que revela que pertencem ao mesmo PDU (\textit{identification} = 0xa813). Desta forma podemos concluir que o datagrama foi fragmentado duas vezes resultando em três fragmentos.
+Analisando o parâmetro \textit{identification} dos pacotes capturados pelo \textit{Wireshark}, nota-se que existem três pacotes com o mesmo valor o que revela que pertencem ao mesmo PDU (\textit{identification} = 0xa813). Desta forma podemos concluir que o datagrama foi fragmentado duas vezes resultando em três fragmentos. Os campos \textit{fragment offset} e \textit{more fragments} confirmam isto.
 	
-A deteção do último fragmento é feita através da análise da \textit{flag more fragments}. Se esta estiver a 1 então existem mais segmentos. Caso contrário, o segmento em questão é o último.
+A deteção do último fragmento é feita através da análise da \textit{flag more fragments}. Se esta estiver a 1 então existem mais segmentos; por outras palavras, não é o último. Caso contrário, o segmento em questão é o último.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-\begin{figure}[h]
-	\centering
-	\begin{subfigure}{.4\textwidth}
-		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/packet_first.png}
-	\end{subfigure}%
-	\begin{subfigure}{.4\textwidth}
-		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/packet_second.png}
-	\end{subfigure}%
-	\begin{subfigure}{.4\textwidth}
-		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/packet_third.png}
-	\end{subfigure}
-	\caption{Encontrando vários fragmentos com a mesma \textit{identification}, é possível saber a sua ordem através do \textit{fragment offset} e flags.}
-	\label{fig:field_packet}
-\end{figure}
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/packet_second.png} 
+	\end{center}
+	\caption{\label{fig:packet_third}A flag \textit{more fragments} indica que é o último fragmento.}
+\end{figure} 
 
 \subsection{Exercício 3.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
@@ -412,8 +401,7 @@ Entre o primeiro fragmento e o último fragmento não inclusives, o \textit{Tota
 No último fragmento, o \textit{Total Length} é menor ou igual ao MTU, a flag \textit{more fragments} é igual a 0 e o \textit{Fragment offset} é igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o número de fragmentos do datagrama.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
-Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado.
-~\ref{fig:field_packet} 
+Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado. ~\ref{fig:packet_first, fig:packet_second, fig:packet_third} 
 
 
 \pagebreak
@@ -642,20 +630,26 @@ Considere que dispõe apenas do endereço de rede IP 172.16.0.0/16, defina um no
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 
-\par A partir do endereço dado, decidiu-se criar um conjunto de subredes de endereço 172.16.0.0/24, dando 8 bits para criação de subredes e 8 bits para criação de \textit{hosts} dentro de cada subrede, de modo a maximizar a flexibilidade da rede. Prosseguimos então à redefenição do esquema de endereçamento:
+\par A partir do endereço dado, decidiu-se criar um conjunto de subredes de endereço 172.16.0.0/24, dando 8 bits para criação de subredes e 8 bits para criação de \textit{hosts} dentro de cada subrede, de modo a maximizar a flexibilidade da rede para instalações futuras. Prosseguimos então à redefenição do esquema de endereçamento:
 \begin{itemize}
 \item \textbf{Ra}: Definimos o IP como 172.16.1.1/24 na interface eth2 (ligação ao Departamento A). A escolha do terceiro octeto a 1 reside no facto de este ter sido a primeira subrede a ser endereçada e 1 no quarto octeto reside no facto de ser o primeiro dispositivo/host da subrede. Propagou-se então os endereços da subnetting para os PC's do departamento. No caso do PC1 recebeu o endereço IP 172.16.1.2/24 e o PC2 recebeu o endereço IP 172.16.1.3/24.
 
-\item \textbf{Rb}: Repetiu-se o processo mas com 172.16.2.1/24 para a interface do router. A escolha do terceiro octeto a 2 reside no facto de este ter sido a segunda subrede a ser endereçada. Propagou-se o IP da subnetting para os PC3 e PC4 com os IP 172.16.2.2/24 e 172.16.2.3/24, respetivamente.
+\item \textbf{Rb}: Repetiu-se o processo mas com 172.16.2.1/24 para a interface eth2 do router (ligação ao Departamento B). A escolha do terceiro octeto a 2 reside no facto de este ter sido a segunda subrede a ser endereçada. Propagou-se o IP da subnetting para os PC3 e PC4 com os IP 172.16.2.2/24 e 172.16.2.3/24, respetivamente.
 
-\item \textbf{Rc}: Repetiu-se o processo mas com 172.16.3.1/24 para a interface do router. A escolha do terceiro octeto a 3 reside no facto de este ter sido a terceira subrede a ser endereçada. Propagou-se o IP da subnetting para os PC5 e PC6 com os IP 172.16.3.2/24 e 172.16.3.3/24, respetivamente.
+\item \textbf{Rc}: Repetiu-se o processo mas com 172.16.3.1/24 para a interface eth2 do router (ligação ao Departamento C). A escolha do terceiro octeto a 3 reside no facto de este ter sido a terceira subrede a ser endereçada. Propagou-se o IP da subnetting para os PC5 e PC6 com os IP 172.16.3.2/24 e 172.16.3.3/24, respetivamente.
 
-\item \textbf{Rd}: Repetiu-se o processo mas com 172.16.4.1/24 para a interface do router. A escolha do terceiro octeto a 4 reside no facto de este ter sido a quarta subrede a ser endereçada. Propagou-se para PC7, PC8, S1 e S2 172.16.4.2/24, 172.16.4.3/24, 172.16.4.4/24 e 172.16.4.5/24, respetivamente.
+\item \textbf{Rd}: Repetiu-se o processo mas com 172.16.4.1/24 para a interface eth4 do router (ligação ao Departamento D). A escolha do terceiro octeto a 4 reside no facto de este ter sido a quarta subrede a ser endereçada. Propagou-se para PC7, PC8, S1 e S2 172.16.4.2/24, 172.16.4.3/24, 172.16.4.4/24 e 172.16.4.5/24, respetivamente.
 
 \end{itemize}
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/redeIPSnovos.png} 
+	\end{center}
+	\caption{\label{fig:ping}As subredes mantêm a capacidade de enviar pacotes entre si.}
+\end{figure} 
 
 
 \subsection{Exercício 3.2}
@@ -666,8 +660,6 @@ Qual a máscara de rede que usou (em formato decimal)? Quantos hosts IP pode int
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 A máscara da rede IP é 255.255.0.0 , sendo a máscara para cada subrede 255.255.255.0 . Isto permite-nos 8 bits para endereçar os \textit{hosts} de cada departamento. Como os \textit{hosts} 172.16.x.0/24 e 172.16.x.255/24 estão reservados como o identificador da subrede e acesso de \textit{broadcast}, respetivamente, dispomos de 2\^{}8 - 2 = 254 \textit{hosts} por departamento. 
-
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 
 
