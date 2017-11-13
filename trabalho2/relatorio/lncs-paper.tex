@@ -372,29 +372,18 @@ Quantos fragmentos foram criados a partir do datagrama original? Como se detecta
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Analisando o parâmetro \textit{identification} dos datagramas capturados pelo \textit{Wireshark}, percebe-se que existem três datagramas com o mesmo valor o que revela que pertencem ao mesmo PDU (\textit{identification} = 0xa813). Desta forma podemos concluir que o datagrama foi fragmentado duas vezes resultando em três fragmentos.
+Analisando o parâmetro \textit{identification} dos pacotes capturados pelo \textit{Wireshark}, nota-se que existem três pacotes com o mesmo valor o que revela que pertencem ao mesmo PDU (\textit{identification} = 0xa813). Desta forma podemos concluir que o datagrama foi fragmentado duas vezes resultando em três fragmentos. Os campos \textit{fragment offset} e \textit{more fragments} confirmam isto.
 	
-A deteção do último fragmento é feita através da análise da \textit{flag more fragments}. Se esta estiver a 1 então existem mais segmentos. Caso contrário, o segmento em questão é o último.
+A deteção do último fragmento é feita através da análise da \textit{flag more fragments}. Se esta estiver a 1 então existem mais segmentos; por outras palavras, não é o último. Caso contrário, o segmento em questão é o último.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-\begin{figure}[h]
-	\centering
-	\begin{subfigure}{.4\textwidth}
-		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/packet_first.png}
-	\end{subfigure}%
-	\begin{subfigure}{.4\textwidth}
-		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/packet_second.png}
-	\end{subfigure}%
-	\begin{subfigure}{.4\textwidth}
-		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/packet_third.png}
-	\end{subfigure}
-	\caption{Encontrando vários fragmentos com a mesma \textit{identification}, é possível saber a sua ordem através do \textit{fragment offset} e flags.}
-	\label{fig:field_packet}
-\end{figure}
+\begin{figure}
+	\begin{center}
+	\includegraphics[scale=0.35]{./imagens/packet_second.png} 
+	\end{center}
+	\caption{\label{fig:packet_third}A flag \textit{more fragments} indica que é o último fragmento.}
+\end{figure} 
 
 \subsection{Exercício 3.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
@@ -412,8 +401,7 @@ Entre o primeiro fragmento e o último fragmento não inclusives, o \textit{Tota
 No último fragmento, o \textit{Total Length} é menor ou igual ao MTU, a flag \textit{more fragments} é igual a 0 e o \textit{Fragment offset} é igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o número de fragmentos do datagrama.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
-Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado.
-~\ref{fig:field_packet} 
+Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado. ~\ref{fig:packet_first, fig:packet_second, fig:packet_third} 
 
 
 \pagebreak
