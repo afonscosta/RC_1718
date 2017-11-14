@@ -1,0 +1,11 @@
+Introdução:
+
+O principal objectivo deste trabalho é o estudo do Internet Protocol (IP) nas suas principais vertentes (estudo do formato de um pacote ou datagrama IP, endereçamento IP, encaminhamento IP e fragmentação de pacotes IP), bem como o estudo do protocolo IPv4 com enfâse no endereçamento e encaminhamento IP.
+
+
+
+
+
+Conclusão:
+
+Neste trabalho aprofundou-se a compreensão do funcionamento interno das redes IP, principalmente nas suas estruturas e na transmissão de dados através da mesma. Particularmente, reforçou-se o conhecimento e compreensão do \textit{subnetting} e as suas aplicações. Consequentemente, conhecemos as potencialidades do \textit{routing} dinâmico e estático, bem como a importância das tabelas de endereçamento. No que toca aos datagramas, tornou-se mais evidente a importância do TTL, dos diferentes protocolos IP e todo um outro conjunto de informações presentes tanto em \textit{headers} como em \textit{payloads}.
