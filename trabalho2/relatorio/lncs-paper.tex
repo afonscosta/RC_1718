@@ -100,7 +100,7 @@ Qual o valor médio do tempo de ida-e-volta (Round-Trip Time) obtido?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O Round-Trip Time é igual à  soma do tempo de envio com o tempo de resposta. Logo, fazendo a soma das médias dos tempos, temos um resultado de Round-Trip Time médio de 0.00015 s (tempo de ida/request) + 0.00005 s (tempo de volta/reply) = 0.00020 s. É de notar que tanto o tempo de request como o de reply se mantêm relativamente constantes. Também se pode analisar este tempo recorrendo ao tempo relativo entre duas mensagens da mesma source.
+O Round-Trip Time é igual à soma do tempo de envio com o tempo de resposta. Logo, fazendo a soma das médias dos tempos, temos um resultado de Round-Trip Time médio de 0.00015 s (tempo de ida/request) + 0.00005 s (tempo de volta/reply) = 0.00020 s. É de notar que tanto o tempo de request como o de reply se mantêm relativamente constantes. Também se pode analisar este tempo recorrendo ao tempo relativo entre duas mensagens da mesma source.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -213,11 +213,11 @@ Assim sendo, conjugando a informação dos dois parâmetros percebe-se que se o dat
 \subsection{Exercício 2.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
-Ordene os pacotes capturados de acordo com o endereço IP fonte (e.g., selecionando o cabeçalho da coluna Source), e analise a sequência de tráfego ICMP gerado a partir do endereço IP atribuído à  sua máquina. Para a sequência de mensagens ICMP enviadas pelo seu computador, indique que campos do cabeçalho IP variam de pacote para pacote.  
+Ordene os pacotes capturados de acordo com o endereço IP fonte (e.g., selecionando o cabeçalho da coluna Source), e analise a sequência de tráfego ICMP gerado a partir do endereço IP atribuído à sua máquina. Para a sequência de mensagens ICMP enviadas pelo seu computador, indique que campos do cabeçalho IP variam de pacote para pacote.  
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Os campos que vêm os seus valores alterados correspondem à  \textit{identification}, \textit{header checksum} e \textit{time to live (TTL)}. 
+Os campos que vêm os seus valores alterados correspondem à \textit{identification}, \textit{header checksum} e \textit{time to live (TTL)}. 
 
 A \emph{identificação} muda pois este campo identifica unicamente cada datagrama e visto que estes são sempre diferentes então o campo também o será.
 
@@ -642,7 +642,7 @@ Em cada uma das tabelas de encaminhamento dos diferentes \textit{hosts} que cons
 
 Na rede core da topologia, isto é, no anel de rede criado entre os \textit{routers} Ra, Rb, Rc e Rb é implementado encaminhamento dinâmico através do protocolo OSPF. Este protocolo é usado para realizar o reconhecimento da rede e consequentemente definir as rotas que os pacotes devem tomar.
 
-Desta forma, é possível reparar que mal iniciamos o fluxo na rede no emulador \emph{CORE}, a tabela de encaminhamento dos \textit{routers} encontram-se apenas com três rotas predefinadas (estáticas), correspondentes às três interfaces que cada \textit{router} interliga. Passados alguns minutos é possível observar que a tabela de encaminhamento obtém novas entradas (referência da imagem com as duas tabelas do netstat). Esta observação leva-nos a pensar que as novas entradas possam ser resultado de encaminhamento dinâmico. De forma a provar a veracidade dessa conjetura, tentou-se perceber se dada alguma falha na rede, por exemplo, com um \textit{router} a desligar uma das suas interfaces, se esta consegue ajustar as diferentes rotas de encaminhamento de forma a suprimir o erro ocorrido.
+Desta forma, é possível reparar que mal iniciamos o fluxo na rede no emulador \emph{CORE}, a tabela de encaminhamento dos \textit{routers} encontram-se apenas com três rotas predefinadas (estáticas), correspondentes às três interfaces que cada \textit{router} interliga. Passados alguns minutos é possível observar que a tabela de encaminhamento obtém novas entradas. Esta observação leva-nos a pensar que as novas entradas possam ser resultado de encaminhamento dinâmico. De forma a provar a veracidade dessa conjetura, tentou-se perceber se dada alguma falha na rede, por exemplo, com um \textit{router} a desligar uma das suas interfaces, se esta consegue ajustar as diferentes rotas de encaminhamento de forma a suprimir o erro ocorrido.
 
 Assim sendo, utilizou-se o PC3 e o S1, como componentes sobre os quais se averiguaria o comportamento dos pacotes quando feito um \textit{ping} do \textit{host} PC3 para o \textit{host} S1. O comando \textit{ping} é realizado às \textbf{10:19:00h}. Consequentemente é possível perceber que, ao analisar o tráfego capturado pelo \textit{Wireshark} no IP 10.0.3.2 da interface do \textit{router} Ra, que a partir dessa mesma hora (\textbf{10:19:00h}) existe passagem de pacotes de "ida" no \textit{router} Ra, isto é, pacotes que têm como \textit{source} o IP 10.0.7.20 e como \textit{destination} o IP 10.0.9.10 [\ref{fig:icmp_normal}]. Da mesma forma, se analisarmos o tráfego capturado pelo \textit{Wireshark} no IP 10.0.1.2 do \textit{router} Rc, percebe-se que por volta da mesma hora (\textbf{10:19:00h}) existe pacotes \emph{ICMP} com sentido contrário, isto é, pacotes que têm como \textit{source} o IP 10.0.9.10 e como \textit{destination} o IP 10.0.7.20 [\ref{fig:icmp_normal}]. Após esta análise conclui-se que o tráfego se encontra normalizado e é realizado pelo trajeto apresentado na imagem [\ref{fig:rede_ida_volta}]. Efetivamente, a verde está demarcado o percurso intitulado de "ida", ou seja, percurso pelo qual passam os pacotes enviados do \textit{host} PC3 para o \textit{host} S1. A laranja temos o percurso de "volta", ou seja, é o percurso pelo qual passsam os pacotes enviados de S1 para o PC3.
 
