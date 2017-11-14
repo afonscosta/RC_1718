@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.9.30)  14 NOV 2017 09:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.9.30)  14 NOV 2017 16:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -446,29 +446,26 @@ LaTeX Warning: Label `fig:r_s' multiply defined.
 LaTeX Warning: Label `fig:r_s' multiply defined.
 
 
-LaTeX Warning: Label `fig:packet_third' multiply defined.
-
-
 LaTeX Warning: Label `fig:ping' multiply defined.
 
 )
 \openout1 = `lncs-paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 18.
  (/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -490,7 +487,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 18.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -499,11 +496,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
 
 
 Package hyperref Warning: bookmark level for unknown title defaults to 0.
@@ -511,188 +508,203 @@ Package hyperref Warning: bookmark level for unknown title defaults to 0.
 
 Package hyperref Warning: bookmark level for unknown author defaults to 0.
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 44.
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-<imagens/ttlexceeded.png, id=4, 962.09438pt x 674.52pt>
-File: imagens/ttlexceeded.png Graphic file (type png)
-<use imagens/ttlexceeded.png>
-Package pdftex.def Info: imagens/ttlexceeded.png  used on input line 58. on inp
-ut line 58.
-Package pdftex.def Info: Requested size: 336.73807pt x 236.08554pt on input lin
-e 58.
-<imagens/bytesdata.png, id=6, 960.58875pt x 514.17094pt>
-File: imagens/bytesdata.png Graphic file (type png)
-<use imagens/bytesdata.png>
-Package pdftex.def Info: imagens/bytesdata.png  used on input line 65. on input
- line 65.
-Package pdftex.def Info: Requested size: 336.21109pt x 179.96252pt on input lin
-e 65.
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-<imagens/ttlexceededmessage.png, id=7, 959.83594pt x 493.845pt>
-File: imagens/ttlexceededmessage.png Graphic file (type png)
-<use imagens/ttlexceededmessage.png>
-Package pdftex.def Info: imagens/ttlexceededmessage.png  used on input line 82.
- on input line 82.
-Package pdftex.def Info: Requested size: 335.94762pt x 172.84833pt on input lin
-e 82.
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./imagens/ttlexceeded.
-png> <./imagens/bytesdata.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 39.
+ [2
+
+]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 45.
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<imagens/roundtime.png, id=34, 962.09438pt x 689.57625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+<imagens/ttlexceeded.png, id=17, 962.09438pt x 674.52pt>
+File: imagens/ttlexceeded.png Graphic file (type png)
+<use imagens/ttlexceeded.png>
+Package pdftex.def Info: imagens/ttlexceeded.png  used on input line 60. on inp
+ut line 60.
+Package pdftex.def Info: Requested size: 336.73807pt x 236.08554pt on input lin
+e 60.
+<imagens/bytesdata.png, id=19, 960.58875pt x 514.17094pt>
+File: imagens/bytesdata.png Graphic file (type png)
+<use imagens/bytesdata.png>
+Package pdftex.def Info: imagens/bytesdata.png  used on input line 68. on input
+ line 68.
+Package pdftex.def Info: Requested size: 336.21109pt x 179.96252pt on input lin
+e 68.
+[3
+
+ <./imagens/ttlexceeded.png>] [4 <./imagens/bytesdata.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+<imagens/ttlexceededmessage.png, id=38, 959.83594pt x 493.845pt>
+File: imagens/ttlexceededmessage.png Graphic file (type png)
+<use imagens/ttlexceededmessage.png>
+Package pdftex.def Info: imagens/ttlexceededmessage.png  used on input line 89.
+ on input line 89.
+Package pdftex.def Info: Requested size: 335.94762pt x 172.84833pt on input lin
+e 89.
+[5
+
+ <./imagens/ttlexceededmessage.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+<imagens/roundtime.png, id=49, 962.09438pt x 689.57625pt>
 File: imagens/roundtime.png Graphic file (type png)
 <use imagens/roundtime.png>
-Package pdftex.def Info: imagens/roundtime.png  used on input line 99. on input
- line 99.
+Package pdftex.def Info: imagens/roundtime.png  used on input line 109. on inpu
+t line 109.
 Package pdftex.def Info: Requested size: 336.73807pt x 241.3553pt on input line
- 99.
-<imagens/ip_source_proof.png, id=35, 1200.485pt x 328.22626pt>
+ 109.
+[6
+
+ <./imagens/roundtime.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+<imagens/ip_source_proof.png, id=60, 1200.485pt x 328.22626pt>
 File: imagens/ip_source_proof.png Graphic file (type png)
 <use imagens/ip_source_proof.png>
-Package pdftex.def Info: imagens/ip_source_proof.png  used on input line 116. o
-n input line 116.
+Package pdftex.def Info: imagens/ip_source_proof.png  used on input line 131. o
+n input line 131.
 Package pdftex.def Info: Requested size: 420.17606pt x 114.8809pt on input line
- 116.
+ 131.
 
-Overfull \hbox (58.82607pt too wide) in paragraph at lines 116--117
+Overfull \hbox (58.82607pt too wide) in paragraph at lines 131--132
  [] 
  []
 
+[7
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-
- []
-
-[3 <./imagens/ttlexceededmessage.png>] [4 <./imagens/roundtime.png> <./imagens/
-ip_source_proof.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+ <./imagens/ip_source_proof.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
-<./imagens/icmp_1.png, id=63, 602.25pt x 527.9725pt>
-File: ./imagens/icmp_1.png Graphic file (type png)
-<use ./imagens/icmp_1.png>
-Package pdftex.def Info: ./imagens/icmp_1.png  used on input line 137. on input
- line 137.
-Package pdftex.def Info: Requested size: 210.79065pt x 184.79314pt on input lin
-e 137.
 
 Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[5 <./imagens/icmp_1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+<./imagens/icmp_1.png, id=76, 602.25pt x 527.9725pt>
+File: ./imagens/icmp_1.png Graphic file (type png)
+<use ./imagens/icmp_1.png>
+Package pdftex.def Info: ./imagens/icmp_1.png  used on input line 154. on input
+ line 154.
+Package pdftex.def Info: Requested size: 210.79065pt x 184.79314pt on input lin
+e 154.
+[8
+
+ <./imagens/icmp_1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
-<./imagens/icmp_size.png, id=77, 594.22pt x 323.2075pt>
-File: ./imagens/icmp_size.png Graphic file (type png)
-<use ./imagens/icmp_size.png>
-Package pdftex.def Info: ./imagens/icmp_size.png  used on input line 160. on in
-put line 160.
-Package pdftex.def Info: Requested size: 207.98012pt x 113.12431pt on input lin
-e 160.
 
 Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
+<./imagens/icmp_size.png, id=88, 594.22pt x 323.2075pt>
+File: ./imagens/icmp_size.png Graphic file (type png)
+<use ./imagens/icmp_size.png>
+Package pdftex.def Info: ./imagens/icmp_size.png  used on input line 179. on in
+put line 179.
+Package pdftex.def Info: Requested size: 207.98012pt x 113.12431pt on input lin
+e 179.
+[9
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+ <./imagens/icmp_size.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Overfull \hbox (9.54607pt too wide) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+
+Overfull \hbox (9.54607pt too wide) in paragraph at lines 195--196
 []\T1/ptm/m/n/10 A frag-men-tação acon-tece quando o tamanho to-tal do data-gra
 ma ex-cede o \T1/ptm/m/it/10 MTU \T1/ptm/m/n/10 disponível.
  []
 
-<./imagens/icmp_frag.png, id=78, 591.20876pt x 373.395pt>
+<./imagens/icmp_frag.png, id=101, 591.20876pt x 373.395pt>
 File: ./imagens/icmp_frag.png Graphic file (type png)
 <use ./imagens/icmp_frag.png>
-Package pdftex.def Info: ./imagens/icmp_frag.png  used on input line 183. on in
-put line 183.
+Package pdftex.def Info: ./imagens/icmp_frag.png  used on input line 204. on in
+put line 204.
 Package pdftex.def Info: Requested size: 206.92616pt x 130.6902pt on input line
- 183.
+ 204.
+[10
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--192
-
- []
-
-[6 <./imagens/icmp_size.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+ <./imagens/icmp_frag.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 
-Overfull \hbox (28.5951pt too wide) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+
+Overfull \hbox (28.5951pt too wide) in paragraph at lines 226--227
 []\T1/ptm/m/n/10 O \T1/ptm/m/it/10 TTL \T1/ptm/m/n/10 muda pois a máquina que e
 stá a ser us-ada está a ten-tar con-tac-tar o \T1/ptm/m/it/10 host \T1/ptm/m/n/
 10 marco.uminho.pt.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-<./imagens/icmp_TTL_1.png, id=95, 590.205pt x 327.2225pt>
-File: ./imagens/icmp_TTL_1.png Graphic file (type png)
-<use ./imagens/icmp_TTL_1.png>
-Package pdftex.def Info: ./imagens/icmp_TTL_1.png  used on input line 211. on i
-nput line 211.
-Package pdftex.def Info: Requested size: 141.6464pt x 78.53pt on input line 211
-.
-<./imagens/icmp_TTL_2.png, id=96, 584.1825pt x 331.2375pt>
-File: ./imagens/icmp_TTL_2.png Graphic file (type png)
-<use ./imagens/icmp_TTL_2.png>
-Package pdftex.def Info: ./imagens/icmp_TTL_2.png  used on input line 215. on i
-nput line 215.
-Package pdftex.def Info: Requested size: 141.6464pt x 80.31235pt on input line 
-215.
-<./imagens/icmp_TTL_3.png, id=97, 585.18625pt x 334.24875pt>
-File: ./imagens/icmp_TTL_3.png Graphic file (type png)
-<use ./imagens/icmp_TTL_3.png>
-Package pdftex.def Info: ./imagens/icmp_TTL_3.png  used on input line 219. on i
-nput line 219.
-Package pdftex.def Info: Requested size: 141.6464pt x 80.90475pt on input line 
-219.
-
-Overfull \hbox (72.26335pt too wide) in paragraph at lines 209--221
- []$[]$$[]$$[]$ 
  []
 
 
@@ -700,512 +712,735 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-[7 <./imagens/icmp_frag.png (PNG copy)> <./imagens/icmp_TTL_1.png (PNG copy)> <
-./imagens/icmp_TTL_2.png (PNG copy)> <./imagens/icmp_TTL_3.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+<./imagens/icmp_TTL_1.png, id=113, 590.205pt x 327.2225pt>
+File: ./imagens/icmp_TTL_1.png Graphic file (type png)
+<use ./imagens/icmp_TTL_1.png>
+Package pdftex.def Info: ./imagens/icmp_TTL_1.png  used on input line 234. on i
+nput line 234.
+Package pdftex.def Info: Requested size: 141.6464pt x 78.53pt on input line 234
+.
+<./imagens/icmp_TTL_2.png, id=114, 584.1825pt x 331.2375pt>
+File: ./imagens/icmp_TTL_2.png Graphic file (type png)
+<use ./imagens/icmp_TTL_2.png>
+Package pdftex.def Info: ./imagens/icmp_TTL_2.png  used on input line 238. on i
+nput line 238.
+Package pdftex.def Info: Requested size: 141.6464pt x 80.31235pt on input line 
+238.
+<./imagens/icmp_TTL_3.png, id=115, 585.18625pt x 334.24875pt>
+File: ./imagens/icmp_TTL_3.png Graphic file (type png)
+<use ./imagens/icmp_TTL_3.png>
+Package pdftex.def Info: ./imagens/icmp_TTL_3.png  used on input line 242. on i
+nput line 242.
+Package pdftex.def Info: Requested size: 141.6464pt x 80.90475pt on input line 
+242.
+
+Overfull \hbox (72.26335pt too wide) in paragraph at lines 232--244
+ []$[]$$[]$$[]$ 
+ []
+
+[11
+
+ <./imagens/icmp_TTL_1.png (PNG copy)> <./imagens/icmp_TTL_2.png (PNG copy)> <.
+/imagens/icmp_TTL_3.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
-<./imagens/icmp_1_id.png, id=110, 584.1825pt x 325.215pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
+
+ []
+
+<./imagens/icmp_1_id.png, id=126, 584.1825pt x 325.215pt>
 File: ./imagens/icmp_1_id.png Graphic file (type png)
 <use ./imagens/icmp_1_id.png>
-Package pdftex.def Info: ./imagens/icmp_1_id.png  used on input line 246. on in
-put line 246.
-Package pdftex.def Info: Requested size: 177.06071pt x 98.56764pt on input line
- 246.
-<./imagens/icmp_2_id.png, id=111, 587.19376pt x 323.2075pt>
+Package pdftex.def Info: ./imagens/icmp_1_id.png  used on input line 270. on in
+put line 270.
+Package pdftex.def Info: Requested size: 260.1712pt x 144.8418pt on input line 
+270.
+<./imagens/icmp_2_id.png, id=127, 587.19376pt x 323.2075pt>
 File: ./imagens/icmp_2_id.png Graphic file (type png)
 <use ./imagens/icmp_2_id.png>
-Package pdftex.def Info: ./imagens/icmp_2_id.png  used on input line 250. on in
-put line 250.
-Package pdftex.def Info: Requested size: 177.06071pt x 97.45616pt on input line
- 250.
+Package pdftex.def Info: ./imagens/icmp_2_id.png  used on input line 275. on in
+put line 275.
+Package pdftex.def Info: Requested size: 260.1712pt x 143.20302pt on input line
+ 275.
+[12
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
+ <./imagens/icmp_1_id.png (PNG copy)> <./imagens/icmp_2_id.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
-[8 <./imagens/icmp_1_id.png (PNG copy)> <./imagens/icmp_2_id.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
-
- []
-
-<./imagens/icmp_1_TTL64_router.png, id=125, 603.25375pt x 324.21124pt>
+<./imagens/icmp_1_TTL64_router.png, id=138, 603.25375pt x 324.21124pt>
 File: ./imagens/icmp_1_TTL64_router.png Graphic file (type png)
 <use ./imagens/icmp_1_TTL64_router.png>
 Package pdftex.def Info: ./imagens/icmp_1_TTL64_router.png  used on input line 
-279. on input line 279.
+306. on input line 306.
 Package pdftex.def Info: Requested size: 141.6464pt x 76.12534pt on input line 
-279.
-<./imagens/icmp_2_TTL64_router.png, id=126, 603.25375pt x 326.21875pt>
+306.
+<./imagens/icmp_2_TTL64_router.png, id=139, 603.25375pt x 326.21875pt>
 File: ./imagens/icmp_2_TTL64_router.png Graphic file (type png)
 <use ./imagens/icmp_2_TTL64_router.png>
 Package pdftex.def Info: ./imagens/icmp_2_TTL64_router.png  used on input line 
-283. on input line 283.
-Package pdftex.def Info: Requested size: 141.6464pt x 76.5967pt on input line 2
-83.
-<./imagens/icmp_3_TTL64_router.png, id=127, 604.2575pt x 322.20375pt>
+310. on input line 310.
+Package pdftex.def Info: Requested size: 141.6464pt x 76.5967pt on input line 3
+10.
+<./imagens/icmp_3_TTL64_router.png, id=140, 604.2575pt x 322.20375pt>
 File: ./imagens/icmp_3_TTL64_router.png Graphic file (type png)
 <use ./imagens/icmp_3_TTL64_router.png>
 Package pdftex.def Info: ./imagens/icmp_3_TTL64_router.png  used on input line 
-287. on input line 287.
+314. on input line 314.
 Package pdftex.def Info: Requested size: 141.6464pt x 75.52614pt on input line 
-287.
+314.
 
-Overfull \hbox (72.26335pt too wide) in paragraph at lines 277--289
+Overfull \hbox (72.26335pt too wide) in paragraph at lines 304--316
  []$[]$$[]$$[]$ 
  []
 
-<./imagens/icmp_1_TTL254_router.png, id=128, 596.2275pt x 324.21124pt>
+<./imagens/icmp_1_TTL254_router.png, id=141, 596.2275pt x 324.21124pt>
 File: ./imagens/icmp_1_TTL254_router.png Graphic file (type png)
 <use ./imagens/icmp_1_TTL254_router.png>
 Package pdftex.def Info: ./imagens/icmp_1_TTL254_router.png  used on input line
- 297. on input line 297.
-Package pdftex.def Info: Requested size: 141.6464pt x 77.02075pt on input line 
-297.
-<./imagens/icmp_2_TTL254_router.png, id=129, 593.21625pt x 323.2075pt>
+ 324. on input line 324.
+Package pdftex.def Info: Requested size: 361.34999pt x 196.49222pt on input lin
+e 324.
+<./imagens/icmp_2_TTL254_router.png, id=142, 593.21625pt x 323.2075pt>
 File: ./imagens/icmp_2_TTL254_router.png Graphic file (type png)
 <use ./imagens/icmp_2_TTL254_router.png>
 Package pdftex.def Info: ./imagens/icmp_2_TTL254_router.png  used on input line
- 301. on input line 301.
-Package pdftex.def Info: Requested size: 141.6464pt x 77.1719pt on input line 3
-01.
-<./imagens/icmp_3_TTL254_router.png, id=130, 593.21625pt x 324.21124pt>
+ 328. on input line 328.
+Package pdftex.def Info: Requested size: 361.34999pt x 196.88504pt on input lin
+e 328.
+<./imagens/icmp_3_TTL254_router.png, id=143, 593.21625pt x 324.21124pt>
 File: ./imagens/icmp_3_TTL254_router.png Graphic file (type png)
 <use ./imagens/icmp_3_TTL254_router.png>
 Package pdftex.def Info: ./imagens/icmp_3_TTL254_router.png  used on input line
- 305. on input line 305.
-Package pdftex.def Info: Requested size: 141.6464pt x 77.41158pt on input line 
-305.
+ 332. on input line 332.
+Package pdftex.def Info: Requested size: 361.34999pt x 197.49648pt on input lin
+e 332.
 
-Overfull \hbox (72.26335pt too wide) in paragraph at lines 295--307
- []$[]$$[]$$[]$ 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[13
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+ <./imagens/icmp_1_TTL64_router.png (PNG copy)> <./imagens/icmp_2_TTL64_router.
+png (PNG copy)> <./imagens/icmp_3_TTL64_router.png (PNG copy)>] [14 <./imagens/
+icmp_1_TTL254_router.png (PNG copy)> <./imagens/icmp_2_TTL254_router.png (PNG c
+opy)> <./imagens/icmp_3_TTL254_router.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
-<./imagens/packet_frag.png, id=131, 840.89156pt x 523.20468pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
+
+ []
+
+<./imagens/packet_frag.png, id=159, 840.89156pt x 523.20468pt>
 File: ./imagens/packet_frag.png Graphic file (type png)
 <use ./imagens/packet_frag.png>
-Package pdftex.def Info: ./imagens/packet_frag.png  used on input line 326. on 
-input line 326.
-Package pdftex.def Info: Requested size: 294.31645pt x 183.12437pt on input lin
-e 326.
-[9 <./imagens/icmp_1_TTL64_router.png (PNG copy)> <./imagens/icmp_2_TTL64_route
-r.png (PNG copy)> <./imagens/icmp_3_TTL64_router.png (PNG copy)> <./imagens/icm
-p_1_TTL254_router.png (PNG copy)> <./imagens/icmp_2_TTL254_router.png (PNG copy
-)> <./imagens/icmp_3_TTL254_router.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Package pdftex.def Info: ./imagens/packet_frag.png  used on input line 354. on 
+input line 354.
+Package pdftex.def Info: Requested size: 420.44475pt x 261.6017pt on input line
+ 354.
+
+Overfull \hbox (59.09476pt too wide) in paragraph at lines 354--355
+ [] 
+ []
+
+[15
+
+ <./imagens/packet_frag.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
 
-Overfull \hbox (12.36635pt too wide) in paragraph at lines 335--336
+Overfull \hbox (12.36635pt too wide) in paragraph at lines 364--365
 []\T1/ptm/m/n/10 Imprima o primeiro frag-mento do data-grama IP seg-men-tado. Q
 ue in-for-mação no cabeçalho
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--338
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--342
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
 
  []
 
-<./imagens/packet_first.png, id=141, 838.63312pt x 521.69907pt>
+<./imagens/packet_first.png, id=169, 838.63312pt x 521.69907pt>
 File: ./imagens/packet_first.png Graphic file (type png)
 <use ./imagens/packet_first.png>
-Package pdftex.def Info: ./imagens/packet_first.png  used on input line 345. on
- input line 345.
-Package pdftex.def Info: Requested size: 293.52599pt x 182.5974pt on input line
- 345.
+Package pdftex.def Info: ./imagens/packet_first.png  used on input line 374. on
+ input line 374.
+Package pdftex.def Info: Requested size: 419.31552pt x 260.84889pt on input lin
+e 374.
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Overfull \hbox (57.96553pt too wide) in paragraph at lines 374--375
+ [] 
+ []
+
+[16
+
+ <./imagens/packet_first.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
 
-[10 <./imagens/packet_frag.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 359--360
-
- []
-
-<./imagens/packet_second.png, id=155, 837.1275pt x 523.20468pt>
-File: ./imagens/packet_second.png Graphic file (type png)
-<use ./imagens/packet_second.png>
-Package pdftex.def Info: ./imagens/packet_second.png  used on input line 363. o
-n input line 363.
-Package pdftex.def Info: Requested size: 292.99901pt x 183.12437pt on input lin
-e 363.
-
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
-
- []
-
-
-Underfull \vbox (badness 3492) has occurred while \output is active []
-
- [11 <./imagens/packet_first.png> <./imagens/packet_second.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
-
- []
-
-File: ./imagens/packet_second.png Graphic file (type png)
-<use ./imagens/packet_second.png>
-Package pdftex.def Info: ./imagens/packet_second.png  used on input line 383. o
-n input line 383.
-Package pdftex.def Info: Requested size: 292.99901pt x 183.12437pt on input lin
-e 383.
 
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
+<./imagens/packet_second.png, id=180, 837.1275pt x 523.20468pt>
+File: ./imagens/packet_second.png Graphic file (type png)
+<use ./imagens/packet_second.png>
+Package pdftex.def Info: ./imagens/packet_second.png  used on input line 393. o
+n input line 393.
+Package pdftex.def Info: Requested size: 418.56273pt x 261.6017pt on input line
+ 393.
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+Overfull \hbox (57.21274pt too wide) in paragraph at lines 393--394
+ [] 
+ []
+
+[17
+
+ <./imagens/packet_second.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
-[12]
 
-LaTeX Warning: Reference `fig:packet_first, fig:packet_second, fig:packet_third
-' on page 13 undefined on input line 404.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
-Overfull \hbox (0.51637pt too wide) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+File: ./imagens/packet_second.png Graphic file (type png)
+<use ./imagens/packet_second.png>
+Package pdftex.def Info: ./imagens/packet_second.png  used on input line 414. o
+n input line 414.
+Package pdftex.def Info: Requested size: 418.56273pt x 261.6017pt on input line
+ 414.
+
+Overfull \hbox (57.21274pt too wide) in paragraph at lines 414--415
+ [] 
+ []
+
+[18
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+[19
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
+
+ []
+
+
+Overfull \hbox (0.51637pt too wide) in paragraph at lines 447--448
 \T1/ptm/m/n/10 equipa-mento. Para sim-pli-ficar, pode in-cluir uma im-agem que 
 ilus-tre de forma clara a topolo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
-<./imagens/rede.png, id=184, 1003.75pt x 751.80875pt>
+<./imagens/rede.png, id=212, 1003.75pt x 751.80875pt>
 File: ./imagens/rede.png Graphic file (type png)
 <use ./imagens/rede.png>
-Package pdftex.def Info: ./imagens/rede.png  used on input line 421. on input l
-ine 421.
+Package pdftex.def Info: ./imagens/rede.png  used on input line 455. on input l
+ine 455.
 Package pdftex.def Info: Requested size: 351.31776pt x 263.137pt on input line 
-421.
+455.
+[20
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
-
- []
-
-[14 <./imagens/rede.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 442--443
+ <./imagens/rede.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 447--448
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+
+ []
+
+[21
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
+
+ []
+
+[22
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
 
-Underfull \vbox (badness 1924) has occurred while \output is active []
-
- [15]
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
-<./imagens/PC1_S1.png, id=208, 489.83pt x 339.2675pt>
+<./imagens/PC1_S1.png, id=238, 489.83pt x 339.2675pt>
 File: ./imagens/PC1_S1.png Graphic file (type png)
 <use ./imagens/PC1_S1.png>
-Package pdftex.def Info: ./imagens/PC1_S1.png  used on input line 471. on input
- line 471.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 471.
-<./imagens/PC1_S2.png, id=209, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/PC1_S1.png  used on input line 507. on input
+ line 507.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 507.
+<./imagens/PC1_S2.png, id=239, 489.83pt x 339.2675pt>
 File: ./imagens/PC1_S2.png Graphic file (type png)
 <use ./imagens/PC1_S2.png>
-Package pdftex.def Info: ./imagens/PC1_S2.png  used on input line 475. on input
- line 475.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 475.
-<./imagens/PC3_S1.png, id=210, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/PC1_S2.png  used on input line 511. on input
+ line 511.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 511.
+[23
+
+ <./imagens/PC1_S1.png (PNG copy)> <./imagens/PC1_S2.png (PNG copy)>]
+<./imagens/PC3_S1.png, id=248, 489.83pt x 339.2675pt>
 File: ./imagens/PC3_S1.png Graphic file (type png)
 <use ./imagens/PC3_S1.png>
-Package pdftex.def Info: ./imagens/PC3_S1.png  used on input line 485. on input
- line 485.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 485.
-<./imagens/PC3_S2.png, id=211, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/PC3_S1.png  used on input line 523. on input
+ line 523.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 523.
+<./imagens/PC3_S2.png, id=249, 489.83pt x 339.2675pt>
 File: ./imagens/PC3_S2.png Graphic file (type png)
 <use ./imagens/PC3_S2.png>
-Package pdftex.def Info: ./imagens/PC3_S2.png  used on input line 489. on input
- line 489.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 489.
-<./imagens/PC5_S1.png, id=212, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/PC3_S2.png  used on input line 527. on input
+ line 527.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 527.
+
+[24
+
+ <./imagens/PC3_S1.png (PNG copy)> <./imagens/PC3_S2.png (PNG copy)>]
+<./imagens/PC5_S1.png, id=255, 489.83pt x 339.2675pt>
 File: ./imagens/PC5_S1.png Graphic file (type png)
 <use ./imagens/PC5_S1.png>
-Package pdftex.def Info: ./imagens/PC5_S1.png  used on input line 499. on input
- line 499.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 499.
-<./imagens/PC5_S2.png, id=213, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/PC5_S1.png  used on input line 539. on input
+ line 539.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 539.
+<./imagens/PC5_S2.png, id=256, 489.83pt x 339.2675pt>
 File: ./imagens/PC5_S2.png Graphic file (type png)
 <use ./imagens/PC5_S2.png>
-Package pdftex.def Info: ./imagens/PC5_S2.png  used on input line 503. on input
- line 503.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 503.
-<./imagens/PC7_S1.png, id=214, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/PC5_S2.png  used on input line 543. on input
+ line 543.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 543.
+
+[25
+
+ <./imagens/PC5_S1.png (PNG copy)> <./imagens/PC5_S2.png (PNG copy)>]
+<./imagens/PC7_S1.png, id=263, 489.83pt x 339.2675pt>
 File: ./imagens/PC7_S1.png Graphic file (type png)
 <use ./imagens/PC7_S1.png>
-Package pdftex.def Info: ./imagens/PC7_S1.png  used on input line 513. on input
- line 513.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 513.
-<./imagens/PC7_S2.png, id=215, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/PC7_S1.png  used on input line 555. on input
+ line 555.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 555.
+<./imagens/PC7_S2.png, id=264, 489.83pt x 339.2675pt>
 File: ./imagens/PC7_S2.png Graphic file (type png)
 <use ./imagens/PC7_S2.png>
-Package pdftex.def Info: ./imagens/PC7_S2.png  used on input line 517. on input
- line 517.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 517.
+Package pdftex.def Info: ./imagens/PC7_S2.png  used on input line 559. on input
+ line 559.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 559.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+[26
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+ <./imagens/PC7_S1.png (PNG copy)> <./imagens/PC7_S2.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
-<./imagens/R_S1.png, id=216, 489.83pt x 339.2675pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 574--575
+
+ []
+
+<./imagens/R_S1.png, id=270, 489.83pt x 339.2675pt>
 File: ./imagens/R_S1.png Graphic file (type png)
 <use ./imagens/R_S1.png>
-Package pdftex.def Info: ./imagens/R_S1.png  used on input line 536. on input l
-ine 536.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 536.
-<./imagens/R_S2.png, id=217, 489.83pt x 339.2675pt>
+Package pdftex.def Info: ./imagens/R_S1.png  used on input line 580. on input l
+ine 580.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 580.
+<./imagens/R_S2.png, id=271, 489.83pt x 339.2675pt>
 File: ./imagens/R_S2.png Graphic file (type png)
 <use ./imagens/R_S2.png>
-Package pdftex.def Info: ./imagens/R_S2.png  used on input line 540. on input l
-ine 540.
-Package pdftex.def Info: Requested size: 135.50624pt x 93.85017pt on input line
- 540.
+Package pdftex.def Info: ./imagens/R_S2.png  used on input line 584. on input l
+ine 584.
+Package pdftex.def Info: Requested size: 271.01248pt x 187.71071pt on input lin
+e 584.
+[27
+
+ <./imagens/R_S1.png (PNG copy)> <./imagens/R_S2.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--614
+
+ []
+
+<./imagens/netstatPC3.png, id=282, 489.83pt x 339.2675pt>
+File: ./imagens/netstatPC3.png Graphic file (type png)
+<use ./imagens/netstatPC3.png>
+Package pdftex.def Info: ./imagens/netstatPC3.png  used on input line 619. on i
+nput line 619.
+Package pdftex.def Info: Requested size: 289.08109pt x 200.2282pt on input line
+ 619.
+<./imagens/netstatRb.png, id=283, 489.83pt x 339.2675pt>
+File: ./imagens/netstatRb.png Graphic file (type png)
+<use ./imagens/netstatRb.png>
+Package pdftex.def Info: ./imagens/netstatRb.png  used on input line 623. on in
+put line 623.
+Package pdftex.def Info: Requested size: 289.08109pt x 200.2282pt on input line
+ 623.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <./imagens/PC1_S1.png (PNG copy)> <./imagens/PC1_S2.png (PNG copy)> <./imag
-ens/PC3_S1.png (PNG copy)> <./imagens/PC3_S2.png (PNG copy)> <./imagens/PC5_S1.
-png (PNG copy)> <./imagens/PC5_S2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+[28
+
+] [29 <./imagens/netstatPC3.png (PNG copy)> <./imagens/netstatRb.png (PNG copy)
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
 
  []
 
-[17 <./imagens/PC7_S1.png (PNG copy)> <./imagens/PC7_S2.png (PNG copy)> <./imag
-ens/R_S1.png (PNG copy)> <./imagens/R_S2.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
+<./imagens/icmp_ida_normal.png, id=301, 893.3375pt x 137.51375pt>
+File: ./imagens/icmp_ida_normal.png Graphic file (type png)
+<use ./imagens/icmp_ida_normal.png>
+Package pdftex.def Info: ./imagens/icmp_ida_normal.png  used on input line 654.
+ on input line 654.
+Package pdftex.def Info: Requested size: 361.34999pt x 55.62352pt on input line
+ 654.
+<./imagens/icmp_volta_normal.png, id=302, 889.3225pt x 120.45pt>
+File: ./imagens/icmp_volta_normal.png Graphic file (type png)
+<use ./imagens/icmp_volta_normal.png>
+Package pdftex.def Info: ./imagens/icmp_volta_normal.png  used on input line 65
+9. on input line 659.
+Package pdftex.def Info: Requested size: 361.34999pt x 48.94003pt on input line
+ 659.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./imagens/rede_ida_volta.png, id=303, 1003.75pt x 751.80875pt>
+File: ./imagens/rede_ida_volta.png Graphic file (type png)
+<use ./imagens/rede_ida_volta.png>
+Package pdftex.def Info: ./imagens/rede_ida_volta.png  used on input line 668. 
+on input line 668.
+Package pdftex.def Info: Requested size: 361.34999pt x 270.65094pt on input lin
+e 668.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30
+
+] [31 <./imagens/icmp_ida_normal.png> <./imagens/icmp_volta_normal.png> <./imag
+ens/rede_ida_volta.png (PNG copy)>]
+<./imagens/eth0_down.png, id=319, 970.62625pt x 68.255pt>
+File: ./imagens/eth0_down.png Graphic file (type png)
+<use ./imagens/eth0_down.png>
+Package pdftex.def Info: ./imagens/eth0_down.png  used on input line 679. on in
+put line 679.
+Package pdftex.def Info: Requested size: 361.34999pt x 25.41017pt on input line
+ 679.
+<./imagens/ospf_ida_emergencia.png, id=322, 882.29625pt x 176.66pt>
+File: ./imagens/ospf_ida_emergencia.png Graphic file (type png)
+<use ./imagens/ospf_ida_emergencia.png>
+Package pdftex.def Info: ./imagens/ospf_ida_emergencia.png  used on input line 
+690. on input line 690.
+Package pdftex.def Info: Requested size: 361.34999pt x 72.35289pt on input line
+ 690.
+<./imagens/ospf_volta_emergencia.png, id=323, 879.285pt x 441.65pt>
+File: ./imagens/ospf_volta_emergencia.png Graphic file (type png)
+<use ./imagens/ospf_volta_emergencia.png>
+Package pdftex.def Info: ./imagens/ospf_volta_emergencia.png  used on input lin
+e 695. on input line 695.
+Package pdftex.def Info: Requested size: 361.34999pt x 181.49548pt on input lin
+e 695.
+<./imagens/netstatRbEmergencia.png, id=324, 1186.4325pt x 834.11626pt>
+File: ./imagens/netstatRbEmergencia.png Graphic file (type png)
+<use ./imagens/netstatRbEmergencia.png>
+Package pdftex.def Info: ./imagens/netstatRbEmergencia.png  used on input line 
+704. on input line 704.
+Package pdftex.def Info: Requested size: 361.34999pt x 254.04234pt on input lin
+e 704.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 6758) has occurred while \output is active []
+
+ [32
+
+ <./imagens/eth0_down.png> <./imagens/ospf_ida_emergencia.png> <./imagens/ospf_
+volta_emergencia.png>]
+<./imagens/icmp_emergencia_missing.png, id=333, 885.3075pt x 289.08pt>
+File: ./imagens/icmp_emergencia_missing.png Graphic file (type png)
+<use ./imagens/icmp_emergencia_missing.png>
+Package pdftex.def Info: ./imagens/icmp_emergencia_missing.png  used on input l
+ine 717. on input line 717.
+Package pdftex.def Info: Requested size: 234.87527pt x 76.69405pt on input line
+ 717.
+<./imagens/icmp_emergencia_has_all.png, id=334, 876.27374pt x 227.85126pt>
+File: ./imagens/icmp_emergencia_has_all.png Graphic file (type png)
+<use ./imagens/icmp_emergencia_has_all.png>
+Package pdftex.def Info: ./imagens/icmp_emergencia_has_all.png  used on input l
+ine 722. on input line 722.
+Package pdftex.def Info: Requested size: 234.87527pt x 61.07216pt on input line
+ 722.
+ [33 <./imagens/netstatRbEmergencia.png (PNG copy)> <./imagens/icmp_emergencia_
+missing.png> <./imagens/icmp_emergencia_has_all.png>]
+
+LaTeX Warning: Reference `netstatRbNormal' on page 34 undefined on input line 7
+31.
+
+<./imagens/eth0_up.png, id=343, 942.52126pt x 61.22874pt>
+File: ./imagens/eth0_up.png Graphic file (type png)
+<use ./imagens/eth0_up.png>
+Package pdftex.def Info: ./imagens/eth0_up.png  used on input line 735. on inpu
+t line 735.
+Package pdftex.def Info: Requested size: 361.34999pt x 23.47456pt on input line
+ 735.
+<./imagens/ospf_normal_ida.png, id=344, 885.3075pt x 465.74pt>
+File: ./imagens/ospf_normal_ida.png Graphic file (type png)
+<use ./imagens/ospf_normal_ida.png>
+Package pdftex.def Info: ./imagens/ospf_normal_ida.png  used on input line 744.
+ on input line 744.
+Package pdftex.def Info: Requested size: 361.34999pt x 190.10184pt on input lin
+e 744.
+<./imagens/ospf_normal_volta.png, id=345, 883.3pt x 84.315pt>
+File: ./imagens/ospf_normal_volta.png Graphic file (type png)
+<use ./imagens/ospf_normal_volta.png>
+Package pdftex.def Info: ./imagens/ospf_normal_volta.png  used on input line 74
+9. on input line 749.
+Package pdftex.def Info: Requested size: 361.34999pt x 34.49217pt on input line
+ 749.
+<./imagens/netstatRbNormal.png, id=346, 1193.45876pt x 839.135pt>
+File: ./imagens/netstatRbNormal.png Graphic file (type png)
+<use ./imagens/netstatRbNormal.png>
+Package pdftex.def Info: ./imagens/netstatRbNormal.png  used on input line 758.
+ on input line 758.
+Package pdftex.def Info: Requested size: 361.34999pt x 254.07278pt on input lin
+e 758.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34
+
+ <./imagens/eth0_up.png> <./imagens/ospf_normal_ida.png> <./imagens/ospf_normal
+_volta.png>] [35 <./imagens/netstatRbNormal.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
 
  []
 
-<./imagens/netstatPC3.png, id=240, 489.83pt x 339.2675pt>
-File: ./imagens/netstatPC3.png Graphic file (type png)
-<use ./imagens/netstatPC3.png>
-Package pdftex.def Info: ./imagens/netstatPC3.png  used on input line 574. on i
-nput line 574.
-Package pdftex.def Info: Requested size: 171.64069pt x 118.87999pt on input lin
-e 574.
-<./imagens/netstatRb.png, id=241, 489.83pt x 339.2675pt>
-File: ./imagens/netstatRb.png Graphic file (type png)
-<use ./imagens/netstatRb.png>
-Package pdftex.def Info: ./imagens/netstatRb.png  used on input line 578. on in
-put line 578.
-Package pdftex.def Info: Requested size: 171.64069pt x 118.87999pt on input lin
-e 578.
 
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
+Underfull \hbox (badness 10000) in paragraph at lines 770--771
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 587--588
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
-
- []
-
-[18 <./imagens/netstatPC3.png (PNG copy)> <./imagens/netstatRb.png (PNG copy)>]
-
-Underfull \hbox (badness 10000) in paragraph at lines 594--595
-
- []
-
-<./imagens/posDeleteRotaDefeito.png, id=252, 663.22781pt x 500.62032pt>
+<./imagens/posDeleteRotaDefeito.png, id=358, 663.22781pt x 500.62032pt>
 File: ./imagens/posDeleteRotaDefeito.png Graphic file (type png)
 <use ./imagens/posDeleteRotaDefeito.png>
 Package pdftex.def Info: ./imagens/posDeleteRotaDefeito.png  used on input line
- 603. on input line 603.
-Package pdftex.def Info: Requested size: 171.64069pt x 129.55473pt on input lin
-e 603.
-<./imagens/posExternos.png, id=253, 668.4975pt x 505.13719pt>
+ 779. on input line 779.
+Package pdftex.def Info: Requested size: 343.28139pt x 259.11713pt on input lin
+e 779.
+<./imagens/posExternos.png, id=359, 668.4975pt x 505.13719pt>
 File: ./imagens/posExternos.png Graphic file (type png)
 <use ./imagens/posExternos.png>
-Package pdftex.def Info: ./imagens/posExternos.png  used on input line 607. on 
-input line 607.
-Package pdftex.def Info: Requested size: 171.64069pt x 129.69852pt on input lin
-e 607.
+Package pdftex.def Info: ./imagens/posExternos.png  used on input line 783. on 
+input line 783.
+Package pdftex.def Info: Requested size: 343.28139pt x 259.39705pt on input lin
+e 783.
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36
+
+] [37 <./imagens/posDeleteRotaDefeito.png> <./imagens/posExternos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 791--792
 
  []
 
-[19 <./imagens/posDeleteRotaDefeito.png> <./imagens/posExternos.png>]
-<./imagens/restauro.png, id=267, 822.07124pt x 581.17125pt>
+<./imagens/restauro.png, id=375, 822.07124pt x 581.17125pt>
 File: ./imagens/restauro.png Graphic file (type png)
 <use ./imagens/restauro.png>
-Package pdftex.def Info: ./imagens/restauro.png  used on input line 628. on inp
-ut line 628.
-Package pdftex.def Info: Requested size: 287.72923pt x 203.41298pt on input lin
-e 628.
+Package pdftex.def Info: ./imagens/restauro.png  used on input line 805. on inp
+ut line 805.
+Package pdftex.def Info: Requested size: 411.0346pt x 290.58492pt on input line
+ 805.
 
-Underfull \hbox (badness 10000) in paragraph at lines 638--639
+Overfull \hbox (49.68462pt too wide) in paragraph at lines 805--806
+ [] 
+ []
+
+[38
+
+ <./imagens/restauro.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 816--817
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--643
+Underfull \hbox (badness 10000) in paragraph at lines 820--821
 
  []
 
-[20 <./imagens/restauro.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+
+Underfull \hbox (badness 10000) in paragraph at lines 835--836
 
  []
 
-<./imagens/redeIPSnovos.png, id=278, 680.5425pt x 493.0922pt>
+<./imagens/redeIPSnovos.png, id=386, 680.5425pt x 493.0922pt>
 File: ./imagens/redeIPSnovos.png Graphic file (type png)
 <use ./imagens/redeIPSnovos.png>
-Package pdftex.def Info: ./imagens/redeIPSnovos.png  used on input line 661. on
- input line 661.
-Package pdftex.def Info: Requested size: 238.19344pt x 172.58485pt on input lin
-e 661.
+Package pdftex.def Info: ./imagens/redeIPSnovos.png  used on input line 839. on
+ input line 839.
+Package pdftex.def Info: Requested size: 476.3765pt x 345.16219pt on input line
+ 839.
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
-
+Overfull \hbox (115.0265pt too wide) in paragraph at lines 839--840
+ [][] 
  []
 
-[21 <./imagens/redeIPSnovos.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
+[39
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 679--680
+] [40 <./imagens/redeIPSnovos.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 683--684
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
+
+ []
+
+[41
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--688
+Underfull \hbox (badness 10000) in paragraph at lines 862--863
 
  []
 
-<./imagens/exercicio3_3.png, id=289, 758.08218pt x 511.15968pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 866--867
+
+ []
+
+<./imagens/exercicio3_3.png, id=408, 758.08218pt x 511.15968pt>
 File: ./imagens/exercicio3_3.png Graphic file (type png)
 <use ./imagens/exercicio3_3.png>
-Package pdftex.def Info: ./imagens/exercicio3_3.png  used on input line 692. on
- input line 692.
-Package pdftex.def Info: Requested size: 265.33273pt x 178.90855pt on input lin
-e 692.
-(./lncs-paper.bbl
+Package pdftex.def Info: ./imagens/exercicio3_3.png  used on input line 870. on
+ input line 870.
+Package pdftex.def Info: Requested size: 379.04016pt x 255.57921pt on input lin
+e 870.
+
+Overfull \hbox (17.69017pt too wide) in paragraph at lines 870--871
+ [] 
+ []
+
+[42
+
+ <./imagens/exercicio3_3.png>] (./lncs-paper.bbl
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
- (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
+
+(/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [22 <./imagens/exercicio3_3.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 706.
- [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 706.
+))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 885.
+ [43
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 885.
  (./lncs-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 706.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 706.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 885.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 885.
 
 
 LaTeX Warning: There were undefined references.
@@ -1213,16 +1448,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 706.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 885.
  ) 
 Here is how much of TeX's memory you used:
- 8043 strings out of 492990
- 120565 string characters out of 6138688
- 210198 words of memory out of 5000000
- 11306 multiletter control sequences out of 15000+600000
- 27742 words of font info for 41 fonts, out of 8000000 for 9000
+ 8149 strings out of 492990
+ 123138 string characters out of 6138688
+ 210036 words of memory out of 5000000
+ 11370 multiletter control sequences out of 15000+600000
+ 30590 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,40p,906b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,8n,40p,1455b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
@@ -1230,10 +1465,10 @@ msy10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on lncs-paper.pdf (23 pages, 14461004 bytes).
+Output written on lncs-paper.pdf (43 pages, 23071314 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 162 named destinations out of 1000 (max. 500000)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 497 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 

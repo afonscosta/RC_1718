@@ -35,9 +35,11 @@ e-mail: \{a78034,a77531,a77870\}@alunos.uminho.pt
 \bibliographystyle{splncs}
 
 \maketitle
+\clearpage
 \section{Introdução}
 Temos que fazer...
 
+\clearpage
 \section{Parte I - Datagramas e Fragmentação}
 
 \subsection{Exercício 1.b.}
@@ -52,19 +54,24 @@ Inicialmente, é feito o envio de um pacote com o TTL = 1, que não recebe respost
 O tamanho do pacote é 74 bytes mas a mensagem tem 60 bytes de tamanho sendo que 14 bytes são para o header do nível 2. Nesta mensagem de 60 bytes estão incluídos 20 bytes de header length (variáveis de acordo com o protocolo IPv4) e nos 40 bytes restantes temos o ICMP header (8 bytes) e ICMP payload (32 bytes), sendo Data resultante de 32 bytes. Vemos que a mensagem de 32 bytes aumentou em 42 bytes até o nível 2 de rede.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/ttlexceeded.png} 
 	\end{center}
-	\caption{\label{fig:ip_source}TTL excedido.}
+	\caption{TTL excedido.}
+	\label{fig:ip_source}
 \end{figure} 
 
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/bytesdata.png} 
 	\end{center}
-	\caption{\label{fig:ip_source}Tamanho do pacote e divisão.}
+	\caption{Tamanho do pacote e divisão.}
+	\label{fig:ip_source}
 \end{figure} 
+
+\clearpage
 
 \subsection{Exercício 1.c.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
@@ -76,13 +83,16 @@ Qual deve ser o valor inicial mínimo do campo TTL para alcançar o destino n4? Ve
 O TTL mínimo necessário para alcançar o destino n4 é 3. Isto é confirmado pelo \textit{wireshark}, que mostra que as tentativas com TTL menor que 3 resultou em \textit{time exceeded message}.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/ttlexceededmessage.png} 
 	\end{center}
-	\caption{\label{fig:ip_source}Mensagem com ICMP retornando TLL excedido.}
+	\caption{Mensagem com ICMP retornando TLL excedido.}
+	\label{fig:ip_source}
 \end{figure} 
 
+\clearpage
 \subsection{Exercício 1.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -93,32 +103,40 @@ Qual o valor médio do tempo de ida-e-volta (Round-Trip Time) obtido?
 O Round-Trip Time é igual à  soma do tempo de envio com o tempo de resposta. Logo, fazendo a soma das médias dos tempos, temos um resultado de Round-Trip Time médio de 0.00015 s (tempo de ida/request) + 0.00005 s (tempo de volta/reply) = 0.00020 s. É de notar que tanto o tempo de request como o de reply se mantêm relativamente constantes. Também se pode analisar este tempo recorrendo ao tempo relativo entre duas mensagens da mesma source.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/roundtime.png} 
 	\end{center}
-	\caption{\label{fig:ip_source}Round-Trip Time.}
+	\caption{Round-Trip Time.}
+	\label{fig:ip_source}
 \end{figure} 
 
 % Exercicio 2 --------------------
 
+\clearpage
 \subsection{Exercício 2.a.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
 Qual é o endereço IP da interface ativa do seu computador?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
 O endereço IP é 192.168.100.216. 
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
 \begin{figure}
 	\begin{center}
 	\includegraphics[scale=0.35]{imagens/ip_source_proof.png} 
 	\end{center}
-	\caption{\label{fig:ip_source}Identificação do endereço IP.}
+	\caption{Identificação do endereço IP.}
+	\label{fig:ip_source}
 \end{figure} 
 
 % ------
 
+\clearpage
 \subsection{Exercício 2.b.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -135,11 +153,13 @@ Assim sendo, analisando a primeira mensagem ICMP, nomeadamente no separador do \
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/icmp_1.png} 
 	\end{center}
-	\caption{\label{fig:icmp_1}Identificação do campo \textit{Protocol}.}
+	\caption{Identificação do campo \textit{Protocol}.}
+	\label{fig:icmp_1}
 \end{figure} 
 
 % ------
 
+\clearpage
 \subsection{Exercício 2.c.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -158,11 +178,13 @@ O cálculo do payload é feito retirando o tamanho do cabeçalho ao tamanho total d
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/icmp_size.png} 
 	\end{center}
-	\caption{\label{fig:icmp_size}Identificação do tamanho do \textit{header} e do \textit{payload}.}
+	\caption{Identificação do tamanho do \textit{header} e do \textit{payload}.}
+	\label{fig:icmp_size}
 \end{figure} 
 
 % ------
 
+\clearpage
 \subsection{Exercício 2.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -181,11 +203,13 @@ Assim sendo, conjugando a informação dos dois parâmetros percebe-se que se o dat
 	\begin{center}
 	\includegraphics[scale=0.35]{./imagens/icmp_frag.png} 
 	\end{center}
-	\caption{\label{fig:icmp_frag}Fragmentação.}
+	\caption{Fragmentação.}
+	\label{fig:icmp_frag}
 \end{figure} 
 
 % ------
 
+\clearpage
 \subsection{Exercício 2.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -223,6 +247,7 @@ O \textit{TTL} muda pois a máquina que está a ser usada está a tentar contactar 
 
 % ------
 
+\clearpage
 \subsection{Exercício 2.f.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -240,13 +265,15 @@ A relação entre \textit{TTL} pode ser observada na figura ~\ref{fig:field_change
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{.8\textwidth}
 		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/icmp_1_id.png}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+		\includegraphics[width=0.9\linewidth]{./imagens/icmp_1_id.png}
+		\caption{Primeiro datagrama.}
+	\end{subfigure}
+	\begin{subfigure}{.8\textwidth}
 		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/icmp_2_id.png}
+		\includegraphics[width=0.9\linewidth]{./imagens/icmp_2_id.png}
+		\caption{Datagrama seguinte.}
 	\end{subfigure}
 	\caption{Identificação.}
 	\label{fig:field_id}
@@ -254,6 +281,7 @@ A relação entre \textit{TTL} pode ser observada na figura ~\ref{fig:field_change
 
 % ------
 
+\clearpage
 \subsection{Exercício 2.g.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -291,17 +319,17 @@ Após estes datagramas é possível identificar um segundo conjunto de datagramas d
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.4\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/icmp_1_TTL254_router.png}
-	\end{subfigure}%
-	\begin{subfigure}{.4\textwidth}
+		\includegraphics[width=1\linewidth]{./imagens/icmp_1_TTL254_router.png}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
 		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/icmp_2_TTL254_router.png}
-	\end{subfigure}%
-	\begin{subfigure}{.4\textwidth}
+		\includegraphics[width=1\linewidth]{./imagens/icmp_2_TTL254_router.png}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
 		\centering
-		\includegraphics[width=0.98\linewidth]{./imagens/icmp_3_TTL254_router.png}
+		\includegraphics[width=1\linewidth]{./imagens/icmp_3_TTL254_router.png}
 	\end{subfigure}
 	\caption{Segundo router com \textit{TTL} = 254.}
 	\label{fig:field_change}
@@ -309,6 +337,7 @@ Após estes datagramas é possível identificar um segundo conjunto de datagramas d
 
 % Exercicio 3 --------------------
 
+\clearpage
 \subsection{Exercício 3.a.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -322,12 +351,13 @@ O pacote inicial tem um \textit{total length} de 3033 bytes. O MTU (\textit{Maxi
 
 \begin{figure}
 	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/packet_frag.png} 
+	\includegraphics[scale=0.50]{./imagens/packet_frag.png} 
 	\end{center}
 	\caption{\label{fig:packet_frag}A MTU é menor do que o tamanho do pacote.}
 \end{figure} 
 
 
+\clearpage
 \subsection{Exercício 3.b.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -341,15 +371,16 @@ A informação de que o datagrama foi fragmentado é dada através da \textit{flag m
 
 \begin{figure}
 	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/packet_first.png} 
+	\includegraphics[scale=0.5]{./imagens/packet_first.png} 
 	\end{center}
 	\caption{\label{fig:packet_first}As flags e o fragment offset confirmam que é o primeiro fragmento.}
 \end{figure} 
 
+\clearpage
 \subsection{Exercício 3.c.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
-Imprima o segundo fragmento do datagrama IP original. Que informação do cabeçalho IP indica que não se trata do 1Âº fragmento? Há mais fragmentos? O que nos permite afirmar isso?
+Imprima o segundo fragmento do datagrama IP original. Que informação do cabeçalho IP indica que não se trata do 1º fragmento? Há mais fragmentos? O que nos permite afirmar isso?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
@@ -359,11 +390,12 @@ Sabe-se que este não é o primeiro segmento pois o datagrama em questão tem \text
 
 \begin{figure}
 	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/packet_second.png} 
+	\includegraphics[scale=0.5]{./imagens/packet_second.png} 
 	\end{center}
 	\caption{\label{fig:packet_second}As flags e o fragment offset confirmam que é o segundo fragmento.}
 \end{figure} 
 
+\clearpage
 \subsection{Exercício 3.d.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -379,11 +411,13 @@ A deteção do último fragmento é feita através da análise da \textit{flag more fr
 
 \begin{figure}
 	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/packet_second.png} 
+	\includegraphics[scale=0.5]{./imagens/packet_second.png} 
 	\end{center}
-	\caption{\label{fig:packet_third}A flag \textit{more fragments} indica que é o último fragmento.}
+	\caption{A flag \textit{more fragments} indica que é o último fragmento.}
+	\label{fig:packet_third}
 \end{figure} 
 
+\clearpage
 \subsection{Exercício 3.e.}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -400,10 +434,11 @@ Entre o primeiro fragmento e o último fragmento não inclusives, o \textit{Total 
 No último fragmento, o \textit{Total Length} é menor ou igual ao MTU, a flag \textit{more fragments} é igual a 0 e o \textit{Fragment offset} é igual a (MTU - \textit{Header Length}) * (n - 1), n sendo o número de fragmentos do datagrama.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
-Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado. ~\ref{fig:packet_first, fig:packet_second, fig:packet_third} 
+
+Verifica-se no datagrama analisado que as \textit{flags} e o \textit{fragment offset} evoluem como indicado [\ref{fig:packet_first}][\ref{fig:packet_second}][\ref{fig:packet_third}]
 
 
-\pagebreak
+\clearpage
 \section{Parte II - Endereçamento e Encaminhamento IP}
 
 \subsection{Exercício 2.1.a}
@@ -422,6 +457,7 @@ A máscara de rede utilizada é 255.255.255.0. Isto deve-se a facto de todos os IP
 	\caption{\label{fig:rede}Topologia da rede.}
 \end{figure} 
 
+\clearpage
 \subsection{Exercício 2.1.b}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -442,6 +478,7 @@ Tratam-se de endereços privados pois o primeiro octeto é 00001010, que em decima
 
 Pela observação da topologia da rede ~\ref{fig:rede}.
 
+\clearpage
 \subsection{Exercício 2.1.c}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -455,72 +492,80 @@ Efetivamente, os \textit{switches} não operam ao nível de rede e como tal a cama
 
 Através do exemplo a cima podemos concluir que não é necessário que este tenha IP pois os pacotes são enviados para o \textit{switch} com base no IP da interface de saída do \textit{router}. Após o datagrama chegar ao \textit{switch} este quanto muito usa endereços MAC por forma a fazer \textit{forward} do datagrama para o \textit{host} respetivo.
 
+\clearpage
 \subsection{Exercício 2.1.d}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
 Usando o comando ping certifique-se que existe conectividade IP entre os laptops dos vários departamentos e os servidores do departamento D (basta certificar-se da conectividade de um laptop por departamento).
 
-\pagebreak
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC1_S1.png}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC1_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC1 e os servidores S1 (à  esquerda) e S2 (à  direita).}
+	\caption{Teste de conectividade entre PC1 e os servidores S1 (à esquerda) e S2 (à direita).}
 	\label{fig:pc1_s}
 \end{figure}
 
+\clearpage
+
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC3_S1.png}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC3_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC3 e os servidores S1 (à  esquerda) e S2 (à  direita).}
+	\caption{Teste de conectividade entre PC3 e os servidores S1 (à esquerda) e S2 (à direita).}
 	\label{fig:pc3_s}
 \end{figure}
 
+\clearpage
+
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC5_S1.png}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC5_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC5 e os servidores S1 (à  esquerda) e S2 (à  direita).}
+	\caption{Teste de conectividade entre PC5 e os servidores S1 (à esquerda) e S2 (à direita).}
 	\label{fig:pc5_s}
 \end{figure}
 
+\clearpage
+
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC7_S1.png}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/PC7_S2.png}
 	\end{subfigure}
-	\caption{Teste de conectividade entre PC7 e os servidores S1 (à  esquerda) e S2 (à  direita).}
+	\caption{Teste de conectividade entre PC7 e os servidores S1 (à esquerda) e S2 (à direita).}
 	\label{fig:pc7_s}
 \end{figure}
 
+
 Tendo em conta os resultados do comando \textit{ping} pode-se afirmar que existe conetividade entre os \textit{hosts} dos diferentes departamentos e os servidores do departamento D.
 
+\clearpage
 \subsection{Exercício 2.1.e}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -530,11 +575,11 @@ Verifique se existe conectividade IP do router de acesso para os servidores S1 e
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/R_S1.png}
-	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{./imagens/R_S2.png}
 	\end{subfigure}
@@ -547,10 +592,11 @@ Tendo em conta os resultados obtidos em ~\ref{fig:r_s}, podemos afirmar que exit
 
 % Exercicio 2 --------------------
  
+\clearpage
 \subsection{Exercício 2.2.a}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
-Execute o comando netstat Â¿rn por forma a poder consultar a tabela de encaminhamento unicast (IPv4). Inclua no seu relatório as tabelas de encaminhamento obtidas; interprete as várias entradas de cada tabela. Se necessário, consulte o manual respetivo ( man netstat ).
+Execute o comando netstat -rn por forma a poder consultar a tabela de encaminhamento unicast (IPv4). Inclua no seu relatório as tabelas de encaminhamento obtidas; interprete as várias entradas de cada tabela. Se necessário, consulte o manual respetivo ( man netstat ).
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
@@ -568,23 +614,154 @@ Todas as outras redes existentes encontram-se na tabela com o endereço de encami
 
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{.8\textwidth}
 		\centering
-		\includegraphics[width=0.95\linewidth]{./imagens/netstatPC3.png}
+		\includegraphics[width=1\linewidth]{./imagens/netstatPC3.png}
 	\end{subfigure}
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{.8\textwidth}
 		\centering
-		\includegraphics[width=0.95\linewidth]{./imagens/netstatRb.png}
+		\includegraphics[width=1\linewidth]{./imagens/netstatRb.png}
 	\end{subfigure}
-	\caption{Tabelas de encaminhamento do PC3 (à  esquerda) e do Rb (à  direita).}
+	\caption{Tabelas de encaminhamento do PC3 (à esquerda) e do Rb (à direita).}
 	\label{fig:r_s}
 \end{figure}
 
+\clearpage
 \subsection{Exercício 2.2.b}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+Diga, justificando, se está a ser usado encaminhamento estático ou
+dinâmico (sugestão: analise que processos estão a correr em cada
+sistema).
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+A rede implementada no CORE tem, efetivamente, os dois tipos de encaminhamento, isto é, estático e dinâmico.
+
+Em cada uma das tabelas de encaminhamento dos diferentes \textit{hosts} que constituem a rede apenas são visíveis duas rotas que se mantém ao longo do tempo. Essas entradas da tabela representam, nomeadamente, a rota por defeito e a rota de tráfego da rede interna, que são sempre rotas estáticas.
+
+Na rede core da topologia, isto é, no anel de rede criado entre os \textit{routers} Ra, Rb, Rc e Rb é implementado encaminhamento dinâmico através do protocolo OSPF. Este protocolo é usado para realizar o reconhecimento da rede e consequentemente definir as rotas que os pacotes devem tomar.
+
+Desta forma, é possível reparar que mal iniciamos o fluxo na rede no emulador \emph{CORE}, a tabela de encaminhamento dos \textit{routers} encontram-se apenas com três rotas predefinadas (estáticas), correspondentes às três interfaces que cada \textit{router} interliga. Passados alguns minutos é possível observar que a tabela de encaminhamento obtém novas entradas (referência da imagem com as duas tabelas do netstat). Esta observação leva-nos a pensar que as novas entradas possam ser resultado de encaminhamento dinâmico. De forma a provar a veracidade dessa conjetura, tentou-se perceber se dada alguma falha na rede, por exemplo, com um \textit{router} a desligar uma das suas interfaces, se esta consegue ajustar as diferentes rotas de encaminhamento de forma a suprimir o erro ocorrido.
+
+Assim sendo, utilizou-se o PC3 e o S1, como componentes sobre os quais se averiguaria o comportamento dos pacotes quando feito um \textit{ping} do \textit{host} PC3 para o \textit{host} S1. O comando \textit{ping} é realizado às \textbf{10:19:00h}. Consequentemente é possível perceber que, ao analisar o tráfego capturado pelo \textit{Wireshark} no IP 10.0.3.2 da interface do \textit{router} Ra, que a partir dessa mesma hora (\textbf{10:19:00h}) existe passagem de pacotes de "ida" no \textit{router} Ra, isto é, pacotes que têm como \textit{source} o IP 10.0.7.20 e como \textit{destination} o IP 10.0.9.10 [\ref{fig:icmp_normal}]. Da mesma forma, se analisarmos o tráfego capturado pelo \textit{Wireshark} no IP 10.0.1.2 do \textit{router} Rc, percebe-se que por volta da mesma hora (\textbf{10:19:00h}) existe pacotes \emph{ICMP} com sentido contrário, isto é, pacotes que têm como \textit{source} o IP 10.0.9.10 e como \textit{destination} o IP 10.0.7.20 [\ref{fig:icmp_normal}]. Após esta análise conclui-se que o tráfego se encontra normalizado e é realizado pelo trajeto apresentado na imagem [\ref{fig:rede_ida_volta}]. Efetivamente, a verde está demarcado o percurso intitulado de "ida", ou seja, percurso pelo qual passam os pacotes enviados do \textit{host} PC3 para o \textit{host} S1. A laranja temos o percurso de "volta", ou seja, é o percurso pelo qual passsam os pacotes enviados de S1 para o PC3.
+
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./imagens/icmp_ida_normal.png}
+		\caption{Pacotes ICMP no percurso de "ida".}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./imagens/icmp_volta_normal.png}
+		\caption{Pacotes ICMP no percurso de "volta".}
+	\end{subfigure}
+	\caption{Pacotes ICMP a circular na rede.}
+	\label{fig:icmp_normal}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{./imagens/rede_ida_volta.png}
+	\caption{Percurso de "ida" (a verde) e percurso de "volta" (a laranja).}
+	\label{fig:rede_ida_volta}
+\end{figure}
+
+\clearpage
+
+De seguida, tentou-se realizar uma perturbação no percurso anteriormente estabelecido de forma a provocar ajustes nas rotas de encaminhamento definidas até ao momento pelos diversos \textit{routers}. Para tal, colocou-se a interface eth0, que corresponde ao IP 10.0.0.1, do \textit{router} Ra \textit{down}, com o comando \textbf{ifconfig eth0 down}. Desta forma, os pacotes que vão do PC3 para o S1 deixam de conseguir seguir a rota definida até ao momento. Esta ação foi realizada às \textbf{10:19:14h} [\ref{fig:eth0_down}].
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{./imagens/eth0_down.png}
+	\caption{Desligada a interface eth0 do \textit{router} Ra.}
+	\label{fig:eth0_down}
+\end{figure}
+
+Consequentemente, por volta das \textbf{10:19:14h}, no tráfego capturado no \textit{Wireshark} das interfaces dos dois \textit{routers}, surge uma afluência significativa de pacotes com o protocolo OSPF [\ref{fig:ospf_emergencia}]. Efetivamente, isto acontece pois como houve uma perturbação na rede, os \textit{routers} precisam de entender que parte da rede ficou afetada com essa perturbação e como podem solucionar o problema (caso ele existe, que é o caso). Para tal usam o \textbf{protocolo OSPF} para recalcular e atualizar a tabela de encaminhamento de forma a ajustarem-se à mudança que ocorreu. Como resultado à alteração por nós imposta, o \textit{router} Rb atualiza a sua tabela de encaminhamento de acordo com a imagem \ref{fig:netstatRbEmergencia}.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./imagens/ospf_ida_emergencia.png}
+		\caption{Troca de pacotes OSPF na rota de "ida" (linhas a preto).}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./imagens/ospf_volta_emergencia.png}
+		\caption{Troca de pacotes OSPF na rota de "volta" (linhas a preto).}
+	\end{subfigure}
+	\caption{Pacotes ICMP a circular na rede.}
+	\label{fig:ospf_emergencia}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{./imagens/netstatRbEmergencia.png}
+	\caption{Atualização da tabela de encaminhamento de Rb.}
+	\label{fig:netstatRbEmergencia}
+\end{figure}
+
+\pagebreak
+
+De seguida, as tabelas de encaminhamento encontram-se atualizadas e o tráfego normaliza. Através da análise do tráfego capturado pelo \textit{Wireshark} percebe-se que este apenas é feito pelo \textit{router} Rc, ou seja, tanto os pacotes enviados do PC3 para o S1, como os pacotes enviados do S1 para o PC3 utilizam a mesma rota [\ref{fig:icmp_emergencia}].
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=0.65\linewidth]{./imagens/icmp_emergencia_missing.png}
+		\caption{Inexistência de tráfego no \textit{router} Ra.}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=0.65\linewidth]{./imagens/icmp_emergencia_has_all.png}
+		\caption{Pacotes de "ida" e de "volta" passam por Rc.}
+	\end{subfigure}
+	\caption{Pacotes a fluir depois do reajuste da rede (\textbf{10:19:14h}).}
+	\label{fig:icmp_emergencia}
+\end{figure}
+
+\clearpage
+
+Posteriormente, resta voltar a normalizar as ligações, isto é, voltar a colocar \textit{up} o \textit{eth0} do \textit{router} Ra (\textbf{ifconfig eth0 up}). Este comando foi realizado às \textbf{10:19:36} [\ref{fig:eth0_up}]. Do mesmo modo, por volta da mesma hora, volta a existir troca de pacotes OSPF [\ref{fig:ospf_normal}], com o objetivo de ajustar as tabelas de encaminhamento dos diferentes \textit{routers}. A transmissão dos pacotes passa a ser feita pelos trajetos originais, isto é, os pacotes de "ida" (10.0.7.2 -> 10.0.9.10) passam por Ra e os pacotes de "volta" (10.0.9.10 -> 10.0.7.20) passam por Rc [\ref{fig:rede_ida_volta}]. De forma a certificar que tudo voltou ao normal basta acedermos às novas tabelas de endereçamento e perceber que estas encontram-se agora iguais às tabelas iniciais [\ref{netstatRbNormal}].
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{./imagens/eth0_up.png}
+	\caption{Reposta a interface eth0 do \textit{router} Ra (\textbf{10:19:36h}).}
+	\label{fig:eth0_up}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./imagens/ospf_normal_ida.png}
+		\caption{Troca de pacotes OSPF em Ra.}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{./imagens/ospf_normal_volta.png}
+		\caption{Troca de pacotes OSPF em Rc.}
+	\end{subfigure}
+	\caption{Troca de pacotes OSPF por forma a reestabelecer a conetividade incial.}
+	\label{fig:ospf_normal}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{./imagens/netstatRbNormal.png}
+	\caption{Atualização da tabela de encaminhamento do Rb.}
+	\label{fig:netstatRbNormal}
+\end{figure}
+
+
+\clearpage
 \subsection{Exercício 2.2.c}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -597,11 +774,11 @@ Ao remover a rota 0.0.0.0 o router fica sem saber o que fazer quando encontra pa
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.95\linewidth]{./imagens/posDeleteRotaDefeito.png}
 	\end{subfigure}
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.95\linewidth]{./imagens/posExternos.png}
 	\end{subfigure}
@@ -609,6 +786,7 @@ Ao remover a rota 0.0.0.0 o router fica sem saber o que fazer quando encontra pa
 	\label{fig:r_s}
 \end{figure}
 
+\clearpage
 \subsection{Exercício 2.2.d e 2.2.e}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -624,15 +802,16 @@ Foram adicionadas as rotas correspondentes aos comandos: \textbf{route add -net 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 \begin{figure}
 	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/restauro.png} 
+	\includegraphics[scale=0.5]{./imagens/restauro.png} 
 	\end{center}
-	\caption{\label{fig:packet_third}A conexão é restabelecida com a nova tabela de reencaminhamento.}
+	\caption{\label{fig:packet_third_2}A conexão é restabelecida com a nova tabela de reencaminhamento.}
 \end{figure} 
 
 
 
 % Exercicio 3 --------------------
 
+\clearpage
 \subsection{Exercício 3.1}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -656,13 +835,13 @@ Considere que dispõe apenas do endereço de rede IP 172.16.0.0/16, defina um novo
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
-	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/redeIPSnovos.png} 
-	\end{center}
+	\centering
+	\includegraphics[scale=0.7]{./imagens/redeIPSnovos.png} 
 	\caption{\label{fig:ping}As subredes mantêm a capacidade de enviar pacotes entre si.}
 \end{figure} 
 
 
+\clearpage
 \subsection{Exercício 3.2}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -674,6 +853,7 @@ A máscara da rede IP é 255.255.0.0 , sendo a máscara para cada subrede 255.255.2
 
 
 
+\clearpage
 \subsection{Exercício 3.3}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
@@ -685,16 +865,16 @@ Recorrendo ao comando \textit{ping}, verificou-se que a conetividade IP das subr
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\ 
 
-
 \begin{figure}
 	\begin{center}
-	\includegraphics[scale=0.35]{./imagens/exercicio3_3.png} 
+	\includegraphics[scale=0.5]{./imagens/exercicio3_3.png} 
 	\end{center}
 	\caption{\label{fig:ping}As subredes mantêm a capacidade de enviar pacotes entre si.}
 \end{figure} 
 
 
 
+\clearpage
 \section{Conclusions}
 Neste trabalho...
 
