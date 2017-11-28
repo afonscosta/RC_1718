@@ -8,4 +8,4 @@ R: Analisando a captura de dados do Wireshark, verificou-se o envio de dois paco
 
 2) Analise o conteúdo de um pedido ARP gratuito e identifique em que se distingue dos restantes pedidos ARP. Registe a trama Ethernet correspondente. Qual o resultado esperado face ao pedido ARP gratuito enviado?
 
-R: O pacote de pedido ARP Gratuito difere dos restantes em que o IP de envio é igual ao IP destino. Como o destino da trama Ethernet é ff:ff:ff:ff:ff:ff (endereço de broadcast), este irá enviar o pacote a todos os hosts da rede. Estes, por sua vez, ao receber o pacote, irão atualizar as respetivas tabelas ARP com do MAC em questão com o novo IP.
+R: O pacote de pedido ARP Gratuito difere dos restantes em que o IP de envio é igual ao IP destino. Como o destino da trama Ethernet é ff:ff:ff:ff:ff:ff (endereço de broadcast), este irá enviar o pacote a todos os hosts da rede. Estes, por sua vez, ao receber o pacote, irão atualizar as respetivas tabelas ARP no MAC em questão com o novo IP.
