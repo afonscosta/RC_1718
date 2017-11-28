@@ -1,0 +1,26 @@
+3 
+
+  1) 
+    Destination: Vmware_d2:19:f0 (00:0c:29:d2:19:f0)
+    Source: LcfcHefe_66:65:4a (68:f7:28:66:65:4a)
+      
+  2) O MAC destination refere ao comutador da rede local
+     O MAC source refere à máquina que enviou o pedido
+     Como o ao nível dos dados apenas comunica com máquinas adjacentes, 
+
+  3) 0x0800, indica tipo IPv4
+
+  4) 54 bytes de 386 bytes
+     overhead percentual de (54/386) * 100 = 14%
+
+  5) 
+     O valor hexadecimal FCS é 0x0d0a0d0a (devia ser 0x971613cf)
+     Disto conclui que a NIC não gerou código de verificação de erros. Na verdade, se a trama estivesse incorreta, nem sequer teria sido recebido o pacote.
+
+  6) Address: Vmware_d2:19:f0 (00:0c:29:d2:19:f0)
+     Corresponde ao comutador da rede local visto que ao nível dos dados, apenas se comunica com as máquinas adjacentes através do protocolo ARP
+
+  7) Address: LcfcHefe_66:65:4a (68:f7:28:66:65:4a)
+     Corresponde à máquina que originalmente enviou o pedido HTTP GET
+
+  8) Na trama está contido um protocolo Ethernet II, no qual está contido um protocolo IPv4, no qual está contido um protocolo TCP, no qual está contido um protocolo Hypertext Transfer Protocol
