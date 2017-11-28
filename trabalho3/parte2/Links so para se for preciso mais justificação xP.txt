@@ -1,0 +1,2 @@
+http://www.tldp.org/LDP/nag/node78.html
+http://www.omnisecu.com/tcpip/what-is-gratuitous-arp.php
