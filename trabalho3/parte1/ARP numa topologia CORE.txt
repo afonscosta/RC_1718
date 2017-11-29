@@ -10,3 +10,7 @@
 
   18) Depois de feito o ping de n1 para n2, a tabela ARP de n1 passou a conhecer o MAC address relativo à interface eth0 do router n2. Do mesmo modo, o router n2 passou a conhecer o router n1 na interface eth0.
       Depois de fazer ping de n1 para n3, a tabela ARP de n1 manteve-se, uma vez que o protocolo ARP só permite conhecer as máquinas adjacentes. No entanto, o router n2, como foi utilizado para encaminhamento, passou a conhecer a interface eth0 do router n3 que, por sua vez passou a conhecer a interface eth1 do router n2.
+
+  19) n1 conhecia, pelo ARP, o endereço IP da interface do router n2. Quando, na tabela ARP, removemos a entrada conhecida e adicionamos outra, com o mesmo IP mas com um endereço Ethernet inexistente, os pacotes são enviados para o endereço inexistente (no caso, utilizou-se 00:00:00:aa:00:04). Este envio é errado pois aquele endereço não existe, havendo perda total de pacotes. Este erro não é corrigido pois é suposto a tabela ARP estar correta.
+
+  20) Como esperado, a tabela ARP de n6 passou a conter o endereço Ethernet e IP do host 5. Como fazem parte da mesma sub-rede 10.0.2.x/24 e estão diretamente ligados, seria expectável que isto acontecesse. De facto, o switch não tem qualquer impacto nas tabelas ARP, uma vez que funciona apenas como redirecionador de pacotes, não tendo interferência àquele nível de rede.
