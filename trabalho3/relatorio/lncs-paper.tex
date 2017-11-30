@@ -50,11 +50,18 @@ Anote os endereços MAC de origem e de destino da trama capturada.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+\textit{Destination}: Vmware_d2:19:f0 (00:0c:29:d2:19:f0)
+\textit{Source}: LcfcHefe_66:65:4a (68:f7:28:66:65:4a)
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/MACAddrGET.pdf} 
+  \end{center}
+  \caption{Endereços MAC do HTTP GET.}
+  \label{fig:ip_source}
+\end{figure} 
 
 \clearpage
 \subsection{Exercício 2}
@@ -64,25 +71,32 @@ Identifique a que sistemas se referem. Justifique.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+O MAC \textit{destination} refere ao comutador da rede local.
+O MAC \textit{source} refere à máquina que enviou o pedido; neste caso, o computador utilizado.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+Ao nível da ligação de dados, as máguinas apenas comunicam com máguinas adjacentes.
 
 \clearpage
 \subsection{Exercício 3}
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
-Qual o valor hexadecimal do campo Type da trama Ethernet? O que significa?
+Qual o valor hexadecimal do campo \textit{Type} da trama Ethernet? O que significa?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+\textit{Type}: 0x0800; Este valor indica o tipo IPv4.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/MACAddrGET.pdf} 
+  \end{center}
+  \caption{O campo \textit{Type} da trama.}
+  \label{fig:ip_source}
+\end{figure} 
 
 \clearpage
 \subsection{Exercício 4}
@@ -92,7 +106,7 @@ Quantos bytes são usados desde o início da trama até ao caractere ASCII “G” do m
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Até ao caractere "G", existem 54 bytes dos 386 bytes do método, resultando num overhead percentual de (54/386) * 100 = 14\%
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
