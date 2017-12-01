@@ -470,11 +470,51 @@ Faça ping de n1 para n4. Verifique com a opção tcpdump como flui o tráfego nas d
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+A rede criada no CORE encontra-se ligada por um \textbf{repetidor}, que quando recebe tramas de um determinado \textit{host} apenas reproduz essa informação para todas as redes a qual se encontram ligadas e como tal pode existir colisões entre diferentes tramas. Deste modo, quando é feito \emph{ping de n1 para n4} todos os restantes \textit{hosts} ficam à espera que as ligações fiquem livres para poderem voltar a enviar tramas. Efetivamente, ficam à escuta do que vai passando na rede. Consequentemente o \textit{tcpdump} apresenta os pacotes que estão a ser enviados do n1 para o n4, além de que mais nenhuma trama circula na rede a não ser as trocadas entre o n1 e o n2.
 
+Concluindo, os resultados apresentados verificam o modo como as colisões são evitadas, ou seja, é utilizado o protocolo CSMA/CD para resolver as colisões neste domínio de colisão em específico \cite{wiki:csma}.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.2]{./imagens/rede_23_repetidor.png} 
+  \end{center}
+	\caption{Topologia de rede que utiliza um repetidor.}
+  \label{fig:rede_23_repetidor}
+\end{figure} 
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n1_repetidor.png} 
+  \end{center}
+	\caption{\texttt{Ping} realizado do \textit{host} n1 para o \textit{host} n4.}
+  \label{fig:n1_repetidor}
+\end{figure} 
+
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n2_tcpdump_repetidor.png} 
+  \end{center}
+	\caption{\texttt{Tcpdump} no \textit{host} n2.}
+  \label{fig:n2_repetidor}
+\end{figure} 
+
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n3_tcpdump_repetidor.png} 
+  \end{center}
+	\caption{\texttt{Tcpdump} no \textit{host} n3.}
+  \label{fig:n3_repetidor}
+\end{figure} 
+
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n4_tcpdump_repetidor.png} 
+  \end{center}
+	\caption{\texttt{Tcpdump} no \textit{host} n4.}
+  \label{fig:n4_repetidor}
+\end{figure} 
 
 \clearpage
 \subsection{Exercício 2}
@@ -484,15 +524,53 @@ Na topologia de rede substitua o hub por um switch. Repita os procedimentos que 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Substituindo o repetidor pelo \textit{switch} as colisões são evitadas. Essa diferença é resultado da metodologia na qual o \textit{switch} acenta. Efetivamente, este aprende a rede na qual se encontra inserido e constrói uma tabela com os endereços MAC correspondendo-os às respetivas portas a que os sistemas se encontram ligados. Assim quando o \textit{host} n1 realiza \textit{ping} no \textit{host} n4, o \textit{switch} reencaminha o tráfego diretamente na porta na qual o n4 está ligado. Desta forma colisões entre diferentes segmentos deixam de ser possíveis visto estarem efetivamento separados. Como resultado, o \textit{tcpdump} que se encontra a correr no \textit{host} n2 e n3, não apresenta qualquer tráfego resultante do \textit{ping} entre o \textit{host} n1 e n4, pois o tráfego encontra-se isolado destes sistemas \cite{wiki:comutador}.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.2]{./imagens/rede_23_comutador.png} 
+  \end{center}
+	\caption{Topologia de rede que utiliza um comutador.}
+  \label{fig:rede_23_comutador}
+\end{figure} 
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n1_comutador.png} 
+  \end{center}
+	\caption{\texttt{Ping} realizado do \textit{host} n1 para o \textit{host} n4.}
+  \label{fig:n1_comutador}
+\end{figure} 
+
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n2_tcpdump_comutador.png} 
+  \end{center}
+	\caption{\texttt{Tcpdump} no \textit{host} n2.}
+  \label{fig:n2_comutador}
+\end{figure} 
+
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n3_tcpdump_comutador.png} 
+  \end{center}
+	\caption{\texttt{Tcpdump} no \textit{host} n3.}
+  \label{fig:n3_comutador}
+\end{figure} 
+
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.3]{./imagens/n4_tcpdump_comutador.png} 
+  \end{center}
+	\caption{\texttt{Tcpdump} no \textit{host} n4.}
+  \label{fig:n4_comutador}
+\end{figure} 
 
 \clearpage
 
-\section{Conclusions}
+\section{Conclusões}
 Neste trabalho...
 
 %BIBLIOGRAFIA

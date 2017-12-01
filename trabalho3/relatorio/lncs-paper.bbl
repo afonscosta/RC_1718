@@ -6,4 +6,16 @@ Plummer, D.C.:
   network protocol addresses to 48.bit {Ethernet} address for transmission on
   {Ethernet} hardware (1982)
 
+\bibitem{wiki:csma}
+Wikipedia:
+\newblock Csma/cd.
+\newblock \url{https://pt.wikipedia.org/wiki/CSMA/CD} (2017) [Online; acedido a
+  1-Dezembro-2017].
+
+\bibitem{wiki:comutador}
+Wikipedia:
+\newblock Comutador (redes).
+\newblock \url{https://pt.wikipedia.org/wiki/Comutador_(redes)} (2017) [Online;
+  acedido a 1-Dezembro-2017].
+
 \end{thebibliography}
