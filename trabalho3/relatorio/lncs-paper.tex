@@ -3,7 +3,7 @@
 \usepackage[T1]{fontenc}
 
 % Comentar para not MAC Users
-\usepackage[applemac]{inputenc}
+%\usepackage[applemac]{inputenc}
 
 \usepackage{a4}
 %\usepackage[margin=3cm,nohead]{geometry}
@@ -11,6 +11,7 @@
 \usepackage{graphicx}
 \usepackage{fancyvrb}
 \usepackage{amsmath}
+\usepackage[bookmarks=false]{hyperref}
 %\renewcommand{\baselinestretch}{1.5}
 
 \begin{document}
@@ -36,7 +37,7 @@ e-mail: \{a78034,a77531,a77870\}@alunos.uminho.pt
 Resumo...
 \end{abstract}
 
-\section{Introduction}
+\section{Introdução}
 
 
 
@@ -50,8 +51,8 @@ Anote os endereços MAC de origem e de destino da trama capturada.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-\textit{Destination}: Vmware_d2:19:f0 (00:0c:29:d2:19:f0)
-\textit{Source}: LcfcHefe_66:65:4a (68:f7:28:66:65:4a)
+\textit{Destination}: Vmware\_d2:19:f0 (00:0c:29:d2:19:f0)
+\textit{Source}: LcfcHefe\_66:65:4a (68:f7:28:66:65:4a)
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -176,10 +177,19 @@ Observe o conteúdo da tabela ARP. Diga o que significa cada uma das colunas?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+A versão linux instalada na máquina na qual este exercício foi realizado não tem o pacote \textit{ARP} disponível pois este foi deprecado. Contudo, o comando \texttt{ip neigh}, realiza a mesma operação, isto é, permite observar o conteúdo da tabela \textit{ARP}.
 
+Desta forma, consultando o manuel referente ao comando a cima mencionado (\texttt{man ip-neighbour}), percebe-se que o \textit{output} é segmentado em 4 colunas. A primeira indica o endereço IP da interface da máquina na vizinhança, à qual se refere a entrada na tabela. A segunda coluna, traduz a interface na qual o \textit{host} da vizinhança se encontra ligado. A terceira coluna apresenta o endereço MAC do \textit{host} a que esta entrada na tabela se refere. Por último, a quarta coluna indica o estado da ligação entre os dois sistemas.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.5]{./imagens/ip_neigh.png} 
+  \end{center}
+	\caption{Manual do comando \texttt{ip neigh}.}
+  \label{fig:ip_neigh}
+\end{figure} 
 
 
 \clearpage
@@ -190,10 +200,25 @@ Qual é o valor hexadecimal dos endereços origem e destino na trama Ethernet que 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+Endereço origem: 2c:60:0c:6b:85:44
 
+Endereço destino: ff:ff:ff:ff:ff:ff (broadcast)
+
+A estratégia utilizada para resolver o exercício foi fazendo \textit{ping} para outra máquina do laboratório, nomeadamente, 192.168.100.205.
+
+Desta forma, a máquina que estava a relizar o \textit{ping} apenas tinha a informação do IP da interface da máquina destino. No entanto, dado que o \textit{host} destino se encontra na vizinhança da máquina de origem, é possível enviar a trama sem que esta vá ao AP. Para tal é usado o protocolo ARP por forma a descobrir o MAC do \textit{host} para que a comunicação seja feita diretamente.
+
+Deste modo, é enviado para todos os sistemas que se encontram na mesma rede local um ARP \textit{request}, por forma a descobrir o endereço MAC a que pertence o IP 192.168.100.205, daí o endereço de destino ser ff:ff:ff:ff:ff:ff. 
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.6]{./imagens/arp_request.png} 
+  \end{center}
+	\caption{Pedido \textit{ARP} enviado em \textit{broadcast}.}
+  \label{fig:arp_request}
+\end{figure} 
 
 
 \clearpage
@@ -204,10 +229,19 @@ Qual o valor hexadecimal do campo tipo da trama Ethernet? O que indica?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+\texttt{Type: ARP (0x0806)} 
 
+Significa que a trama \textit{Ethernet} leva encapsulado o protocolo ARP.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.6]{./imagens/arp_request_type.png} 
+  \end{center}
+	\caption{Tipo da trama \textit{Ethernet}.}
+  \label{fig:arp_request_type}
+\end{figure} 
 
 
 \clearpage
@@ -218,10 +252,22 @@ Qual o valor do campo ARP opcode? O que especifica?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+\texttt{Opcode: request (1)}
 
+Segundo o padrão descrito no RFC826 \cite{RFC0826}:
+	\emph{"The opcode is to determine if this is a request (which may cause a reply) or a reply to a previous request.  16 bits for this is overkill, but a flag (field) is needed."}
+
+Desta forma, pode-se afirmar que a trama em questão representa um ARP \textit{request}.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.6]{./imagens/arp_request_opcode.png} 
+  \end{center}
+	\caption{Valor do \textit{opcode} do ARP \textit{request}.}
+  \label{fig:arp_request_opcode}
+\end{figure} 
 
 
 \clearpage
@@ -232,10 +278,29 @@ Identifique que tipo de endereços estão contidos na mensagem ARP? Que conclui?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+Os endereços contidos na mensagem ARP são os seguintes:
 
+\begin{itemize}
+	\item Sender MAC address: 2c:60:0c:6b:85:44
+
+	\item Sender IP address: 192.168.100.198
+
+	\item Target MAC address: 00:00:00:00:00:00 
+
+	\item Target IP address: 192.168.100.254
+\end{itemize}
+
+Efetivamente, o facto de o \textit{Target MAC address} estar todo a zero significa que está à espera de ser preenchido, assim que o \textit{Target IP address} faça correspondência na máquina de destino.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.6]{./imagens/arp_request_addr.png} 
+  \end{center}
+	\caption{Endereços contidos na mensagem ARP.}
+  \label{fig:arp_request_addr}
+\end{figure} 
 
 
 \clearpage
@@ -246,10 +311,7 @@ Explicite que tipo de pedido ou pergunta é feita pelo host de origem?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
-
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
-
+O \textit{host} de origem quer saber qual o endereço MAC da máquina que tem como IP da interface 192.168.100.205.
 
 
 \clearpage
@@ -260,10 +322,19 @@ Qual o valor do campo ARP opcode? O que especifica?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+\texttt{Opcode: reply (2)}
 
+Este valor significa que esta trama é a resposta a uma trama ARP \textit{request} recebida anteriormente.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.6]{./imagens/arp_reply_opcode.png} 
+  \end{center}
+	\caption{Campo \textit{opcode} do ARP \textit{reply}.}
+  \label{fig:arp_reply_opcode}
+\end{figure} 
 
 
 \clearpage
@@ -274,10 +345,19 @@ Em que posição da mensagem ARP está a resposta ao pedido ARP ?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{itemize}
+	\item Sender MAC address: 64:51:06:02:a3:b0
+\end{itemize}
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+	  \includegraphics[scale=0.6]{./imagens/arp_reply_resp.png} 
+  \end{center}
+	\caption{Campo com a resposta ao pedido ARP.}
+  \label{fig:arp_reply_resp}
+\end{figure} 
 
 
 \clearpage
@@ -415,20 +495,8 @@ Na topologia de rede substitua o hub por um switch. Repita os procedimentos que 
 \section{Conclusions}
 Neste trabalho...
 
-%UNCOMMENT para a bibliografia 
-%% ficheirodebibliografia.bib
-%\bibliography{ficheirodebibliografia}
-
-%ou inserir directamente os v‡rios \bibitem 
-\begin{thebibliography}{1}
-\bibitem{Zadeh65}
-Zadeh, L.:
-\newblock {Fuzzy sets} (1965)
-
-\bibitem{Nguyen99}
-Nguyen, H., Walker, E.:
-\newblock {First course in fuzzy logic}.
-\newblock {Boca Raton: Chapman and Hall/CRC Press} (1999)
-\end{thebibliography}
+%BIBLIOGRAFIA
+\bibliographystyle{splncs}
+\bibliography{ficheirodebibliografia}
 
 \end{document}

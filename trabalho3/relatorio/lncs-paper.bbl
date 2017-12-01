@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+
+\bibitem{RFC0826}
+Plummer, D.C.:
+\newblock {RFC 826}: {Ethernet Address Resolution Protocol}: Or converting
+  network protocol addresses to 48.bit {Ethernet} address for transmission on
+  {Ethernet} hardware (1982)
+
+\end{thebibliography}
