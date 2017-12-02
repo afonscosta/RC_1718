@@ -187,11 +187,20 @@ Este endereço corresponde ao computador utilizado, que originalmente enviou o pe
 \subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
 
 Atendendo ao conceito de desencapsulamento protocolar, identifique os vários protocolos contidos na trama recebida.
+
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Na trama capturada está contido um protocolo Ethernet II, no qual está encapsulado um protocolo IPv4 que, por sua vez, transporta um protocolo TCP, no qual está contido um protocolo Hypertext Transfer Protocol (HTTP).
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/fields.png} 
+  \end{center}
+  \caption{Os protocolos contidos na trama de resposta.}
+  \label{fig:response_fields}
+\end{figure}
 
 
 % 4. Protocolo ARP ---------
