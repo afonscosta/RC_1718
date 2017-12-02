@@ -475,10 +475,37 @@ Identifique um pacote de pedido ARP gratuito originado pelo seu sistema. Verifiq
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes de ARP Gratuito em t = 15.631251s e t = 408.067672s (~ 392s). Com o intuito de confirmar o resultado, repetiu-se a experiência, capturando de novo dois pacotes de ARP Gratuito, que, desta vez foram enviados em t = 13.988762s e t = 641.373163s (~ 627s).
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{.4\textwidth}
+    \centering
+    \includegraphics[width=0.98\linewidth]{./imagens/ARPG1_1.png}
+  \end{subfigure}%
+  \begin{subfigure}{.4\textwidth}
+    \centering
+    \includegraphics[width=0.98\linewidth]{./imagens/ARPG1_2.png}
+  \end{subfigure}%
+  \caption{2 pacotes de ARP Gratuito capturados com um intervalo de 392s.}
+  \label{fig:arpg_1}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{.4\textwidth}
+    \centering
+    \includegraphics[width=0.98\linewidth]{./imagens/ARPG2_1.png}
+  \end{subfigure}%
+  \begin{subfigure}{.4\textwidth}
+    \centering
+    \includegraphics[width=0.98\linewidth]{./imagens/ARPG2_2.png}
+  \end{subfigure}%
+  \caption{2 pacotes de ARP Gratuito capturados com um intervalo de 627s.}
+  \label{fig:arpg_2}
+\end{figure}
 
 
 \clearpage
@@ -489,10 +516,17 @@ Analise o conteúdo de um pedido ARP gratuito e identifique em que se distingue d
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+O pacote de pedido ARP Gratuito difere dos restantes em que o IP de envio é igual ao IP destino. Como o destino da trama Ethernet é ff:ff:ff:ff:ff:ff (endereço de broadcast), este irá enviar o pacote a todos os hosts da rede. Estes, por sua vez, ao receber o pacote - e identificando o pacote como ARP Gratuito - irão atualizar as respetivas tabelas ARP no MAC em questão com o novo IP.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.6]{./imagens/ARPG_IP.png} 
+  \end{center}
+  \caption{O IP destino é igual ao IP fonte e o destino Ethernet é \textit{Broadcast}.}
+  \label{fig:arpg_ip}
+\end{figure} 
 
 
 \clearpage
