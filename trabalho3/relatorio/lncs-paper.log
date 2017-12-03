@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  1 DEC 2017 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  3 DEC 2017 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -136,6 +136,324 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
 (/usr/share/texmf-dist/tex/latex/ntgclass/a4.sty
 Package: a4 2004/04/15 v1.2g A4 based page layout
 )
@@ -162,7 +480,7 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
+\KV@toks@=\toks20
 )
 (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
@@ -235,7 +553,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks21
 \ex@=\dimen127
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -269,23 +587,55 @@ Package amsmath Warning: Unable to redefine math accent \vec.
 \dotsspace@=\muskip10
 \c@parentequation=\count126
 \dspbrk@lvl=\count127
-\tag@help=\toks20
+\tag@help=\toks22
 \row@=\count128
 \column@=\count129
 \maxfields@=\count130
-\andhelp@=\toks21
+\andhelp@=\toks23
 \eqnshift@=\dimen130
 \alignsep@=\dimen131
 \tagshift@=\dimen132
 \tagwidth@=\dimen133
 \totwidth@=\dimen134
 \lineht@=\dimen135
-\@envbody=\toks22
+\@envbody=\toks24
 \multlinegap=\skip46
 \multlinetaggap=\skip47
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
+) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen136
+\captionmargin@=\dimen137
+\captionwidth=\dimen138
+\caption@tempdima=\dimen139
+\caption@indent=\dimen140
+\caption@parindent=\dimen141
+\caption@hangindent=\dimen142
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \sbox \@tempboxa {{\bfseries #1.} #2}\ifdim \wd \@tempboxa >\hsize {\bfseries
+ #1.} #2\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempbox
+a \hfil }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count131
+)
+\c@subfigure=\count132
+\c@subtable=\count133
 ) (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
 
@@ -329,14 +679,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen136
-\Hy@linkcounter=\count131
-\Hy@pagecounter=\count132
+\@linkdim=\dimen143
+\Hy@linkcounter=\count134
+\Hy@pagecounter=\count135
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count133
+\Hy@SavedSpaceFactor=\count136
 
 (/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -349,17 +701,17 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4757.
-\c@Hy@tempcnt=\count134
+\c@Hy@tempcnt=\count137
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
-\XeTeXLinkMargin=\dimen137
-\Fld@menulength=\count135
-\Field@Width=\dimen138
-\Fld@charsize=\dimen139
+\XeTeXLinkMargin=\dimen144
+\Fld@menulength=\count138
+\Field@Width=\dimen145
+\Fld@charsize=\dimen146
 Package hyperref Info: Hyper figures OFF on input line 6358.
 Package hyperref Info: Link nesting OFF on input line 6363.
 Package hyperref Info: Hyper index ON on input line 6366.
@@ -369,17 +721,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count136
-\c@Item=\count137
-\c@Hfootnote=\count138
+\Hy@abspage=\count139
+\c@Item=\count140
+\c@Hfootnote=\count141
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count139
-\c@bookmark@seq@number=\count140
+\Fld@listcount=\count142
+\c@bookmark@seq@number=\count143
 
 (/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -388,60 +740,59 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip48
 )
-(./lncs-paper.aux
-
-LaTeX Warning: Label `fig:ip_source' multiply defined.
-
-)
+(./lncs-paper.aux)
 \openout1 = `lncs-paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 19.
  (/usr/share/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count141
-\scratchdimen=\dimen140
+\scratchcounter=\count144
+\scratchdimen=\dimen147
 \scratchbox=\box57
-\nofMPsegments=\count142
-\nofMParguments=\count143
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count144
-\MPscratchDim=\dimen141
-\MPnumerator=\count145
-\makeMPintoPDFobject=\count146
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count145
+\nofMParguments=\count146
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count147
+\MPscratchDim=\dimen148
+\MPnumerator=\count148
+\makeMPintoPDFobject=\count149
+\everyMPtoPDFconversion=\toks27
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 17.
+Package hyperref Info: Link coloring OFF on input line 19.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count147
+\c@section@level=\count150
 )
-LaTeX Info: Redefining \ref on input line 17.
-LaTeX Info: Redefining \pageref on input line 17.
-LaTeX Info: Redefining \nameref on input line 17.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 36.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
 
 
 Package hyperref Warning: bookmark level for unknown title defaults to 0.
@@ -450,273 +801,273 @@ Package hyperref Warning: bookmark level for unknown title defaults to 0.
 Package hyperref Warning: bookmark level for unknown author defaults to 0.
 
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 36.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 40.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 42.
 [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 
-Overfull \hbox (50.40637pt too wide) in paragraph at lines 54--56
-[]\T1/ptm/m/it/10 Destination\T1/ptm/m/n/10 : Vmware_d2:19:f0 (00:0c:29:d2:19:f
-0) \T1/ptm/m/it/10 Source\T1/ptm/m/n/10 : LcfcHefe_66:65:4a (68:f7:28:66:65:4a)
- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
-pdfTeX warning: pdflatex (file ./imagens/MACAddrGET.pdf): PDF inclusion: found 
-PDF version <1.7>, but at most version <1.5> allowed
-<imagens/MACAddrGET.pdf, id=13, pagebox=cropbox, 597.55246pt x 845.07724pt>
-File: imagens/MACAddrGET.pdf Graphic file (type pdf)
-<use imagens/MACAddrGET.pdf>
-Package pdftex.def Info: imagens/MACAddrGET.pdf  used on input line 61. on inpu
-t line 61.
-Package pdftex.def Info: Requested size: 209.14648pt x 295.78146pt on input lin
-e 61.
+ []
+
+<imagens/MACAddrGET.png, id=13, 1078.0275pt x 255.95625pt>
+File: imagens/MACAddrGET.png Graphic file (type png)
+<use imagens/MACAddrGET.png>
+Package pdftex.def Info: imagens/MACAddrGET.png  used on input line 64. on inpu
+t line 64.
+Package pdftex.def Info: Requested size: 377.31528pt x 89.58601pt on input line
+ 64.
+
+Overfull \hbox (15.96529pt too wide) in paragraph at lines 64--65
+ [] 
+ []
+
 [2
 
- <./imagens/MACAddrGET.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+ <./imagens/MACAddrGET.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
 
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-File: imagens/MACAddrGET.pdf Graphic file (type pdf)
-<use imagens/MACAddrGET.pdf>
-Package pdftex.def Info: imagens/MACAddrGET.pdf  used on input line 96. on inpu
-t line 96.
-Package pdftex.def Info: Requested size: 209.14648pt x 295.78146pt on input lin
-e 96.
+File: imagens/MACAddrGET.png Graphic file (type png)
+<use imagens/MACAddrGET.png>
+Package pdftex.def Info: imagens/MACAddrGET.png  used on input line 99. on inpu
+t line 99.
+Package pdftex.def Info: Requested size: 377.31528pt x 89.58601pt on input line
+ 99.
+
+Overfull \hbox (15.96529pt too wide) in paragraph at lines 99--100
+ [] 
+ []
+
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
+<imagens/HTTPbytes.png, id=42, 410.2828pt x 274.02374pt>
+File: imagens/HTTPbytes.png Graphic file (type png)
+<use imagens/HTTPbytes.png>
+Package pdftex.def Info: imagens/HTTPbytes.png  used on input line 119. on inpu
+t line 119.
+Package pdftex.def Info: Requested size: 143.60112pt x 95.90974pt on input line
+ 119.
 [5
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+ <./imagens/HTTPbytes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 
-Overfull \hbox (41.73468pt too wide) in paragraph at lines 120--122
+Overfull \hbox (41.73468pt too wide) in paragraph at lines 129--131
 \T1/ptm/m/n/10 campo FCS está visível, i.e., se está a ser uti-lizado. Aceda à 
 opção Edit/Preferences/Protocols/Ethernet
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
+ []
+
+<imagens/FCS.png, id=52, 1355.8153pt x 317.68687pt>
+File: imagens/FCS.png Graphic file (type png)
+<use imagens/FCS.png>
+Package pdftex.def Info: imagens/FCS.png  used on input line 140. on input line
+ 140.
+Package pdftex.def Info: Requested size: 474.54247pt x 111.19206pt on input lin
+e 140.
+
+Overfull \hbox (113.19247pt too wide) in paragraph at lines 140--141
+ [] 
  []
 
 [6
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+ <./imagens/FCS.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
+ []
+
+<imagens/HTTPresponse.png, id=62, 1341.51187pt x 300.3722pt>
+File: imagens/HTTPresponse.png Graphic file (type png)
+<use imagens/HTTPresponse.png>
+Package pdftex.def Info: imagens/HTTPresponse.png  used on input line 162. on i
+nput line 162.
+Package pdftex.def Info: Requested size: 469.5362pt x 105.13184pt on input line
+ 162.
+
+Overfull \hbox (108.1862pt too wide) in paragraph at lines 162--163
+ [] 
  []
 
 [7
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+ <./imagens/HTTPresponse.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-[8
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
-
- []
-
-[9
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 180.
+File: imagens/HTTPresponse.png Graphic file (type png)
+<use imagens/HTTPresponse.png>
+Package pdftex.def Info: imagens/HTTPresponse.png  used on input line 184. on i
+nput line 184.
+Package pdftex.def Info: Requested size: 469.5362pt x 105.13184pt on input line
+ 184.
+
+Overfull \hbox (108.1862pt too wide) in paragraph at lines 184--185
+ [] 
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+<imagens/fields.png, id=82, 1357.32094pt x 228.10219pt>
+File: imagens/fields.png Graphic file (type png)
+<use imagens/fields.png>
+Package pdftex.def Info: imagens/fields.png  used on input line 204. on input l
+ine 204.
+Package pdftex.def Info: Requested size: 475.06946pt x 79.83694pt on input line
+ 204.
+
+Overfull \hbox (113.71947pt too wide) in paragraph at lines 204--205
+ [] 
+ []
+
+[9
+
+ <./imagens/fields.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 220.
 (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
-<./imagens/ip_neigh.png, id=100, 841.1425pt x 683.55376pt>
+<./imagens/ip_neigh.png, id=92, 841.1425pt x 683.55376pt>
 File: ./imagens/ip_neigh.png Graphic file (type png)
 <use ./imagens/ip_neigh.png>
-Package pdftex.def Info: ./imagens/ip_neigh.png  used on input line 188. on inp
-ut line 188.
+Package pdftex.def Info: ./imagens/ip_neigh.png  used on input line 228. on inp
+ut line 228.
 Package pdftex.def Info: Requested size: 420.57022pt x 341.77605pt on input lin
-e 188.
+e 228.
 
-Overfull \hbox (59.22023pt too wide) in paragraph at lines 188--189
+Overfull \hbox (59.22023pt too wide) in paragraph at lines 228--229
  [] 
  []
 
 [10
 
  <./imagens/ip_neigh.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
-
- []
-
-<./imagens/arp_request.png, id=111, 752.8125pt x 116.435pt>
-File: ./imagens/arp_request.png Graphic file (type png)
-<use ./imagens/arp_request.png>
-Package pdftex.def Info: ./imagens/arp_request.png  used on input line 217. on 
-input line 217.
-Package pdftex.def Info: Requested size: 451.69098pt x 69.86153pt on input line
- 217.
-
-Overfull \hbox (90.34099pt too wide) in paragraph at lines 217--218
- [] 
- []
-
-[11
-
- <./imagens/arp_request.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
-
- []
-
-<./imagens/arp_request_type.png, id=121, 754.82pt x 114.4275pt>
-File: ./imagens/arp_request_type.png Graphic file (type png)
-<use ./imagens/arp_request_type.png>
-Package pdftex.def Info: ./imagens/arp_request_type.png  used on input line 240
-. on input line 240.
-Package pdftex.def Info: Requested size: 452.89551pt x 68.65701pt on input line
- 240.
-
-Overfull \hbox (91.54552pt too wide) in paragraph at lines 240--241
- [] 
- []
-
-[12
-
- <./imagens/arp_request_type.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
@@ -725,87 +1076,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
+<./imagens/arp_request.png, id=103, 752.8125pt x 116.435pt>
+File: ./imagens/arp_request.png Graphic file (type png)
+<use ./imagens/arp_request.png>
+Package pdftex.def Info: ./imagens/arp_request.png  used on input line 257. on 
+input line 257.
+Package pdftex.def Info: Requested size: 451.69098pt x 69.86153pt on input line
+ 257.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Overfull \hbox (90.34099pt too wide) in paragraph at lines 257--258
+ [] 
+ []
+
+[11
+
+ <./imagens/arp_request.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
-<./imagens/arp_request_opcode.png, id=134, 500.87125pt x 193.72375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+<./imagens/arp_request_type.png, id=113, 754.82pt x 114.4275pt>
+File: ./imagens/arp_request_type.png Graphic file (type png)
+<use ./imagens/arp_request_type.png>
+Package pdftex.def Info: ./imagens/arp_request_type.png  used on input line 280
+. on input line 280.
+Package pdftex.def Info: Requested size: 452.89551pt x 68.65701pt on input line
+ 280.
+
+Overfull \hbox (91.54552pt too wide) in paragraph at lines 280--281
+ [] 
+ []
+
+[12
+
+ <./imagens/arp_request_type.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
+
+ []
+
+<./imagens/arp_request_opcode.png, id=125, 500.87125pt x 193.72375pt>
 File: ./imagens/arp_request_opcode.png Graphic file (type png)
 <use ./imagens/arp_request_opcode.png>
-Package pdftex.def Info: ./imagens/arp_request_opcode.png  used on input line 2
-66. on input line 266.
+Package pdftex.def Info: ./imagens/arp_request_opcode.png  used on input line 3
+06. on input line 306.
 Package pdftex.def Info: Requested size: 300.52505pt x 116.23514pt on input lin
-e 266.
+e 306.
 [13
 
  <./imagens/arp_request_opcode.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
-<./imagens/arp_request_addr.png, id=146, 500.87125pt x 193.72375pt>
-File: ./imagens/arp_request_addr.png Graphic file (type png)
-<use ./imagens/arp_request_addr.png>
-Package pdftex.def Info: ./imagens/arp_request_addr.png  used on input line 299
-. on input line 299.
-Package pdftex.def Info: Requested size: 300.52505pt x 116.23514pt on input lin
-e 299.
-[14
-
- <./imagens/arp_request_addr.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-
- []
-
-[15
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
+<./imagens/arp_request_addr.png, id=138, 500.87125pt x 193.72375pt>
+File: ./imagens/arp_request_addr.png Graphic file (type png)
+<use ./imagens/arp_request_addr.png>
+Package pdftex.def Info: ./imagens/arp_request_addr.png  used on input line 339
+. on input line 339.
+Package pdftex.def Info: Requested size: 300.52505pt x 116.23514pt on input lin
+e 339.
+[14
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
-
- []
-
-<./imagens/arp_reply_opcode.png, id=163, 501.875pt x 194.7275pt>
-File: ./imagens/arp_reply_opcode.png Graphic file (type png)
-<use ./imagens/arp_reply_opcode.png>
-Package pdftex.def Info: ./imagens/arp_reply_opcode.png  used on input line 333
-. on input line 333.
-Package pdftex.def Info: Requested size: 301.12732pt x 116.83739pt on input lin
-e 333.
-[16
-
- <./imagens/arp_reply_opcode.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+ <./imagens/arp_request_addr.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
@@ -814,17 +1177,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
-<./imagens/arp_reply_resp.png, id=173, 501.875pt x 194.7275pt>
-File: ./imagens/arp_reply_resp.png Graphic file (type png)
-<use ./imagens/arp_reply_resp.png>
-Package pdftex.def Info: ./imagens/arp_reply_resp.png  used on input line 356. 
-on input line 356.
-Package pdftex.def Info: Requested size: 301.12732pt x 116.83739pt on input lin
-e 356.
-[17
+[15
 
- <./imagens/arp_reply_resp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+]
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
@@ -833,254 +1194,374 @@ Underfull \hbox (badness 10000) in paragraph at lines 369--370
 
  []
 
+<./imagens/arp_reply_opcode.png, id=155, 501.875pt x 194.7275pt>
+File: ./imagens/arp_reply_opcode.png Graphic file (type png)
+<use ./imagens/arp_reply_opcode.png>
+Package pdftex.def Info: ./imagens/arp_reply_opcode.png  used on input line 373
+. on input line 373.
+Package pdftex.def Info: Requested size: 301.12732pt x 116.83739pt on input lin
+e 373.
+[16
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+ <./imagens/arp_reply_opcode.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+
+ []
+
+<./imagens/arp_reply_resp.png, id=165, 501.875pt x 194.7275pt>
+File: ./imagens/arp_reply_resp.png Graphic file (type png)
+<use ./imagens/arp_reply_resp.png>
+Package pdftex.def Info: ./imagens/arp_reply_resp.png  used on input line 396. 
+on input line 396.
+Package pdftex.def Info: Requested size: 301.12732pt x 116.83739pt on input lin
+e 396.
+[17
+
+ <./imagens/arp_reply_resp.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
+
+ []
+
+<./imagens/ifconfig.png, id=175, 983.92593pt x 587.94656pt>
+File: ./imagens/ifconfig.png Graphic file (type png)
+<use ./imagens/ifconfig.png>
+Package pdftex.def Info: ./imagens/ifconfig.png  used on input line 424. on inp
+ut line 424.
+Package pdftex.def Info: Requested size: 590.36012pt x 352.77066pt on input lin
+e 424.
+
+Overfull \hbox (229.01013pt too wide) in paragraph at lines 424--425
+ [] 
  []
 
 [18
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+] [19 <./imagens/ifconfig.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
-[19
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 401--402
-
- []
-
+<./imagens/5_17.png, id=192, 557.83406pt x 501.37312pt>
+File: ./imagens/5_17.png Graphic file (type png)
+<use ./imagens/5_17.png>
+Package pdftex.def Info: ./imagens/5_17.png  used on input line 444. on input l
+ine 444.
+Package pdftex.def Info: Requested size: 334.703pt x 300.82619pt on input line 
+444.
 [20
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+ <./imagens/5_17.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
+<./imagens/5_18.png, id=203, 560.0925pt x 502.87875pt>
+File: ./imagens/5_18.png Graphic file (type png)
+<use ./imagens/5_18.png>
+Package pdftex.def Info: ./imagens/5_18.png  used on input line 466. on input l
+ine 466.
+Package pdftex.def Info: Requested size: 336.05809pt x 301.72957pt on input lin
+e 466.
 [21
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+ <./imagens/5_18.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 474--475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+Underfull \hbox (badness 10000) in paragraph at lines 482--483
 
  []
 
+<./imagens/5_19.png, id=214, 365.86688pt x 197.98969pt>
+File: ./imagens/5_19.png Graphic file (type png)
+<use ./imagens/5_19.png>
+Package pdftex.def Info: ./imagens/5_19.png  used on input line 486. on input l
+ine 486.
+Package pdftex.def Info: Requested size: 219.52182pt x 118.79472pt on input lin
+e 486.
 [22
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+ <./imagens/5_19.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
+<./imagens/5_20.png, id=225, 551.81157pt x 491.58656pt>
+File: ./imagens/5_20.png Graphic file (type png)
+<use ./imagens/5_20.png>
+Package pdftex.def Info: ./imagens/5_20.png  used on input line 506. on input l
+ine 506.
+Package pdftex.def Info: Requested size: 331.0895pt x 294.95421pt on input line
+ 506.
 [23
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 451--452
+ <./imagens/5_20.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
  []
 
+<./imagens/ARPG1_1.png, id=236, 666.23906pt x 432.11438pt>
+File: ./imagens/ARPG1_1.png Graphic file (type png)
+<use ./imagens/ARPG1_1.png>
+Package pdftex.def Info: ./imagens/ARPG1_1.png  used on input line 530. on inpu
+t line 530.
+Package pdftex.def Info: Requested size: 141.6464pt x 91.86758pt on input line 
+530.
+<./imagens/ARPG1_2.png, id=237, 663.98062pt x 435.12563pt>
+File: ./imagens/ARPG1_2.png Graphic file (type png)
+<use ./imagens/ARPG1_2.png>
+Package pdftex.def Info: ./imagens/ARPG1_2.png  used on input line 534. on inpu
+t line 534.
+Package pdftex.def Info: Requested size: 141.6464pt x 92.81984pt on input line 
+534.
+<./imagens/ARPG2_1.png, id=238, 663.22781pt x 435.12563pt>
+File: ./imagens/ARPG2_1.png Graphic file (type png)
+<use ./imagens/ARPG2_1.png>
+Package pdftex.def Info: ./imagens/ARPG2_1.png  used on input line 544. on inpu
+t line 544.
+Package pdftex.def Info: Requested size: 141.6464pt x 92.92607pt on input line 
+544.
+<./imagens/ARPG2_2.png, id=239, 667.74469pt x 434.37282pt>
+File: ./imagens/ARPG2_2.png Graphic file (type png)
+<use ./imagens/ARPG2_2.png>
+Package pdftex.def Info: ./imagens/ARPG2_2.png  used on input line 548. on inpu
+t line 548.
+Package pdftex.def Info: Requested size: 141.6464pt x 92.14227pt on input line 
+548.
 [24
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
+ <./imagens/ARPG1_1.png> <./imagens/ARPG1_2.png> <./imagens/ARPG2_1.png> <./ima
+gens/ARPG2_2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--478
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
-<./imagens/rede_23_repetidor.png, id=243, 1134.2375pt x 981.6675pt>
+<./imagens/ARPG_IP.png, id=251, 661.72218pt x 434.37282pt>
+File: ./imagens/ARPG_IP.png Graphic file (type png)
+<use ./imagens/ARPG_IP.png>
+Package pdftex.def Info: ./imagens/ARPG_IP.png  used on input line 569. on inpu
+t line 569.
+Package pdftex.def Info: Requested size: 397.03638pt x 260.62569pt on input lin
+e 569.
+
+Overfull \hbox (35.68639pt too wide) in paragraph at lines 569--570
+ [] 
+ []
+
+[25
+
+ <./imagens/ARPG_IP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 590--591
+
+ []
+
+<./imagens/rede_23_repetidor.png, id=264, 1134.2375pt x 981.6675pt>
 File: ./imagens/rede_23_repetidor.png Graphic file (type png)
 <use ./imagens/rede_23_repetidor.png>
-Package pdftex.def Info: ./imagens/rede_23_repetidor.png  used on input line 48
-1. on input line 481.
+Package pdftex.def Info: ./imagens/rede_23_repetidor.png  used on input line 59
+4. on input line 594.
 Package pdftex.def Info: Requested size: 226.84348pt x 196.33002pt on input lin
-e 481.
-<./imagens/n1_repetidor.png, id=244, 1193.45876pt x 836.12375pt>
+e 594.
+<./imagens/n1_repetidor.png, id=265, 1193.45876pt x 836.12375pt>
 File: ./imagens/n1_repetidor.png Graphic file (type png)
 <use ./imagens/n1_repetidor.png>
-Package pdftex.def Info: ./imagens/n1_repetidor.png  used on input line 489. on
- input line 489.
+Package pdftex.def Info: ./imagens/n1_repetidor.png  used on input line 602. on
+ input line 602.
 Package pdftex.def Info: Requested size: 358.04039pt x 250.83905pt on input lin
-e 489.
-<./imagens/n2_tcpdump_repetidor.png, id=245, 1192.455pt x 837.1275pt>
+e 602.
+<./imagens/n2_tcpdump_repetidor.png, id=266, 1192.455pt x 837.1275pt>
 File: ./imagens/n2_tcpdump_repetidor.png Graphic file (type png)
 <use ./imagens/n2_tcpdump_repetidor.png>
 Package pdftex.def Info: ./imagens/n2_tcpdump_repetidor.png  used on input line
- 497. on input line 497.
+ 610. on input line 610.
 Package pdftex.def Info: Requested size: 357.73926pt x 251.14018pt on input lin
-e 497.
-<./imagens/n3_tcpdump_repetidor.png, id=246, 1185.42876pt x 838.13126pt>
+e 610.
+<./imagens/n3_tcpdump_repetidor.png, id=267, 1185.42876pt x 838.13126pt>
 File: ./imagens/n3_tcpdump_repetidor.png Graphic file (type png)
 <use ./imagens/n3_tcpdump_repetidor.png>
 Package pdftex.def Info: ./imagens/n3_tcpdump_repetidor.png  used on input line
- 505. on input line 505.
+ 618. on input line 618.
 Package pdftex.def Info: Requested size: 355.63136pt x 251.44131pt on input lin
-e 505.
-<./imagens/n4_tcpdump_repetidor.png, id=247, 1185.42876pt x 833.1125pt>
+e 618.
+<./imagens/n4_tcpdump_repetidor.png, id=268, 1185.42876pt x 833.1125pt>
 File: ./imagens/n4_tcpdump_repetidor.png Graphic file (type png)
 <use ./imagens/n4_tcpdump_repetidor.png>
 Package pdftex.def Info: ./imagens/n4_tcpdump_repetidor.png  used on input line
- 513. on input line 513.
+ 626. on input line 626.
 Package pdftex.def Info: Requested size: 355.63136pt x 249.93568pt on input lin
-e 513.
-[25
+e 626.
+[26
 
- <./imagens/rede_23_repetidor.png>] [26 <./imagens/n1_repetidor.png> <./imagens
-/n2_tcpdump_repetidor.png>] [27 <./imagens/n3_tcpdump_repetidor.png> <./imagens
+ <./imagens/rede_23_repetidor.png>] [27 <./imagens/n1_repetidor.png> <./imagens
+/n2_tcpdump_repetidor.png>] [28 <./imagens/n3_tcpdump_repetidor.png> <./imagens
 /n4_tcpdump_repetidor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 521--522
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 525--526
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
+Underfull \hbox (badness 10000) in paragraph at lines 642--643
 
  []
 
-<./imagens/rede_23_comutador.png, id=275, 1136.245pt x 981.6675pt>
+<./imagens/rede_23_comutador.png, id=295, 1136.245pt x 981.6675pt>
 File: ./imagens/rede_23_comutador.png Graphic file (type png)
 <use ./imagens/rede_23_comutador.png>
-Package pdftex.def Info: ./imagens/rede_23_comutador.png  used on input line 53
-3. on input line 533.
+Package pdftex.def Info: ./imagens/rede_23_comutador.png  used on input line 64
+6. on input line 646.
 Package pdftex.def Info: Requested size: 227.24496pt x 196.33002pt on input lin
-e 533.
-<./imagens/n1_comutador.png, id=276, 1191.45125pt x 839.135pt>
+e 646.
+<./imagens/n1_comutador.png, id=296, 1191.45125pt x 839.135pt>
 File: ./imagens/n1_comutador.png Graphic file (type png)
 <use ./imagens/n1_comutador.png>
-Package pdftex.def Info: ./imagens/n1_comutador.png  used on input line 541. on
- input line 541.
+Package pdftex.def Info: ./imagens/n1_comutador.png  used on input line 654. on
+ input line 654.
 Package pdftex.def Info: Requested size: 357.43813pt x 251.74243pt on input lin
-e 541.
-<./imagens/n2_tcpdump_comutador.png, id=277, 1185.42876pt x 832.10875pt>
+e 654.
+<./imagens/n2_tcpdump_comutador.png, id=297, 1185.42876pt x 832.10875pt>
 File: ./imagens/n2_tcpdump_comutador.png Graphic file (type png)
 <use ./imagens/n2_tcpdump_comutador.png>
 Package pdftex.def Info: ./imagens/n2_tcpdump_comutador.png  used on input line
- 549. on input line 549.
+ 662. on input line 662.
 Package pdftex.def Info: Requested size: 355.63136pt x 249.63455pt on input lin
-e 549.
-<./imagens/n3_tcpdump_comutador.png, id=278, 1188.44pt x 836.12375pt>
+e 662.
+<./imagens/n3_tcpdump_comutador.png, id=298, 1188.44pt x 836.12375pt>
 File: ./imagens/n3_tcpdump_comutador.png Graphic file (type png)
 <use ./imagens/n3_tcpdump_comutador.png>
 Package pdftex.def Info: ./imagens/n3_tcpdump_comutador.png  used on input line
- 557. on input line 557.
+ 670. on input line 670.
 Package pdftex.def Info: Requested size: 356.53476pt x 250.83905pt on input lin
-e 557.
-<./imagens/n4_tcpdump_comutador.png, id=279, 1184.425pt x 832.10875pt>
+e 670.
+<./imagens/n4_tcpdump_comutador.png, id=299, 1184.425pt x 832.10875pt>
 File: ./imagens/n4_tcpdump_comutador.png Graphic file (type png)
 <use ./imagens/n4_tcpdump_comutador.png>
 Package pdftex.def Info: ./imagens/n4_tcpdump_comutador.png  used on input line
- 565. on input line 565.
+ 678. on input line 678.
 Package pdftex.def Info: Requested size: 355.33025pt x 249.63455pt on input lin
-e 565.
-[28
+e 678.
+[29
 
- <./imagens/rede_23_comutador.png>] [29 <./imagens/n1_comutador.png> <./imagens
-/n2_tcpdump_comutador.png>] [30 <./imagens/n3_tcpdump_comutador.png> <./imagens
+ <./imagens/rede_23_comutador.png>] [30 <./imagens/n1_comutador.png> <./imagens
+/n2_tcpdump_comutador.png>] [31 <./imagens/n3_tcpdump_comutador.png> <./imagens
 /n4_tcpdump_comutador.png>] (./lncs-paper.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 580.
- [31
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 693.
+ [32
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 580.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 693.
  (./lncs-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 580.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 580.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 580.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 693.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 693.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 693.
  ) 
 Here is how much of TeX's memory you used:
- 6854 strings out of 492985
- 98374 string characters out of 6138637
- 188162 words of memory out of 5000000
- 10152 multiletter control sequences out of 15000+600000
+ 8334 strings out of 492985
+ 122413 string characters out of 6138637
+ 213610 words of memory out of 5000000
+ 11581 multiletter control sequences out of 15000+600000
  31166 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,23p,890b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,40p,904b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lncs-paper.pdf (31 pages, 2441976 bytes).
+Output written on lncs-paper.pdf (32 pages, 2927278 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 297 compressed objects within 3 object streams
- 160 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 385 PDF objects out of 1000 (max. 8388607)
+ 303 compressed objects within 4 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

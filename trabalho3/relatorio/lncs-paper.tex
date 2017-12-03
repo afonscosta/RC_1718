@@ -1,6 +1,7 @@
 \documentclass{llncs}
 \usepackage{times}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 % Comentar para not MAC Users
 %\usepackage[applemac]{inputenc}
@@ -11,6 +12,7 @@
 \usepackage{graphicx}
 \usepackage{fancyvrb}
 \usepackage{amsmath}
+\usepackage{subcaption}
 \usepackage[bookmarks=false]{hyperref}
 %\renewcommand{\baselinestretch}{1.5}
 
@@ -52,6 +54,7 @@ Anote os endereços MAC de origem e de destino da trama capturada.
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 \textit{Destination}: Vmware\_d2:19:f0 (00:0c:29:d2:19:f0)
+
 \textit{Source}: LcfcHefe\_66:65:4a (68:f7:28:66:65:4a)
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
@@ -148,7 +151,8 @@ Qual é o endereço Ethernet da fonte? A que sistema de rede corresponde? Justif
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-\textit{Address}: Vmware_d2:19:f0 (00:0c:29:d2:19:f0)
+\textit{Address}: Vmware\_d2:19:f0 (00:0c:29:d2:19:f0)
+
 Este endereço corresponde ao comutador da rede local visto que, ao nível dos dados, máquinas apenas comunicam com as máquinas adjacentes através do protocolo ARP.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
@@ -169,7 +173,8 @@ Qual é o endereço MAC do destino? A que sistema corresponde?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-\textit{Address}: LcfcHefe_66:65:4a (68:f7:28:66:65:4a)
+\textit{Address}: LcfcHefe\_66:65:4a (68:f7:28:66:65:4a)
+
 Este endereço corresponde ao computador utilizado, que originalmente enviou o pedido HTTP GET.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
@@ -419,7 +424,7 @@ Pode-se observar que as interfaces ligadas são a eth0 (de n1) e eth0 (de n2), r
     \includegraphics[scale=0.6]{./imagens/ifconfig.png} 
   \end{center}
   \caption{Endereços de interfaces.}
-  \label{fig:arp_reply_resp}
+  \label{fig:ifconfig}
 \end{figure} 
 
 \clearpage
@@ -436,10 +441,10 @@ As caches ARP inicialmente estão vazias, como seria de esperar, pois ainda não
 
 \begin{figure}
   \begin{center}
-    \includegraphics[scale=0.6]{./imagens/5.17.png} 
+    \includegraphics[scale=0.6]{./imagens/5_17.png} 
   \end{center}
   \caption{Caches ARP vazias.}
-  \label{fig:arp_reply_resp}
+  \label{fig:5_17}
 \end{figure} 
 
 \clearpage
@@ -458,10 +463,10 @@ Depois de fazer ping de \textbf{n1} para \textbf{n3}, a tabela ARP de \textbf{n1
 
 \begin{figure}
   \begin{center}
-    \includegraphics[scale=0.6]{./imagens/5.18.png} 
+    \includegraphics[scale=0.6]{./imagens/5_18.png} 
   \end{center}
   \caption{Atualização de caches ARP.}
-  \label{fig:arp_reply_resp}
+  \label{fig:5_18}
 \end{figure} 
 
 \clearpage
@@ -478,10 +483,10 @@ Em n1 remova a entrada correspondente a n2. Coloque uma nova entrada para n2 com
 
 \begin{figure}
   \begin{center}
-    \includegraphics[scale=0.6]{./imagens/5.19.png} 
+    \includegraphics[scale=0.6]{./imagens/5_19.png} 
   \end{center}
   \caption{Tabela ARP com entradas erradas.}
-  \label{fig:arp_reply_resp}
+  \label{fig:5_19}
 \end{figure} 
 
 \clearpage
@@ -498,10 +503,10 @@ Como esperado, a tabela ARP de \textbf{n6} passou a conter o endereço Ethernet 
 
 \begin{figure}
   \begin{center}
-    \includegraphics[scale=0.6]{./imagens/5.20.png} 
+    \includegraphics[scale=0.6]{./imagens/5_20.png} 
   \end{center}
   \caption{Tabela ARP atualizada com endereço de host.}
-  \label{fig:arp_reply_resp}
+  \label{fig:5_20}
 \end{figure} 
 
 \clearpage
@@ -520,11 +525,11 @@ Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes
 
 \begin{figure}[h]
   \centering
-  \begin{subfigure}{.4\textwidth}
+  \begin{subfigure}{0.4\textwidth}
     \centering
     \includegraphics[width=0.98\linewidth]{./imagens/ARPG1_1.png}
   \end{subfigure}%
-  \begin{subfigure}{.4\textwidth}
+  \begin{subfigure}{0.4\textwidth}
     \centering
     \includegraphics[width=0.98\linewidth]{./imagens/ARPG1_2.png}
   \end{subfigure}%
@@ -534,11 +539,11 @@ Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes
 
 \begin{figure}[h]
   \centering
-  \begin{subfigure}{.4\textwidth}
+  \begin{subfigure}{0.4\textwidth}
     \centering
     \includegraphics[width=0.98\linewidth]{./imagens/ARPG2_1.png}
   \end{subfigure}%
-  \begin{subfigure}{.4\textwidth}
+  \begin{subfigure}{0.4\textwidth}
     \centering
     \includegraphics[width=0.98\linewidth]{./imagens/ARPG2_2.png}
   \end{subfigure}%
