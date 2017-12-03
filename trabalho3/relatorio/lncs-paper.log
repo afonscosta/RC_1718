@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  3 DEC 2017 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  3 DEC 2017 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1516,15 +1516,15 @@ e 669.
  <./imagens/rede_23_comutador.png>] [29 <./imagens/n1_comutador.png> <./imagens
 /n2_tcpdump_comutador.png>] [30 <./imagens/n3_tcpdump_comutador.png> <./imagens
 /n4_tcpdump_comutador.png>] (./lncs-paper.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 684.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 689.
  [31
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 684.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 689.
  (./lncs-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 684.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 684.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 684.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 689.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 689.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 689.
  ) 
 Here is how much of TeX's memory you used:
  8333 strings out of 492985
@@ -1538,7 +1538,7 @@ Here is how much of TeX's memory you used:
 ts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lncs-paper.pdf (31 pages, 2926866 bytes).
+Output written on lncs-paper.pdf (31 pages, 2927590 bytes).
 PDF statistics:
  380 PDF objects out of 1000 (max. 8388607)
  300 compressed objects within 3 object streams
