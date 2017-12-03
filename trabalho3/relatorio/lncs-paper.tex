@@ -16,9 +16,9 @@
 
 \begin{document}
 \mainmatter
-\title{TP3: Camada de LigaÁ„o LÛgica: Ethernet e Protocolo ARP}
+\title{TP3: Camada de Liga√ß√£o L√≥gica: Ethernet e Protocolo ARP}
 
-\titlerunning{TP3: Camada de LigaÁ„o LÛgica: Ethernet e Protocolo ARP}
+\titlerunning{TP3: Camada de Liga√ß√£o L√≥gica: Ethernet e Protocolo ARP}
 
 \author{Diogo Afonso Costa \and Daniel Maia \and Vitor Castro}
 
@@ -37,51 +37,51 @@ e-mail: \{a78034,a77531,a77870\}@alunos.uminho.pt
 Resumo...
 \end{abstract}
 
-\section{IntroduÁ„o}
+\section{Introdu√ß√£o}
 
 
 
 \clearpage
-\section{Parte I - Captura e an·lise de Tramas Ethernet}
+\section{Parte I - Captura e an√°lise de Tramas Ethernet}
 
-\subsection{ExercÌcio 1}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 1}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Anote os endereÁos MAC de origem e de destino da trama capturada.
+Anote os endere√ßos MAC de origem e de destino da trama capturada.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 \textit{Destination}: Vmware\_d2:19:f0 (00:0c:29:d2:19:f0)
 \textit{Source}: LcfcHefe\_66:65:4a (68:f7:28:66:65:4a)
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
   \includegraphics[scale=0.35]{imagens/MACAddrGET.png} 
   \end{center}
-  \caption{EndereÁos MAC do HTTP GET.}
+  \caption{Endere√ßos MAC do HTTP GET.}
   \label{fig:mac_addr}
 \end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 2}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Identifique a que sistemas se referem. Justifique.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 O MAC \textit{destination} refere ao comutador da rede local.
-O MAC \textit{source} refere ‡ m·quina que enviou o pedido; neste caso, o computador utilizado.
+O MAC \textit{source} refere √† m√°quina que enviou o pedido; neste caso, o computador utilizado.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Ao nÌvel da ligaÁ„o de dados, as m·quinas apenas comunicam com m·quinas adjacentes.
+Ao n√≠vel da liga√ß√£o de dados, as m√°quinas apenas comunicam com m√°quinas adjacentes.
 
 \clearpage
-\subsection{ExercÌcio 3}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 3}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Qual o valor hexadecimal do campo \textit{Type} da trama Ethernet? O que significa?
 
@@ -89,7 +89,7 @@ Qual o valor hexadecimal do campo \textit{Type} da trama Ethernet? O que signifi
 
 \textit{Type}: 0x0800; Este valor indica o tipo IPv4.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -100,99 +100,99 @@ Qual o valor hexadecimal do campo \textit{Type} da trama Ethernet? O que signifi
 \end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 4}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 4}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Quantos bytes s„o usados desde o inÌcio da trama atÈ ao caractere ASCII ìGî do mÈtodo HTTP GET? Calcule e indique, em percentagem, a sobrecarga (overhead) introduzida pela pilha protocolar no envio do HTTP GET.
+Quantos bytes s√£o usados desde o in√≠cio da trama at√© ao caractere ASCII ‚ÄúG‚Äù do m√©todo HTTP GET? Calcule e indique, em percentagem, a sobrecarga (overhead) introduzida pela pilha protocolar no envio do HTTP GET.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-AtÈ ao caractere "G", existem 54 bytes dos 386 bytes do mÈtodo, resultando num overhead percentual de (54/386) * 100 = 14\%
+At√© ao caractere "G", existem 54 bytes dos 386 bytes do m√©todo, resultando num overhead percentual de (54/386) * 100 = 14\%
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
   \includegraphics[scale=0.35]{imagens/HTTPbytes.png} 
   \end{center}
-  \caption{O byte com o caratere "G" aparece apÛs 54 outros.}
+  \caption{O byte com o caratere "G" aparece ap√≥s 54 outros.}
   \label{fig:http_bytes}
 \end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 5}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 5}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Em ligaÁıes com fios pouco susceptÌveis a erros, nem sempre as NICs geram o cÛdigo de detecÁ„o de erros. AtravÈs de visualizaÁ„o direta de uma trama capturada, verifique se o campo FCS est· visÌvel, i.e., se est· a ser utilizado. Aceda ‡ opÁ„o Edit/Preferences/Protocols/Ethernet e indique que È assumido o uso do campo FCS. Verifique qual o valor hexadecimal desse campo na trama
-capturada. Que conclui? Reponha a configuraÁ„o original.
+Em liga√ß√µes com fios pouco suscept√≠veis a erros, nem sempre as NICs geram o c√≥digo de detec√ß√£o de erros. Atrav√©s de visualiza√ß√£o direta de uma trama capturada, verifique se o campo FCS est√° vis√≠vel, i.e., se est√° a ser utilizado. Aceda √† op√ß√£o Edit/Preferences/Protocols/Ethernet e indique que √© assumido o uso do campo FCS. Verifique qual o valor hexadecimal desse campo na trama
+capturada. Que conclui? Reponha a configura√ß√£o original.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O valor hexadecimal FCS da trama È 0x0d0a0d0a, mas deveria ser 0x971613cf. Disto conclui que a NIC n„o gerou cÛdigo de verificaÁ„o de erros, visto que, se a trama estivesse incorreta, o pacote teria sido enviado.
+O valor hexadecimal FCS da trama √© 0x0d0a0d0a, mas deveria ser 0x971613cf. Disto conclui que a NIC n√£o gerou c√≥digo de verifica√ß√£o de erros, visto que, se a trama estivesse incorreta, o pacote teria sido enviado.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
   \includegraphics[scale=0.35]{imagens/FCS.png} 
   \end{center}
-  \caption{Se o pacote tivesse um erro, n„o seria enviado e, por extens„o, capturado.}
+  \caption{Se o pacote tivesse um erro, n√£o seria enviado e, por extens√£o, capturado.}
   \label{fig:fcs_field}
 \end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 6}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 6}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Qual È o endereÁo Ethernet da fonte? A que sistema de rede corresponde? Justifique.
+Qual √© o endere√ßo Ethernet da fonte? A que sistema de rede corresponde? Justifique.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 \textit{Address}: Vmware_d2:19:f0 (00:0c:29:d2:19:f0)
-Este endereÁo corresponde ao comutador da rede local visto que, ao nÌvel dos dados, m·quinas apenas comunicam com as m·quinas adjacentes atravÈs do protocolo ARP.
+Este endere√ßo corresponde ao comutador da rede local visto que, ao n√≠vel dos dados, m√°quinas apenas comunicam com as m√°quinas adjacentes atrav√©s do protocolo ARP.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
   \includegraphics[scale=0.35]{imagens/HTTPresponse.png} 
   \end{center}
-  \caption{O endereÁo Ethernet da fonte da resposta.}
+  \caption{O endere√ßo Ethernet da fonte da resposta.}
   \label{fig:ethernet_response_source}
 \end{figure}
 
 \clearpage
-\subsection{ExercÌcio 7}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 7}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Qual È o endereÁo MAC do destino? A que sistema corresponde?
+Qual √© o endere√ßo MAC do destino? A que sistema corresponde?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 \textit{Address}: LcfcHefe_66:65:4a (68:f7:28:66:65:4a)
-Este endereÁo corresponde ao computador utilizado, que originalmente enviou o pedido HTTP GET.
+Este endere√ßo corresponde ao computador utilizado, que originalmente enviou o pedido HTTP GET.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
   \includegraphics[scale=0.35]{imagens/HTTPresponse.png} 
   \end{center}
-  \caption{O endereÁo Ethernet do destino da resposta.}
+  \caption{O endere√ßo Ethernet do destino da resposta.}
   \label{fig:ethernet_response_dest}
 \end{figure}
 
 \clearpage
-\subsection{ExercÌcio 8}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 8}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Atendendo ao conceito de desencapsulamento protocolar, identifique os v·rios protocolos contidos na trama recebida.
+Atendendo ao conceito de desencapsulamento protocolar, identifique os v√°rios protocolos contidos na trama recebida.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Na trama capturada est· contido um protocolo Ethernet II, no qual est· encapsulado um protocolo IPv4 que, por sua vez, transporta um protocolo TCP, no qual est· contido um protocolo Hypertext Transfer Protocol (HTTP).
+Na trama capturada est√° contido um protocolo Ethernet II, no qual est√° encapsulado um protocolo IPv4 que, por sua vez, transporta um protocolo TCP, no qual est√° contido um protocolo Hypertext Transfer Protocol (HTTP).
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -205,18 +205,18 @@ Na trama capturada est· contido um protocolo Ethernet II, no qual est· encapsula
 
 % 4. Protocolo ARP ---------
 \clearpage
-\subsection{ExercÌcio 9}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 9}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Observe o conte˙do da tabela ARP. Diga o que significa cada uma das colunas?
+Observe o conte√∫do da tabela ARP. Diga o que significa cada uma das colunas?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A vers„o linux instalada na m·quina na qual este exercÌcio foi realizado n„o tem o pacote \textit{ARP} disponÌvel pois este foi deprecado. Contudo, o comando \texttt{ip neigh}, realiza a mesma operaÁ„o, isto È, permite observar o conte˙do da tabela \textit{ARP}.
+A vers√£o linux instalada na m√°quina na qual este exerc√≠cio foi realizado n√£o tem o pacote \textit{ARP} dispon√≠vel pois este foi deprecado. Contudo, o comando \texttt{ip neigh}, realiza a mesma opera√ß√£o, isto √©, permite observar o conte√∫do da tabela \textit{ARP}.
 
-Desta forma, consultando o manuel referente ao comando a cima mencionado (\texttt{man ip-neighbour}), percebe-se que o \textit{output} È segmentado em 4 colunas. A primeira indica o endereÁo IP da interface da m·quina na vizinhanÁa, ‡ qual se refere a entrada na tabela. A segunda coluna, traduz a interface na qual o \textit{host} da vizinhanÁa se encontra ligado. A terceira coluna apresenta o endereÁo MAC do \textit{host} a que esta entrada na tabela se refere. Por ˙ltimo, a quarta coluna indica o estado da ligaÁ„o entre os dois sistemas.
+Desta forma, consultando o manuel referente ao comando a cima mencionado (\texttt{man ip-neighbour}), percebe-se que o \textit{output} √© segmentado em 4 colunas. A primeira indica o endere√ßo IP da interface da m√°quina na vizinhan√ßa, √† qual se refere a entrada na tabela. A segunda coluna, traduz a interface na qual o \textit{host} da vizinhan√ßa se encontra ligado. A terceira coluna apresenta o endere√ßo MAC do \textit{host} a que esta entrada na tabela se refere. Por √∫ltimo, a quarta coluna indica o estado da liga√ß√£o entre os dois sistemas.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -228,24 +228,24 @@ Desta forma, consultando o manuel referente ao comando a cima mencionado (\textt
 
 
 \clearpage
-\subsection{ExercÌcio 10}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 10}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Qual È o valor hexadecimal dos endereÁos origem e destino na trama Ethernet que contÈm a mensagem com o pedido ARP (ARP Request)? Como interpreta e justifica o endereÁo destino usado?
+Qual √© o valor hexadecimal dos endere√ßos origem e destino na trama Ethernet que cont√©m a mensagem com o pedido ARP (ARP Request)? Como interpreta e justifica o endere√ßo destino usado?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-EndereÁo origem: 2c:60:0c:6b:85:44
+Endere√ßo origem: 2c:60:0c:6b:85:44
 
-EndereÁo destino: ff:ff:ff:ff:ff:ff (broadcast)
+Endere√ßo destino: ff:ff:ff:ff:ff:ff (broadcast)
 
-A estratÈgia utilizada para resolver o exercÌcio foi fazendo \textit{ping} para outra m·quina do laboratÛrio, nomeadamente, 192.168.100.205.
+A estrat√©gia utilizada para resolver o exerc√≠cio foi fazendo \textit{ping} para outra m√°quina do laborat√≥rio, nomeadamente, 192.168.100.205.
 
-Desta forma, a m·quina que estava a relizar o \textit{ping} apenas tinha a informaÁ„o do IP da interface da m·quina destino. No entanto, dado que o \textit{host} destino se encontra na vizinhanÁa da m·quina de origem, È possÌvel enviar a trama sem que esta v· ao AP. Para tal È usado o protocolo ARP por forma a descobrir o MAC do \textit{host} para que a comunicaÁ„o seja feita diretamente.
+Desta forma, a m√°quina que estava a relizar o \textit{ping} apenas tinha a informa√ß√£o do IP da interface da m√°quina destino. No entanto, dado que o \textit{host} destino se encontra na vizinhan√ßa da m√°quina de origem, √© poss√≠vel enviar a trama sem que esta v√° ao AP. Para tal √© usado o protocolo ARP por forma a descobrir o MAC do \textit{host} para que a comunica√ß√£o seja feita diretamente.
 
-Deste modo, È enviado para todos os sistemas que se encontram na mesma rede local um ARP \textit{request}, por forma a descobrir o endereÁo MAC a que pertence o IP 192.168.100.205, daÌ o endereÁo de destino ser ff:ff:ff:ff:ff:ff. 
+Deste modo, √© enviado para todos os sistemas que se encontram na mesma rede local um ARP \textit{request}, por forma a descobrir o endere√ßo MAC a que pertence o IP 192.168.100.205, da√≠ o endere√ßo de destino ser ff:ff:ff:ff:ff:ff. 
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -257,8 +257,8 @@ Deste modo, È enviado para todos os sistemas que se encontram na mesma rede loca
 
 
 \clearpage
-\subsection{ExercÌcio 11}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 11}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Qual o valor hexadecimal do campo tipo da trama Ethernet? O que indica?
 
@@ -268,7 +268,7 @@ Qual o valor hexadecimal do campo tipo da trama Ethernet? O que indica?
 
 Significa que a trama \textit{Ethernet} leva encapsulado o protocolo ARP.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -280,8 +280,8 @@ Significa que a trama \textit{Ethernet} leva encapsulado o protocolo ARP.
 
 
 \clearpage
-\subsection{ExercÌcio 12}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 12}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Qual o valor do campo ARP opcode? O que especifica?
 
@@ -289,12 +289,12 @@ Qual o valor do campo ARP opcode? O que especifica?
 
 \texttt{Opcode: request (1)}
 
-Segundo o padr„o descrito no RFC826 \cite{RFC0826}:
+Segundo o padr√£o descrito no RFC826 \cite{RFC0826}:
 	\emph{"The opcode is to determine if this is a request (which may cause a reply) or a reply to a previous request.  16 bits for this is overkill, but a flag (field) is needed."}
 
-Desta forma, pode-se afirmar que a trama em quest„o representa um ARP \textit{request}.
+Desta forma, pode-se afirmar que a trama em quest√£o representa um ARP \textit{request}.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -306,14 +306,14 @@ Desta forma, pode-se afirmar que a trama em quest„o representa um ARP \textit{re
 
 
 \clearpage
-\subsection{ExercÌcio 13}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 13}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Identifique que tipo de endereÁos est„o contidos na mensagem ARP? Que conclui?
+Identifique que tipo de endere√ßos est√£o contidos na mensagem ARP? Que conclui?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Os endereÁos contidos na mensagem ARP s„o os seguintes:
+Os endere√ßos contidos na mensagem ARP s√£o os seguintes:
 
 \begin{itemize}
 	\item Sender MAC address: 2c:60:0c:6b:85:44
@@ -325,33 +325,33 @@ Os endereÁos contidos na mensagem ARP s„o os seguintes:
 	\item Target IP address: 192.168.100.254
 \end{itemize}
 
-Efetivamente, o facto de o \textit{Target MAC address} estar todo a zero significa que est· ‡ espera de ser preenchido, assim que o \textit{Target IP address} faÁa correspondÍncia na m·quina de destino.
+Efetivamente, o facto de o \textit{Target MAC address} estar todo a zero significa que est√° √† espera de ser preenchido, assim que o \textit{Target IP address} fa√ßa correspond√™ncia na m√°quina de destino.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
 	  \includegraphics[scale=0.6]{./imagens/arp_request_addr.png} 
   \end{center}
-	\caption{EndereÁos contidos na mensagem ARP.}
+	\caption{Endere√ßos contidos na mensagem ARP.}
   \label{fig:arp_request_addr}
 \end{figure} 
 
 
 \clearpage
-\subsection{ExercÌcio 14}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 14}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Explicite que tipo de pedido ou pergunta È feita pelo host de origem?
+Explicite que tipo de pedido ou pergunta √© feita pelo host de origem?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O \textit{host} de origem quer saber qual o endereÁo MAC da m·quina que tem como IP da interface 192.168.100.205.
+O \textit{host} de origem quer saber qual o endere√ßo MAC da m√°quina que tem como IP da interface 192.168.100.205.
 
 
 \clearpage
-\subsection{ExercÌcio 15.a)}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 15.a)}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Qual o valor do campo ARP opcode? O que especifica?
 
@@ -359,9 +359,9 @@ Qual o valor do campo ARP opcode? O que especifica?
 
 \texttt{Opcode: reply (2)}
 
-Este valor significa que esta trama È a resposta a uma trama ARP \textit{request} recebida anteriormente.
+Este valor significa que esta trama √© a resposta a uma trama ARP \textit{request} recebida anteriormente.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -373,10 +373,10 @@ Este valor significa que esta trama È a resposta a uma trama ARP \textit{request
 
 
 \clearpage
-\subsection{ExercÌcio 15.b)}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 15.b)}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Em que posiÁ„o da mensagem ARP est· a resposta ao pedido ARP ?
+Em que posi√ß√£o da mensagem ARP est√° a resposta ao pedido ARP ?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
@@ -384,7 +384,7 @@ Em que posiÁ„o da mensagem ARP est· a resposta ao pedido ARP ?
 	\item Sender MAC address: 64:51:06:02:a3:b0
 \end{itemize}
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -396,88 +396,127 @@ Em que posiÁ„o da mensagem ARP est· a resposta ao pedido ARP ?
 
 
 \clearpage
-\subsection{ExercÌcio 16}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 16}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Com auxÌlio do comando ifconfig obtenha os endereÁos Ethernet das interfaces dos diversos routers.
+Com aux√≠lio do comando ifconfig obtenha os endere√ßos Ethernet das interfaces dos diversos routers.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{itemize}
+  \item MAC Router n1 (eth0): 00:00:00:aa:00:00
+  \item MAC Router n2 (eth0): 00:00:00:aa:00:01
+  \item MAC Router n2 (eth1): 00:00:00:aa:00:02
+  \item MAC Router n3 (eth0): 00:00:00:aa:00:03
+\end{itemize}
 
+Pode-se observar que as interfaces ligadas s√£o a eth0 (de n1) e eth0 (de n2), relativas ao caminho entre \textbf{n1} e \textbf{n2}, tal como eth1 (de n2) e eth0 (de n3), correspondentes ao caminho entre \textbf{n2} e \textbf{n3}.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.6]{./imagens/ifconfig.png} 
+  \end{center}
+  \caption{Endere√ßos de interfaces.}
+  \label{fig:arp_reply_resp}
+\end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 17}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 17}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Usando o comando arp obtenha as caches arp dos diversos sistemas.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+As caches ARP inicialmente est√£o vazias, como seria de esperar, pois ainda n√£o houve qualquer tipo de comunica√ß√£o.
 
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
-
-
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.6]{./imagens/5.17.png} 
+  \end{center}
+  \caption{Caches ARP vazias.}
+  \label{fig:arp_reply_resp}
+\end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 18}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 18}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-FaÁa ping de n1 para n2. Que modificaÁıes observa nas caches ARP desses sistemas? FaÁa ping de n1 para n3. Consulte as caches ARP. Que conclui?
+Fa√ßa ping de n1 para n2. Que modifica√ß√µes observa nas caches ARP desses sistemas? Fa√ßa ping de n1 para n3. Consulte as caches ARP. Que conclui?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+Depois de feito o ping de \textbf{n1} para \textbf{n2}, a tabela ARP de \textbf{n1} passou a conhecer o MAC address relativo √† interface eth0 do router \textbf{n2}. Do mesmo modo, o router \textbf{n2} passou a conhecer o router \textbf{n1} na interface eth0.
 
+Depois de fazer ping de \textbf{n1} para \textbf{n3}, a tabela ARP de \textbf{n1} manteve-se, uma vez que o protocolo ARP s√≥ permite conhecer as m√°quinas adjacentes. No entanto, o router \textbf{n2}, como foi utilizado para encaminhamento, passou a conhecer a interface eth0 do router \textbf{n3} que, por sua vez passou a conhecer a interface eth1 do router \textbf{n2}.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.6]{./imagens/5.18.png} 
+  \end{center}
+  \caption{Atualiza√ß√£o de caches ARP.}
+  \label{fig:arp_reply_resp}
+\end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 19}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 19}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Em n1 remova a entrada correspondente a n2. Coloque uma nova entrada para n2 com endereÁo Ethernet inexistente. O que acontece?
+Em n1 remova a entrada correspondente a n2. Coloque uma nova entrada para n2 com endere√ßo Ethernet inexistente. O que acontece?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+\textbf{n1} conhecia, pelo ARP, o endere√ßo IP da interface do router \textbf{n2}. Quando, na tabela ARP, removemos a entrada conhecida e adicionamos outra, com o mesmo IP mas com um endere√ßo Ethernet inexistente, os pacotes s√£o enviados para o endere√ßo inexistente (no caso, utilizou-se 00:00:00:aa:00:04). Este envio √© errado pois aquele endere√ßo n√£o existe, havendo perda total de pacotes. Este erro n√£o √© corrigido pois √© suposto a tabela ARP estar correta.
 
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
-
-
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.6]{./imagens/5.19.png} 
+  \end{center}
+  \caption{Tabela ARP com entradas erradas.}
+  \label{fig:arp_reply_resp}
+\end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 20}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 20}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-FaÁa ping de n6 para n5. Sem consultar a tabela ARP anote a entrada que, em sua opini„o, È criada na tabela ARP de n6. Verifique, justificando, se a sua interpretaÁ„o sobre a operaÁ„o da rede Ethernet e protocolo ARP estava correto.
+Fa√ßa ping de n6 para n5. Sem consultar a tabela ARP anote a entrada que, em sua opini√£o, √© criada na tabela ARP de n6. Verifique, justificando, se a sua interpreta√ß√£o sobre a opera√ß√£o da rede Ethernet e protocolo ARP estava correto.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+Como esperado, a tabela ARP de \textbf{n6} passou a conter o endere√ßo Ethernet e IP do host 5. Como fazem parte da mesma sub-rede \textbf{10.0.2.x/24} e est√£o diretamente ligados, seria expect√°vel que isto acontecesse. De facto, o \textit{switch} n√£o tem qualquer impacto nas tabelas ARP, uma vez que funciona apenas como redirecionador de pacotes, n√£o tendo interfer√™ncia √†quele n√≠vel de rede.
 
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
-
-
+\begin{figure}
+  \begin{center}
+    \includegraphics[scale=0.6]{./imagens/5.20.png} 
+  \end{center}
+  \caption{Tabela ARP atualizada com endere√ßo de host.}
+  \label{fig:arp_reply_resp}
+\end{figure} 
 
 \clearpage
 \section{Parte II - ARP Gratuito}
 
-\subsection{ExercÌcio 1}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 1}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
 Identifique um pacote de pedido ARP gratuito originado pelo seu sistema. Verifique quantos pacotes ARP gratuito foram enviados e com que intervalo temporal?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes de ARP Gratuito em t = 15.631251s e t = 408.067672s (~ 392s). Com o intuito de confirmar o resultado, repetiu-se a experiÍncia, capturando de novo dois pacotes de ARP Gratuito, que, desta vez foram enviados em t = 13.988762s e t = 641.373163s (~ 627s).
+Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes de ARP Gratuito em t = 15.631251s e t = 408.067672s (~ 392s). Com o intuito de confirmar o resultado, repetiu-se a experi√™ncia, capturando de novo dois pacotes de ARP Gratuito, que, desta vez foram enviados em t = 13.988762s e t = 641.373163s (~ 627s).
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}[h]
   \centering
@@ -509,41 +548,41 @@ Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes
 
 
 \clearpage
-\subsection{ExercÌcio 2}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Analise o conte˙do de um pedido ARP gratuito e identifique em que se distingue dos restantes pedidos ARP. Registe a trama Ethernet correspondente. Qual o resultado esperado face ao pedido ARP gratuito enviado?
+Analise o conte√∫do de um pedido ARP gratuito e identifique em que se distingue dos restantes pedidos ARP. Registe a trama Ethernet correspondente. Qual o resultado esperado face ao pedido ARP gratuito enviado?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O pacote de pedido ARP Gratuito difere dos restantes em que o IP de envio È igual ao IP destino. Como o destino da trama Ethernet È ff:ff:ff:ff:ff:ff (endereÁo de broadcast), este ir· enviar o pacote a todos os hosts da rede. Estes, por sua vez, ao receber o pacote - e identificando o pacote como ARP Gratuito - ir„o atualizar as respetivas tabelas ARP no MAC em quest„o com o novo IP.
+O pacote de pedido ARP Gratuito difere dos restantes em que o IP de envio √© igual ao IP destino. Como o destino da trama Ethernet √© ff:ff:ff:ff:ff:ff (endere√ßo de broadcast), este ir√° enviar o pacote a todos os hosts da rede. Estes, por sua vez, ao receber o pacote - e identificando o pacote como ARP Gratuito - ir√£o atualizar as respetivas tabelas ARP no MAC em quest√£o com o novo IP.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
     \includegraphics[scale=0.6]{./imagens/ARPG_IP.png} 
   \end{center}
-  \caption{O IP destino È igual ao IP fonte e o destino Ethernet È \textit{Broadcast}.}
+  \caption{O IP destino √© igual ao IP fonte e o destino Ethernet √© \textit{Broadcast}.}
   \label{fig:arpg_ip}
 \end{figure} 
 
 
 \clearpage
-\section{Parte II - DomÌnios de colis„o}
+\section{Parte II - Dom√≠nios de colis√£o}
 
-\subsection{ExercÌcio 1}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 1}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-FaÁa ping de n1 para n4. Verifique com a opÁ„o tcpdump como flui o tr·fego nas diversas interfaces dos v·rios dispositivos. Que conclui?
+Fa√ßa ping de n1 para n4. Verifique com a op√ß√£o tcpdump como flui o tr√°fego nas diversas interfaces dos v√°rios dispositivos. Que conclui?
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-A rede criada no CORE encontra-se ligada por um \textbf{repetidor}, que quando recebe tramas de um determinado \textit{host} apenas reproduz essa informaÁ„o para todas as redes a qual se encontram ligadas e como tal pode existir colisıes entre diferentes tramas. Deste modo, quando È feito \emph{ping de n1 para n4} todos os restantes \textit{hosts} ficam ‡ espera que as ligaÁıes fiquem livres para poderem voltar a enviar tramas. Efetivamente, ficam ‡ escuta do que vai passando na rede. Consequentemente o \textit{tcpdump} apresenta os pacotes que est„o a ser enviados do n1 para o n4, alÈm de que mais nenhuma trama circula na rede a n„o ser as trocadas entre o n1 e o n2.
+A rede criada no CORE encontra-se ligada por um \textbf{repetidor}, que quando recebe tramas de um determinado \textit{host} apenas reproduz essa informa√ß√£o para todas as redes a qual se encontram ligadas e como tal pode existir colis√µes entre diferentes tramas. Deste modo, quando √© feito \emph{ping de n1 para n4} todos os restantes \textit{hosts} ficam √† espera que as liga√ß√µes fiquem livres para poderem voltar a enviar tramas. Efetivamente, ficam √† escuta do que vai passando na rede. Consequentemente o \textit{tcpdump} apresenta os pacotes que est√£o a ser enviados do n1 para o n4, al√©m de que mais nenhuma trama circula na rede a n√£o ser as trocadas entre o n1 e o n2.
 
-Concluindo, os resultados apresentados verificam o modo como as colisıes s„o evitadas, ou seja, È utilizado o protocolo CSMA/CD para resolver as colisıes neste domÌnio de colis„o em especÌfico \cite{wiki:csma}.
+Concluindo, os resultados apresentados verificam o modo como as colis√µes s√£o evitadas, ou seja, √© utilizado o protocolo CSMA/CD para resolver as colis√µes neste dom√≠nio de colis√£o em espec√≠fico \cite{wiki:csma}.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -586,16 +625,16 @@ Concluindo, os resultados apresentados verificam o modo como as colisıes s„o evi
 \end{figure} 
 
 \clearpage
-\subsection{ExercÌcio 2}
-\subsubsection{Quest„o}\rule[-10pt]{0pt}{10pt}\\
+\subsection{Exerc√≠cio 2}
+\subsubsection{Quest√£o}\rule[-10pt]{0pt}{10pt}\\
 
-Na topologia de rede substitua o hub por um switch. Repita os procedimentos que realizou na pergunta anterior. Comente os resultados obtidos quanto ‡ utilizaÁ„o de hubs e switches no contexto de controlar ou dividir domÌnios de colis„o. Documente as suas observaÁıes e conclusıes com base no tr·fego observado/capturado.
+Na topologia de rede substitua o hub por um switch. Repita os procedimentos que realizou na pergunta anterior. Comente os resultados obtidos quanto √† utiliza√ß√£o de hubs e switches no contexto de controlar ou dividir dom√≠nios de colis√£o. Documente as suas observa√ß√µes e conclus√µes com base no tr√°fego observado/capturado.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Substituindo o repetidor pelo \textit{switch} as colisıes s„o evitadas. Essa diferenÁa È resultado da metodologia na qual o \textit{switch} acenta. Efetivamente, este aprende a rede na qual se encontra inserido e constrÛi uma tabela com os endereÁos MAC correspondendo-os ‡s respetivas portas a que os sistemas se encontram ligados. Assim quando o \textit{host} n1 realiza \textit{ping} no \textit{host} n4, o \textit{switch} reencaminha o tr·fego diretamente na porta na qual o n4 est· ligado. Desta forma colisıes entre diferentes segmentos deixam de ser possÌveis visto estarem efetivamento separados. Como resultado, o \textit{tcpdump} que se encontra a correr no \textit{host} n2 e n3, n„o apresenta qualquer tr·fego resultante do \textit{ping} entre o \textit{host} n1 e n4, pois o tr·fego encontra-se isolado destes sistemas \cite{wiki:comutador}.
+Substituindo o repetidor pelo \textit{switch} as colis√µes s√£o evitadas. Essa diferen√ßa √© resultado da metodologia na qual o \textit{switch} acenta. Efetivamente, este aprende a rede na qual se encontra inserido e constr√≥i uma tabela com os endere√ßos MAC correspondendo-os √†s respetivas portas a que os sistemas se encontram ligados. Assim quando o \textit{host} n1 realiza \textit{ping} no \textit{host} n4, o \textit{switch} reencaminha o tr√°fego diretamente na porta na qual o n4 est√° ligado. Desta forma colis√µes entre diferentes segmentos deixam de ser poss√≠veis visto estarem efetivamento separados. Como resultado, o \textit{tcpdump} que se encontra a correr no \textit{host} n2 e n3, n√£o apresenta qualquer tr√°fego resultante do \textit{ping} entre o \textit{host} n1 e n4, pois o tr√°fego encontra-se isolado destes sistemas \cite{wiki:comutador}.
 
-\subsubsection{RealizaÁ„o}\rule[-10pt]{0pt}{10pt}\\
+\subsubsection{Realiza√ß√£o}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
@@ -639,7 +678,7 @@ Substituindo o repetidor pelo \textit{switch} as colisıes s„o evitadas. Essa dif
 
 \clearpage
 
-\section{Conclusıes}
+\section{Conclus√µes}
 Neste trabalho...
 
 %BIBLIOGRAFIA
