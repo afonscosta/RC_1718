@@ -76,6 +76,7 @@ Identifique a que sistemas se referem. Justifique.
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
 O MAC \textit{destination} refere ao comutador da rede local.
+
 O MAC \textit{source} refere à máquina que enviou o pedido; neste caso, o computador utilizado.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
@@ -110,13 +111,13 @@ Quantos bytes são usados desde o início da trama até ao caractere ASCII “G�
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Até ao caractere "G", existem 54 bytes dos 386 bytes do método, resultando num overhead percentual de (54/386) * 100 = 14\%
+Até ao caractere "G", existem 54 bytes dos 386 bytes do método, resultando num overhead percentual de (54/386) * 100 = 14\%.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
   \begin{center}
-  \includegraphics[scale=0.35]{imagens/HTTPbytes.png} 
+  \includegraphics[scale=0.8]{imagens/HTTPbytes.png} 
   \end{center}
   \caption{O byte com o caratere "G" aparece após 54 outros.}
   \label{fig:http_bytes}
@@ -224,12 +225,10 @@ Desta forma, consultando o manuel referente ao comando a cima mencionado (\textt
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
-  \begin{center}
-	  \includegraphics[scale=0.5]{./imagens/ip_neigh.png} 
-  \end{center}
-	\caption{Manual do comando \texttt{ip neigh}.}
+  \makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{./imagens/ip_neigh.png}}%
+  \caption{Manual do comando \texttt{ip neigh}.}
   \label{fig:ip_neigh}
-\end{figure} 
+\end{figure}
 
 
 \clearpage
@@ -253,11 +252,9 @@ Deste modo, é enviado para todos os sistemas que se encontram na mesma rede loc
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
-  \begin{center}
-	  \includegraphics[scale=0.6]{./imagens/arp_request.png} 
-  \end{center}
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{./imagens/arp_request.png}}%
 	\caption{Pedido \textit{ARP} enviado em \textit{broadcast}.}
-  \label{fig:arp_request}
+	\label{fig:arp_request}
 \end{figure} 
 
 
@@ -276,11 +273,9 @@ Significa que a trama \textit{Ethernet} leva encapsulado o protocolo ARP.
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
-  \begin{center}
-	  \includegraphics[scale=0.6]{./imagens/arp_request_type.png} 
-  \end{center}
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{./imagens/arp_request_type.png}}%
 	\caption{Tipo da trama \textit{Ethernet}.}
-  \label{fig:arp_request_type}
+	\label{fig:arp_request_type}
 \end{figure} 
 
 
@@ -420,11 +415,9 @@ Pode-se observar que as interfaces ligadas são a eth0 (de n1) e eth0 (de n2), r
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
-  \begin{center}
-    \includegraphics[scale=0.6]{./imagens/ifconfig.png} 
-  \end{center}
-  \caption{Endereços de interfaces.}
-  \label{fig:ifconfig}
+	\makebox[\textwidth][c]{\includegraphics[width=1.4\textwidth]{./imagens/ifconfig.png}}%
+	\caption{Endereços de interfaces.}
+	\label{fig:ifconfig}
 \end{figure} 
 
 \clearpage
@@ -483,7 +476,7 @@ Em n1 remova a entrada correspondente a n2. Coloque uma nova entrada para n2 com
 
 \begin{figure}
   \begin{center}
-    \includegraphics[scale=0.6]{./imagens/5_19.png} 
+    \includegraphics[scale=1]{./imagens/5_19.png} 
   \end{center}
   \caption{Tabela ARP com entradas erradas.}
   \label{fig:5_19}
@@ -525,13 +518,13 @@ Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes
 
 \begin{figure}[h]
   \centering
-  \begin{subfigure}{0.4\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.98\linewidth]{./imagens/ARPG1_1.png}
+    \includegraphics[width=1\linewidth]{./imagens/ARPG1_1.png}
   \end{subfigure}%
-  \begin{subfigure}{0.4\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.98\linewidth]{./imagens/ARPG1_2.png}
+    \includegraphics[width=1\linewidth]{./imagens/ARPG1_2.png}
   \end{subfigure}%
   \caption{2 pacotes de ARP Gratuito capturados com um intervalo de 392s.}
   \label{fig:arpg_1}
@@ -539,13 +532,13 @@ Analisando a captura de dados do Wireshark, verificou-se o envio de dois pacotes
 
 \begin{figure}[h]
   \centering
-  \begin{subfigure}{0.4\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.98\linewidth]{./imagens/ARPG2_1.png}
+    \includegraphics[width=1\linewidth]{./imagens/ARPG2_1.png}
   \end{subfigure}%
-  \begin{subfigure}{0.4\textwidth}
+  \begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.98\linewidth]{./imagens/ARPG2_2.png}
+    \includegraphics[width=1\linewidth]{./imagens/ARPG2_2.png}
   \end{subfigure}%
   \caption{2 pacotes de ARP Gratuito capturados com um intervalo de 627s.}
   \label{fig:arpg_2}
@@ -565,11 +558,9 @@ O pacote de pedido ARP Gratuito difere dos restantes em que o IP de envio é igu
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 \begin{figure}
-  \begin{center}
-    \includegraphics[scale=0.6]{./imagens/ARPG_IP.png} 
-  \end{center}
-  \caption{O IP destino é igual ao IP fonte e o destino Ethernet é \textit{Broadcast}.}
-  \label{fig:arpg_ip}
+	\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{./imagens/ARPG_IP.png}}
+	\caption{O IP destino é igual ao IP fonte e o destino Ethernet é \textit{Broadcast}.}
+	\label{fig:arpg_ip}
 \end{figure} 
 
 
