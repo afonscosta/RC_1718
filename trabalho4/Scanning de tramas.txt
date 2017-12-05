@@ -1,0 +1,24 @@
+Scanning Passivo e Ativo:
+
+4) Selecione uma trama beacon (cujo número de ordem inclua o número 33). Esta trama pertence a que tipo de tramas 802.11? Indique o valor dos seus identificadores de tipo e de subtipo. Em que parte concreta do cabeçalho da trama estão especificados (ver anexo)?
+
+[Trama nº 233]
+Esta trama é uma Management Frame (identificador 00) de subtipo Beacon (identificador 1000 em binário, 8 em decimal). Estas estão presentes no campo Frame Control, nos bits 2-3 e 4-7, respetivamente.
+
+5)Liste todos os SSIDs dos APs (Access Points) que estão a operar na vizinhança da STA de captura? Explicite o modo como obteve essa informação. Como sugestão pode construir um filtro de visualização apropriado (tomando como base a resposta da alínea anterior) que lhe permita obter a listagem pretendida.
+
+SSID's : ZON-2770, FON_ZON_FREE_INTERNET, DDSS
+Encontram-se estes ao analisar o campo IEEE 802.11 wireless LAN -> Tagged parameters -> Tag: SSID parameter set:
+
+6)Verifique se está a ser usado o método de detecção de erros (CRC), e se todas as tramas Beacon são recebidas corretamente. Justifique a conveniência em usar detecção de erros neste tipo de redes locais.
+
+Está de facto a ser utilizada CRC, através de frame check sequence (FCS). As tramas beacon estão a ser recebidas corretamente, visto que as tramas estão a ser dadas como recebidas e, por extensão, capturadas pelo Wireshark. (está correto?)
+É conveniente utilizar deteção de erros em redes sem fios visto que estes são por natureza dispostos a ter mais ruído do que os meios com fios, o que leva a uma maior probabilidade de corrupção de dados enviados.
+
+7)Para dois dos APs identificados, indique qual é o intervalo de tempo previsto entre tramas beacon consecutivas? (Nota: este valor é anunciado na própria trama beacon). Na prática, a periodicidade de tramas beacon é verificada? Tente explicar porquê.
+
+SSID ZON-2770: intervalo de acordo com a trama: 0.102400 s
+
+SSID FON_ZON_FREE_INTERNET: intervalo de acordo com a trama: 0.102400 s
+
+Na prática, o valor do intervalo de tempo varia cerca de +0.0001 s relativamente ao intervalo previsto. Isto pode se dever ao facto que é necessário fazer deteção de erros antes de receber cada beacon.
