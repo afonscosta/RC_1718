@@ -1,0 +1,319 @@
+\documentclass{llncs}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Comentar para not MAC Users
+%\usepackage[applemac]{inputenc}
+
+\usepackage{a4}
+%\usepackage[margin=3cm,nohead]{geometry}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage[bookmarks=false]{hyperref}
+%\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+\mainmatter
+\title{TP4: Redes sem fios (802.11)}
+
+\titlerunning{TP4: Redes sem fios (802.11)}
+
+\author{Diogo Afonso Costa \and Daniel Maia \and Vitor Castro}
+
+\authorrunning{Diogo Afonso Costa \and Daniel Maia \and Vitor Castro}
+
+\institute{
+University of Minho, Department of  Informatics, 4710-057 Braga, Portugal\\
+e-mail: \{a78034,a77531,a77870\}@alunos.uminho.pt
+}
+
+\date{12 de dezembro de 2017}
+\bibliographystyle{splncs}
+
+\maketitle
+\begin{abstract}
+
+\end{abstract}
+
+\section{Introdução}
+
+
+
+\clearpage
+\section{Acesso Rádio}
+
+\subsection{Exercício 1}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Identifique em que frequência do espectro está a operar a rede sem fios, e o canal que corresponde essa frequência.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 2}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Identifique a versão da norma IEEE 802.11 que está a ser usada.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 3}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Qual o débito a que foi enviada a trama escolhida? Será que esse débito corresponde ao débito máximo a que a interface WiFi pode operar? Justifique.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+
+\section{Scanning Passivo e Scanning Ativo}
+\subsection{Exercício 4}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Selecione uma trama beacon (cujo número de ordem inclua o seu número de grupo). Esta trama pertence a que tipo de tramas 802.11? Indique o valor dos seus identificadores de tipo e de subtipo. Em que parte concreta do cabeçalho da trama estão especificados (ver anexo)?
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 5}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Liste todos os SSIDs dos APs (Access Points) que estão a operar na vizinhança da STA de captura? Explicite o modo como obteve essa informação. Como sugestão pode construir um filtro de visualização apropriado (tomando como base a resposta da alínea anterior) que lhe permita obter a listagem pretendida.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 6}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Verifique se está a ser usado o método de detecção de erros (CRC), e se todas as tramas Beacon são recebidas corretamente. Justifique a conveniência em usar detecção de erros neste tipo de redes locais.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 7}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Para dois dos APs identificados, indique qual é o intervalo de tempo previsto entre tramas beacon consecutivas? (Nota: este valor é anunciado na própria trama beacon). Na prática, a periodicidade de tramas beacon é verificada? Tente explicar porquê.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 8}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Identifique e registe todos os endereços MAC usados nas tramas beacon enviadas pelos APs. Recorde que o endereçamento está definido no cabeçalho das tramas 802.11, podendo ser utilizados até quatro endereços com diferente semântica. Para uma descrição detalhada da estrutura da trama 802.11, consulte o anexo ao enunciado.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 9}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+As tramas beacon anunciam que o AP pode suportar vários débitos de base assim como vários “extended supported rates”. Indique quais são esses débitos?
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 10}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Estabeleça um filtro Wireshark apropriado que lhe permita visualizar todas as tramas probing request ou probing response, simultaneamente.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+
+\clearpage
+\subsection{Exercício 11}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Identifique um probing request para o qual tenha havido um probing response. Face ao endereçamento usado, indique a que sistemas são endereçadas estas tramas e explique qual o propósito das mesmas?
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+
+\section{Processo de Associação}
+\subsection{Exercício 12}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Identifique uma sequência de tramas que corresponda a um processo de associação completo entre a STA e o AP, incluindo a fase de autenticação.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 13}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Efetue um diagrama que ilustre a sequência de todas as tramas trocadas no processo.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+
+\section{Transferência de Dados}
+\subsection{Exercício 14}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Considere a trama de dados nº1054. Sabendo que o campo Frame Control contido no cabeçalho das tramas 802.11 permite especificar a direccionalidade das tramas, o que pode concluir face à direccionalidade dessa trama, será local à WLAN?
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+\clearpage
+\subsection{Exercício 15}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Para a trama de dados nº1054, transcreva os endereços MAC em uso, identificando qual o endereço MAC correspondente ao host sem fios (STA), ao AP e ao router de acesso ao sistema de distribuição?
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 16}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Como interpreta a trama nº1060 face à sua direccionalidade e endereçamento MAC?
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 17}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+Que subtipo de tramas de controlo são transmitidas ao longo da transferência de dados acima mencionada? Tente explicar porque razão têm de existir (contrariamente ao que acontece numa rede Ethernet.)
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+\subsection{Exercício 18}
+\subsubsection{Questão}\rule[-10pt]{0pt}{10pt}\\
+
+O uso de tramas Request To Send e Clear To Send, apesar de opcional, é comum para efetuar "pré-reserva" do acesso ao meio quando se pretende enviar tramas de dados, com o intuito de reduzir o número de colisões resultante maioritariamente de STAs escondidas. Para o exemplo acima, verifique se está a ser usada a opção RTS/CTS na troca de dados entre a STA e o AP/Router da WLAN, identificando a direccionalidade das tramas e os sistemas envolvidos.
+
+\subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
+
+
+
+\clearpage
+
+\section{Conclusões}
+
+\hspace{5mm} Neste trabalho foi abordada a camada de ligação lógica da pilha OSI e alguns dos seus componentes. 
+
+Primeiramente, procedeu-se à compreensão das tramas \textit{ethernet} que permitiu consolidar bases para analisar as mensagens de ARP e as suas características. A compreensão do protocolo ARP, auxiliada pelos exercícios propostos, permitiu perceber a área em que este protocolo atua e quais as suas consequências.
+
+Por fim, percebeu-se o impacto que têm os diferentes sistemas que constituem a rede. Nomeadamente, o domínio de colisão depende em grande parte da topologia utilizada e caso esta não previna antecipadamente as colisões de tramas na rede, são então utilizados protocolos que tem como objetivo evitar essas mesmas colisões através de diferentes abordagens, como é o caso do protocolo CSMA/CD que apenas transmite quando a rede se encontra desocupada.
+
+%BIBLIOGRAFIA
+\bibliographystyle{splncs}
+\bibliography{ficheirodebibliografia}
+
+\end{document}
