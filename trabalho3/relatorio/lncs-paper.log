@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  3 DEC 2017 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.21)  4 DEC 2017 20:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,65 +803,60 @@ Package hyperref Warning: bookmark level for unknown author defaults to 0.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 43.
 [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 49.
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-
- []
-
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
 
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-<imagens/MACAddrGET.png, id=13, 1078.0275pt x 255.95625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+<imagens/MACAddrGET.png, id=14, 1078.0275pt x 255.95625pt>
 File: imagens/MACAddrGET.png Graphic file (type png)
 <use imagens/MACAddrGET.png>
-Package pdftex.def Info: imagens/MACAddrGET.png  used on input line 64. on inpu
-t line 64.
+Package pdftex.def Info: imagens/MACAddrGET.png  used on input line 68. on inpu
+t line 68.
 Package pdftex.def Info: Requested size: 377.31528pt x 89.58601pt on input line
- 64.
+ 68.
 
-Overfull \hbox (15.96529pt too wide) in paragraph at lines 64--65
+Overfull \hbox (15.96529pt too wide) in paragraph at lines 68--69
  [] 
  []
 
 [2
 
  <./imagens/MACAddrGET.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--83
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
@@ -871,25 +866,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--97
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
 File: imagens/MACAddrGET.png Graphic file (type png)
 <use imagens/MACAddrGET.png>
-Package pdftex.def Info: imagens/MACAddrGET.png  used on input line 100. on inp
-ut line 100.
+Package pdftex.def Info: imagens/MACAddrGET.png  used on input line 104. on inp
+ut line 104.
 Package pdftex.def Info: Requested size: 377.31528pt x 89.58601pt on input line
- 100.
+ 104.
 
-Overfull \hbox (15.96529pt too wide) in paragraph at lines 100--101
+Overfull \hbox (15.96529pt too wide) in paragraph at lines 104--105
  [] 
  []
 
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -899,29 +894,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
 <imagens/HTTPbytes.png, id=42, 410.2828pt x 274.02374pt>
 File: imagens/HTTPbytes.png Graphic file (type png)
 <use imagens/HTTPbytes.png>
-Package pdftex.def Info: imagens/HTTPbytes.png  used on input line 120. on inpu
-t line 120.
+Package pdftex.def Info: imagens/HTTPbytes.png  used on input line 124. on inpu
+t line 124.
 Package pdftex.def Info: Requested size: 328.22668pt x 219.21928pt on input lin
-e 120.
+e 124.
 [5
 
  <./imagens/HTTPbytes.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Overfull \hbox (41.73468pt too wide) in paragraph at lines 130--132
+Overfull \hbox (41.73468pt too wide) in paragraph at lines 134--136
 \T1/ptm/m/n/10 campo FCS está visível, i.e., se está a ser uti-lizado. Aceda à 
 opção Edit/Preferences/Protocols/Ethernet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
  []
 
 
@@ -929,83 +924,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
 <imagens/FCS.png, id=52, 1355.8153pt x 317.68687pt>
 File: imagens/FCS.png Graphic file (type png)
 <use imagens/FCS.png>
-Package pdftex.def Info: imagens/FCS.png  used on input line 141. on input line
- 141.
+Package pdftex.def Info: imagens/FCS.png  used on input line 145. on input line
+ 145.
 Package pdftex.def Info: Requested size: 474.54247pt x 111.19206pt on input lin
-e 141.
+e 145.
 
-Overfull \hbox (113.19247pt too wide) in paragraph at lines 141--142
+Overfull \hbox (113.19247pt too wide) in paragraph at lines 145--146
  [] 
  []
 
 [6
 
  <./imagens/FCS.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 <imagens/HTTPresponse.png, id=62, 1341.51187pt x 300.3722pt>
 File: imagens/HTTPresponse.png Graphic file (type png)
 <use imagens/HTTPresponse.png>
-Package pdftex.def Info: imagens/HTTPresponse.png  used on input line 163. on i
-nput line 163.
+Package pdftex.def Info: imagens/HTTPresponse.png  used on input line 167. on i
+nput line 167.
 Package pdftex.def Info: Requested size: 469.5362pt x 105.13184pt on input line
- 163.
+ 167.
 
-Overfull \hbox (108.1862pt too wide) in paragraph at lines 163--164
+Overfull \hbox (108.1862pt too wide) in paragraph at lines 167--168
  [] 
  []
 
 [7
 
  <./imagens/HTTPresponse.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 File: imagens/HTTPresponse.png Graphic file (type png)
 <use imagens/HTTPresponse.png>
-Package pdftex.def Info: imagens/HTTPresponse.png  used on input line 185. on i
-nput line 185.
+Package pdftex.def Info: imagens/HTTPresponse.png  used on input line 189. on i
+nput line 189.
 Package pdftex.def Info: Requested size: 469.5362pt x 105.13184pt on input line
- 185.
+ 189.
 
-Overfull \hbox (108.1862pt too wide) in paragraph at lines 185--186
+Overfull \hbox (108.1862pt too wide) in paragraph at lines 189--190
  [] 
  []
 
 [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
@@ -1015,107 +1010,112 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
+
+ []
+
 <imagens/fields.png, id=82, 1357.32094pt x 228.10219pt>
 File: imagens/fields.png Graphic file (type png)
 <use imagens/fields.png>
-Package pdftex.def Info: imagens/fields.png  used on input line 205. on input l
-ine 205.
+Package pdftex.def Info: imagens/fields.png  used on input line 209. on input l
+ine 209.
 Package pdftex.def Info: Requested size: 475.06946pt x 79.83694pt on input line
- 205.
+ 209.
 
-Overfull \hbox (113.71947pt too wide) in paragraph at lines 205--206
+Overfull \hbox (113.71947pt too wide) in paragraph at lines 209--210
  [] 
  []
 
 [9
 
  <./imagens/fields.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 221.
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--224
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 225.
 (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 <./imagens/ip_neigh.png, id=92, 841.1425pt x 683.55376pt>
 File: ./imagens/ip_neigh.png Graphic file (type png)
 <use ./imagens/ip_neigh.png>
-Package pdftex.def Info: ./imagens/ip_neigh.png  used on input line 228. on inp
-ut line 228.
+Package pdftex.def Info: ./imagens/ip_neigh.png  used on input line 232. on inp
+ut line 232.
 Package pdftex.def Info: Requested size: 433.61888pt x 352.38353pt on input lin
-e 228.
+e 232.
 [10
 
  <./imagens/ip_neigh.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 <./imagens/arp_request.png, id=103, 752.8125pt x 116.435pt>
 File: ./imagens/arp_request.png Graphic file (type png)
 <use ./imagens/arp_request.png>
-Package pdftex.def Info: ./imagens/arp_request.png  used on input line 255. on 
-input line 255.
+Package pdftex.def Info: ./imagens/arp_request.png  used on input line 259. on 
+input line 259.
 Package pdftex.def Info: Requested size: 433.61888pt x 67.06863pt on input line
- 255.
+ 259.
 [11
 
  <./imagens/arp_request.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 <./imagens/arp_request_type.png, id=113, 754.82pt x 114.4275pt>
 File: ./imagens/arp_request_type.png Graphic file (type png)
 <use ./imagens/arp_request_type.png>
-Package pdftex.def Info: ./imagens/arp_request_type.png  used on input line 276
-. on input line 276.
+Package pdftex.def Info: ./imagens/arp_request_type.png  used on input line 280
+. on input line 280.
 Package pdftex.def Info: Requested size: 433.61888pt x 65.73418pt on input line
- 276.
+ 280.
 [12
 
  <./imagens/arp_request_type.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--298
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
@@ -1123,125 +1123,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 297--298
 File: ./imagens/arp_request_opcode.png Graphic file (type png)
 <use ./imagens/arp_request_opcode.png>
 Package pdftex.def Info: ./imagens/arp_request_opcode.png  used on input line 3
-01. on input line 301.
+05. on input line 305.
 Package pdftex.def Info: Requested size: 300.52505pt x 116.23514pt on input lin
-e 301.
+e 305.
 [13
 
  <./imagens/arp_request_opcode.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 314--315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--331
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
 
  []
 
 <./imagens/arp_request_addr.png, id=138, 500.87125pt x 193.72375pt>
 File: ./imagens/arp_request_addr.png Graphic file (type png)
 <use ./imagens/arp_request_addr.png>
-Package pdftex.def Info: ./imagens/arp_request_addr.png  used on input line 334
-. on input line 334.
+Package pdftex.def Info: ./imagens/arp_request_addr.png  used on input line 338
+. on input line 338.
 Package pdftex.def Info: Requested size: 300.52505pt x 116.23514pt on input lin
-e 334.
+e 338.
 [14
 
  <./imagens/arp_request_addr.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 
  []
 
 [15
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--365
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
 
  []
 
 <./imagens/arp_reply_opcode.png, id=155, 501.875pt x 194.7275pt>
 File: ./imagens/arp_reply_opcode.png Graphic file (type png)
 <use ./imagens/arp_reply_opcode.png>
-Package pdftex.def Info: ./imagens/arp_reply_opcode.png  used on input line 368
-. on input line 368.
+Package pdftex.def Info: ./imagens/arp_reply_opcode.png  used on input line 372
+. on input line 372.
 Package pdftex.def Info: Requested size: 301.12732pt x 116.83739pt on input lin
-e 368.
+e 372.
 [16
 
  <./imagens/arp_reply_opcode.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 381--382
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
 <./imagens/arp_reply_resp.png, id=165, 501.875pt x 194.7275pt>
 File: ./imagens/arp_reply_resp.png Graphic file (type png)
 <use ./imagens/arp_reply_resp.png>
-Package pdftex.def Info: ./imagens/arp_reply_resp.png  used on input line 391. 
-on input line 391.
+Package pdftex.def Info: ./imagens/arp_reply_resp.png  used on input line 395. 
+on input line 395.
 Package pdftex.def Info: Requested size: 301.12732pt x 116.83739pt on input lin
-e 391.
+e 395.
 [17
 
  <./imagens/arp_reply_resp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 400--401
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
 <./imagens/ifconfig.png, id=175, 983.92593pt x 587.94656pt>
 File: ./imagens/ifconfig.png Graphic file (type png)
 <use ./imagens/ifconfig.png>
-Package pdftex.def Info: ./imagens/ifconfig.png  used on input line 418. on inp
-ut line 418.
+Package pdftex.def Info: ./imagens/ifconfig.png  used on input line 422. on inp
+ut line 422.
 Package pdftex.def Info: Requested size: 505.88777pt x 302.29796pt on input lin
-e 418.
+e 422.
 [18
 
  <./imagens/ifconfig.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 425--426
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
@@ -1251,45 +1246,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
-<./imagens/5_17.png, id=187, 557.83406pt x 501.37312pt>
-File: ./imagens/5_17.png Graphic file (type png)
-<use ./imagens/5_17.png>
-Package pdftex.def Info: ./imagens/5_17.png  used on input line 437. on input l
-ine 437.
-Package pdftex.def Info: Requested size: 334.703pt x 300.82619pt on input line 
-437.
-[19
 
- <./imagens/5_17.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
+<./imagens/5_17.png, id=187, 557.83406pt x 501.37312pt>
+File: ./imagens/5_17.png Graphic file (type png)
+<use ./imagens/5_17.png>
+Package pdftex.def Info: ./imagens/5_17.png  used on input line 441. on input l
+ine 441.
+Package pdftex.def Info: Requested size: 334.703pt x 300.82619pt on input line 
+441.
+[19
 
+ <./imagens/5_17.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+Underfull \hbox (badness 10000) in paragraph at lines 453--454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
 <./imagens/5_18.png, id=199, 560.0925pt x 502.87875pt>
 File: ./imagens/5_18.png Graphic file (type png)
 <use ./imagens/5_18.png>
-Package pdftex.def Info: ./imagens/5_18.png  used on input line 459. on input l
-ine 459.
+Package pdftex.def Info: ./imagens/5_18.png  used on input line 463. on input l
+ine 463.
 Package pdftex.def Info: Requested size: 336.05809pt x 301.72957pt on input lin
-e 459.
+e 463.
 [20
 
  <./imagens/5_18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 467--468
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
@@ -1299,26 +1294,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 475--476
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
 <./imagens/5_19.png, id=210, 365.86688pt x 197.98969pt>
 File: ./imagens/5_19.png Graphic file (type png)
 <use ./imagens/5_19.png>
-Package pdftex.def Info: ./imagens/5_19.png  used on input line 479. on input l
-ine 479.
+Package pdftex.def Info: ./imagens/5_19.png  used on input line 483. on input l
+ine 483.
 Package pdftex.def Info: Requested size: 365.86598pt x 197.9892pt on input line
- 479.
+ 483.
 
-Overfull \hbox (4.51599pt too wide) in paragraph at lines 479--480
+Overfull \hbox (4.51599pt too wide) in paragraph at lines 483--484
  [] 
  []
 
 [21
 
  <./imagens/5_19.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 487--488
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
@@ -1328,21 +1323,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 495--496
 
  []
 
-<./imagens/5_20.png, id=221, 551.81157pt x 491.58656pt>
-File: ./imagens/5_20.png Graphic file (type png)
-<use ./imagens/5_20.png>
-Package pdftex.def Info: ./imagens/5_20.png  used on input line 499. on input l
-ine 499.
-Package pdftex.def Info: Requested size: 331.0895pt x 294.95421pt on input line
- 499.
-[22
 
- <./imagens/5_20.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
+Underfull \hbox (badness 10000) in paragraph at lines 499--500
 
  []
 
+<./imagens/5_20.png, id=221, 551.81157pt x 491.58656pt>
+File: ./imagens/5_20.png Graphic file (type png)
+<use ./imagens/5_20.png>
+Package pdftex.def Info: ./imagens/5_20.png  used on input line 503. on input l
+ine 503.
+Package pdftex.def Info: Requested size: 331.0895pt x 294.95421pt on input line
+ 503.
+[22
 
+ <./imagens/5_20.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
@@ -1352,43 +1347,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
 <./imagens/ARPG1_1.png, id=232, 666.23906pt x 432.11438pt>
 File: ./imagens/ARPG1_1.png Graphic file (type png)
 <use ./imagens/ARPG1_1.png>
-Package pdftex.def Info: ./imagens/ARPG1_1.png  used on input line 523. on inpu
-t line 523.
+Package pdftex.def Info: ./imagens/ARPG1_1.png  used on input line 527. on inpu
+t line 527.
 Package pdftex.def Info: Requested size: 180.67499pt x 117.18013pt on input lin
-e 523.
+e 527.
 <./imagens/ARPG1_2.png, id=233, 663.98062pt x 435.12563pt>
 File: ./imagens/ARPG1_2.png Graphic file (type png)
 <use ./imagens/ARPG1_2.png>
-Package pdftex.def Info: ./imagens/ARPG1_2.png  used on input line 527. on inpu
-t line 527.
+Package pdftex.def Info: ./imagens/ARPG1_2.png  used on input line 531. on inpu
+t line 531.
 Package pdftex.def Info: Requested size: 180.67499pt x 118.40173pt on input lin
-e 527.
+e 531.
 <./imagens/ARPG2_1.png, id=234, 663.22781pt x 435.12563pt>
 File: ./imagens/ARPG2_1.png Graphic file (type png)
 <use ./imagens/ARPG2_1.png>
-Package pdftex.def Info: ./imagens/ARPG2_1.png  used on input line 537. on inpu
-t line 537.
+Package pdftex.def Info: ./imagens/ARPG2_1.png  used on input line 541. on inpu
+t line 541.
 Package pdftex.def Info: Requested size: 180.67499pt x 118.53452pt on input lin
-e 537.
+e 541.
 <./imagens/ARPG2_2.png, id=235, 667.74469pt x 434.37282pt>
 File: ./imagens/ARPG2_2.png Graphic file (type png)
 <use ./imagens/ARPG2_2.png>
-Package pdftex.def Info: ./imagens/ARPG2_2.png  used on input line 541. on inpu
-t line 541.
+Package pdftex.def Info: ./imagens/ARPG2_2.png  used on input line 545. on inpu
+t line 545.
 Package pdftex.def Info: Requested size: 180.67499pt x 117.52745pt on input lin
-e 541.
+e 545.
 [23
 
  <./imagens/ARPG1_1.png> <./imagens/ARPG1_2.png> <./imagens/ARPG2_1.png> <./ima
 gens/ARPG2_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 550--551
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
@@ -1398,27 +1393,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
-<./imagens/ARPG_IP.png, id=247, 661.72218pt x 434.37282pt>
-File: ./imagens/ARPG_IP.png Graphic file (type png)
-<use ./imagens/ARPG_IP.png>
-Package pdftex.def Info: ./imagens/ARPG_IP.png  used on input line 561. on inpu
-t line 561.
-Package pdftex.def Info: Requested size: 433.61888pt x 284.63889pt on input lin
-e 561.
-[24
 
- <./imagens/ARPG_IP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
 
  []
 
+<./imagens/ARPG_IP.png, id=247, 661.72218pt x 434.37282pt>
+File: ./imagens/ARPG_IP.png Graphic file (type png)
+<use ./imagens/ARPG_IP.png>
+Package pdftex.def Info: ./imagens/ARPG_IP.png  used on input line 565. on inpu
+t line 565.
+Package pdftex.def Info: Requested size: 433.61888pt x 284.63889pt on input lin
+e 565.
+[24
 
+ <./imagens/ARPG_IP.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 575--576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
 
  []
 
@@ -1426,47 +1426,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--582
 File: ./imagens/rede_23_repetidor.png Graphic file (type png)
 <use ./imagens/rede_23_repetidor.png>
 Package pdftex.def Info: ./imagens/rede_23_repetidor.png  used on input line 58
-5. on input line 585.
+9. on input line 589.
 Package pdftex.def Info: Requested size: 226.84348pt x 196.33002pt on input lin
-e 585.
+e 589.
 <./imagens/n1_repetidor.png, id=260, 1193.45876pt x 836.12375pt>
 File: ./imagens/n1_repetidor.png Graphic file (type png)
 <use ./imagens/n1_repetidor.png>
-Package pdftex.def Info: ./imagens/n1_repetidor.png  used on input line 593. on
- input line 593.
+Package pdftex.def Info: ./imagens/n1_repetidor.png  used on input line 597. on
+ input line 597.
 Package pdftex.def Info: Requested size: 358.04039pt x 250.83905pt on input lin
-e 593.
+e 597.
 <./imagens/n2_tcpdump_repetidor.png, id=261, 1192.455pt x 837.1275pt>
 File: ./imagens/n2_tcpdump_repetidor.png Graphic file (type png)
 <use ./imagens/n2_tcpdump_repetidor.png>
 Package pdftex.def Info: ./imagens/n2_tcpdump_repetidor.png  used on input line
- 601. on input line 601.
+ 605. on input line 605.
 Package pdftex.def Info: Requested size: 357.73926pt x 251.14018pt on input lin
-e 601.
+e 605.
 <./imagens/n3_tcpdump_repetidor.png, id=262, 1185.42876pt x 838.13126pt>
 File: ./imagens/n3_tcpdump_repetidor.png Graphic file (type png)
 <use ./imagens/n3_tcpdump_repetidor.png>
 Package pdftex.def Info: ./imagens/n3_tcpdump_repetidor.png  used on input line
- 609. on input line 609.
+ 613. on input line 613.
 Package pdftex.def Info: Requested size: 355.63136pt x 251.44131pt on input lin
-e 609.
+e 613.
 <./imagens/n4_tcpdump_repetidor.png, id=263, 1185.42876pt x 833.1125pt>
 File: ./imagens/n4_tcpdump_repetidor.png Graphic file (type png)
 <use ./imagens/n4_tcpdump_repetidor.png>
 Package pdftex.def Info: ./imagens/n4_tcpdump_repetidor.png  used on input line
- 617. on input line 617.
+ 621. on input line 621.
 Package pdftex.def Info: Requested size: 355.63136pt x 249.93568pt on input lin
-e 617.
+e 621.
 [25
 
  <./imagens/rede_23_repetidor.png>] [26 <./imagens/n1_repetidor.png> <./imagens
 /n2_tcpdump_repetidor.png>] [27 <./imagens/n3_tcpdump_repetidor.png> <./imagens
 /n4_tcpdump_repetidor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 629--630
 
  []
@@ -1476,60 +1471,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 633--634
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--638
+
+ []
+
 <./imagens/rede_23_comutador.png, id=291, 1136.245pt x 981.6675pt>
 File: ./imagens/rede_23_comutador.png Graphic file (type png)
 <use ./imagens/rede_23_comutador.png>
-Package pdftex.def Info: ./imagens/rede_23_comutador.png  used on input line 63
-7. on input line 637.
+Package pdftex.def Info: ./imagens/rede_23_comutador.png  used on input line 64
+1. on input line 641.
 Package pdftex.def Info: Requested size: 227.24496pt x 196.33002pt on input lin
-e 637.
+e 641.
 <./imagens/n1_comutador.png, id=292, 1191.45125pt x 839.135pt>
 File: ./imagens/n1_comutador.png Graphic file (type png)
 <use ./imagens/n1_comutador.png>
-Package pdftex.def Info: ./imagens/n1_comutador.png  used on input line 645. on
- input line 645.
+Package pdftex.def Info: ./imagens/n1_comutador.png  used on input line 649. on
+ input line 649.
 Package pdftex.def Info: Requested size: 357.43813pt x 251.74243pt on input lin
-e 645.
+e 649.
 <./imagens/n2_tcpdump_comutador.png, id=293, 1185.42876pt x 832.10875pt>
 File: ./imagens/n2_tcpdump_comutador.png Graphic file (type png)
 <use ./imagens/n2_tcpdump_comutador.png>
 Package pdftex.def Info: ./imagens/n2_tcpdump_comutador.png  used on input line
- 653. on input line 653.
+ 657. on input line 657.
 Package pdftex.def Info: Requested size: 355.63136pt x 249.63455pt on input lin
-e 653.
+e 657.
 <./imagens/n3_tcpdump_comutador.png, id=294, 1188.44pt x 836.12375pt>
 File: ./imagens/n3_tcpdump_comutador.png Graphic file (type png)
 <use ./imagens/n3_tcpdump_comutador.png>
 Package pdftex.def Info: ./imagens/n3_tcpdump_comutador.png  used on input line
- 661. on input line 661.
+ 665. on input line 665.
 Package pdftex.def Info: Requested size: 356.53476pt x 250.83905pt on input lin
-e 661.
+e 665.
 <./imagens/n4_tcpdump_comutador.png, id=295, 1184.425pt x 832.10875pt>
 File: ./imagens/n4_tcpdump_comutador.png Graphic file (type png)
 <use ./imagens/n4_tcpdump_comutador.png>
 Package pdftex.def Info: ./imagens/n4_tcpdump_comutador.png  used on input line
- 669. on input line 669.
+ 673. on input line 673.
 Package pdftex.def Info: Requested size: 355.33025pt x 249.63455pt on input lin
-e 669.
+e 673.
 [28
 
  <./imagens/rede_23_comutador.png>] [29 <./imagens/n1_comutador.png> <./imagens
 /n2_tcpdump_comutador.png>] [30 <./imagens/n3_tcpdump_comutador.png> <./imagens
 /n4_tcpdump_comutador.png>] (./lncs-paper.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 689.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 693.
  [31
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 689.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 693.
  (./lncs-paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 689.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 689.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 689.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 693.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 693.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 693.
  ) 
 Here is how much of TeX's memory you used:
  8333 strings out of 492985
  122406 string characters out of 6138637
- 212610 words of memory out of 5000000
+ 213610 words of memory out of 5000000
  11581 multiletter control sequences out of 15000+600000
  31166 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1538,7 +1538,7 @@ Here is how much of TeX's memory you used:
 ts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/ut
 mb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on lncs-paper.pdf (31 pages, 2927590 bytes).
+Output written on lncs-paper.pdf (31 pages, 2928519 bytes).
 PDF statistics:
  380 PDF objects out of 1000 (max. 8388607)
  300 compressed objects within 3 object streams
