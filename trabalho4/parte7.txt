@@ -1,0 +1,28 @@
+14) O campo Frame Control transporta diversos dados associados ao controlo, especificando a Protocol Version, Type e Subtype. Para além destas informações, tem ainda diversas flags, entre as quais é possível encontrar a textit{To AP} e a textit{From AP}.
+Pela análise destas últimas, é possível perceber a direcionalidade da trama. Depois de observado o Frame Control da trama de dados nº. 1054, verificou-se que:
+
+\begin{itemize}
+	\item To DS: 1
+
+	\item From DS: 0
+\end{itemize}
+
+Com isto, conclui-se que a direcionalidade é para o textit{Distributed System}, ou seja, a infraestrutura que liga os múltiplos textit{APs}, logo a trama não é local à WLAN.
+
+15) Como os campos textit{To AP} e textit{From AP} são 1 e 0, respetivamente, então:
+
+\begin{itemize}
+	\item textbf{BSS Id:} corresponde ao AP
+
+	\item textbf{STA address:} corresponde ao textit{host}
+\end{itemize}
+
+Assim sendo, pode-se afirmar que os endereços textit{MAC} são:
+
+\begin{itemize}
+	\item textbf{STA:} a4:d1:d2:d1:fe:a8
+
+	\item textbf{AP:} bc:14:01:1b:27:78
+
+	\item textbf{Router:} bc:14:01:1b:27:76
+\end{itemize}
