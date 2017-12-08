@@ -97,11 +97,18 @@ Selecione uma trama beacon (cujo número de ordem inclua o seu número de grupo 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+[Trama nº 233]
+Esta trama é uma \textit{Management Frame} (identificador 00) de subtipo \textit{Beacon} (identificador 1000 em binário, 8 em decimal). Os identificadores estão presentes em IEEE 802.11 Beacon Frame, no campo Frame Control, nos bits 4-5 e 0-3, respetivamente.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/tipo_subtipo.png} 
+  \end{center}
+  \caption{Os identificadores do tipo e subtipo da trama \textit{Beacon}.}
+  \label{fig:type_field}
+\end{figure} 
 
 \clearpage
 \subsection{Exercício 5}
@@ -111,11 +118,17 @@ Liste todos os SSIDs dos APs (Access Points) que estão a operar na vizinhança 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Ao aplicar o filtro \texttt{wlan.fc == 0x8000} , obtém-se todas as tramas \textit{beacon}, enviadas pelos AP's cirundantes. Observando o campo IEEE 802.11 wireless LAN -> Tagged parameters -> Tag: SSID parameter set -> SSID ao longo das tramas capturadas, determina-se que existem 3 AP's, com os SSID's ZON-2770, FON_ZON_FREE_INTERNET e DDSS.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/SSID.png} 
+  \end{center}
+  \caption{O SSID da trama 233; O \textit{Wireshark} destaca esta informação por defeito.}
+  \label{fig:type_field}
+\end{figure}
 
 \clearpage
 \subsection{Exercício 6}
