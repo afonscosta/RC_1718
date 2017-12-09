@@ -127,7 +127,7 @@ Ao aplicar o filtro \texttt{wlan.fc == 0x8000} , obtém-se todas as tramas \text
   \includegraphics[scale=0.35]{imagens/SSID.png} 
   \end{center}
   \caption{O SSID da trama 233; O \textit{Wireshark} destaca esta informação por defeito.}
-  \label{fig:type_field}
+  \label{fig:ssid_field}
 \end{figure}
 
 \clearpage
@@ -138,11 +138,18 @@ Verifique se está a ser usado o método de detecção de erros (CRC), e se toda
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Está de facto a ser utilizada CRC, nomeadamente através de frame check sequence (FCS). Nem todas as tramas beacon estão a ser recebidas corretamente, visto que é possível encontrar uma pequena percentagem de tramas com um FCS incorreto.
+É conveniente utilizar deteção de erros em redes sem fios visto que estes são por natureza dispostos a ter mais ruído do que os meios com fios, o que leva a uma maior probabilidade de corrupção de dados enviados. Deste modo, assegura-se que não ocorrem falhas de interpretação de informação ou desperdício de recursos.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/FCS.png} 
+  \end{center}
+  \caption{O campo FCS de uma trama corrompida; nota-se que o \textit{Wireshark} destaca os campos corrompidos.}
+  \label{fig:fcs_field}
+\end{figure}
 
 \clearpage
 \subsection{Exercício 7}
@@ -152,7 +159,11 @@ Para dois dos APs identificados, indique qual é o intervalo de tempo previsto e
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+SSID ZON-2770: intervalo de acordo com a trama: 0.102400 s
 
+SSID FON_ZON_FREE_INTERNET: intervalo de acordo com a trama: 0.102400 s
+
+Na prática, o valor do intervalo de tempo varia cerca de +0.0001 s relativamente ao intervalo previsto. Isto pode se dever ao facto que é necessário fazer deteção de erros antes de receber cada beacon.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
