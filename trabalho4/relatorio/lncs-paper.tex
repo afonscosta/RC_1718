@@ -37,6 +37,8 @@ e-mail: \{a78034,a77531,a77870\}@alunos.uminho.pt
 \maketitle
 \begin{abstract}
 
+Este trabalho tem como objectivo explorar as particularidades do protocolo IEEE 802.11, especificamente, o formato das tramas, o endereçamento dos componentes envolvidos na comunicação sem fios e os tipos de tramas mais comuns, bem como a operação do protocolo.
+
 \end{abstract}
 
 \section{Introdução}
@@ -163,10 +165,25 @@ SSID ZON-2770: intervalo de acordo com a trama: 0.102400 s
 
 SSID FON_ZON_FREE_INTERNET: intervalo de acordo com a trama: 0.102400 s
 
-Na prática, o valor do intervalo de tempo varia cerca de +0.0001 s relativamente ao intervalo previsto. Isto pode se dever ao facto que é necessário fazer deteção de erros antes de receber cada beacon.
+Na prática, o valor do intervalo de tempo varia cerca de \pm 0.0001 s relativamente ao intervalo previsto. Isto pode se dever ao facto de que é necessário fazer deteção de erros ao receber cada trama. Isto é tido em conta pelo beacon interval e, como o tempo necessário para fazer a verificação é imutável, ocorrem pequenas variâncias no intervalo entre tramas.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/ZON_BI.png} 
+  \end{center}
+  \caption{Um exemplo de um intervalo real entre duas tramas beacon do mesmo AP, igual a 0.102527 s.}
+  \label{fig:zon_interval}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/FONZON_BI.png} 
+  \end{center}
+  \caption{Um exemplo de um intervalo real entre duas tramas beacon do mesmo AP, igual a 0.102383 s.}
+  \label{fig:zon_interval}
+\end{figure}
 
 
 \clearpage
