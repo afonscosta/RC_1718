@@ -55,10 +55,19 @@ Identifique em que frequência do espectro está a operar a rede sem fios, e o c
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+A rede sem fios encontra-se a operar numa frequência de 2462MHz, que consequentemente pertence ao espectro dos 2GHz. 
 
+Além disso, o canal usado é o número 11.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{./imagens/ex1.png} 
+  \end{center}
+  \caption{Frequência do espectro em que a rede sem fios se encontra a operar assim como o respetivo canal.}
+  \label{fig:freq}
+\end{figure}
 
 
 \clearpage
@@ -69,10 +78,17 @@ Identifique a versão da norma IEEE 802.11 que está a ser usada.
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+A versão utilizada é a IEEE 802.11g.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{./imagens/ex2.png} 
+  \end{center}
+  \caption{Versão da norma IEEE utilizada.}
+  \label{fig:norma_ieee}
+\end{figure}
 
 
 \clearpage
@@ -83,10 +99,25 @@ Qual o débito a que foi enviada a trama escolhida? Será que esse débito corre
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+A trama escolhida foi enviada a 1.0 Mb/s. Visto tratar-se de uma trama que usa a norma IEEE 802.11g tem-se por defeito acesso a débitos até 54 Mb/s \cite{computer_networking}.
 
+Efetivamente, a razão pela qual o débito se encontra consideravelmente baixo em relação ao máximo permitido pode resultar de diferentes fatores. Nomeadamente, quando a distância entre o \textit{host} e o ponto de acesso (AP) aumenta, o \textit{signal-to-noise ratio} (SNR) aumenta e o bit error ratio (BER) também. Por forma a combater o declinio na qualidade da ligação, caso a distância assim o justifique, o débito a que a trama é transmitida pode ser diminuido por forma a aumentar o SNR e o BER. Deste modo, também por esta razão a frequência que se encontra a operar a ligação seja relativamente baixa (2462 MHz) quando comparada com a frequência máxima que uma ligação 802.11g pode oferecer, ou seja, 5 GHz \cite{computer_networking} \cite{wiki:ber} \cite{wiki:snr}.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{./imagens/ex3_debito.png}
+  \end{subfigure}%
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{./imagens/ex3_debito_max.png}
+  \end{subfigure}%
+  \caption{Comparação do débito da trama com o máximo permitido na norma 802.11g.}
+  \label{fig:debito_733}
+\end{figure}
 
 
 \clearpage
@@ -120,7 +151,7 @@ Liste todos os SSIDs dos APs (Access Points) que estão a operar na vizinhança 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Ao aplicar o filtro \texttt{wlan.fc == 0x8000} , obtém-se todas as tramas \textit{beacon}, enviadas pelos AP's cirundantes. Observando o campo IEEE 802.11 wireless LAN -> Tagged parameters -> Tag: SSID parameter set -> SSID ao longo das tramas capturadas, determina-se que existem 3 AP's, com os SSID's ZON-2770, FON_ZON_FREE_INTERNET e DDSS.
+Ao aplicar o filtro \texttt{wlan.fc == 0x8000} , obtém-se todas as tramas \textit{beacon}, enviadas pelos AP's cirundantes. Observando o campo IEEE 802.11 wireless LAN -> Tagged parameters -> Tag: SSID parameter set -> SSID ao longo das tramas capturadas, determina-se que existem 3 AP's, com os SSID's ZON-2770, FON\_ZON\_FREE\_INTERNET e DDSS.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -163,9 +194,9 @@ Para dois dos APs identificados, indique qual é o intervalo de tempo previsto e
 
 SSID ZON-2770: intervalo de acordo com a trama: 0.102400 s
 
-SSID FON_ZON_FREE_INTERNET: intervalo de acordo com a trama: 0.102400 s
+SSID FON\_ZON\_FREE\_INTERNET: intervalo de acordo com a trama: 0.102400 s
 
-Na prática, o valor do intervalo de tempo varia cerca de \pm 0.0001 s relativamente ao intervalo previsto. Isto pode se dever ao facto de que é necessário fazer deteção de erros ao receber cada trama. Isto é tido em conta pelo beacon interval e, como o tempo necessário para fazer a verificação é imutável, ocorrem pequenas variâncias no intervalo entre tramas.
+Na prática, o valor do intervalo de tempo varia cerca de $ \pm $ 0.0001 s relativamente ao intervalo previsto. Isto pode se dever ao facto de que é necessário fazer deteção de erros ao receber cada trama. Isto é tido em conta pelo beacon interval e, como o tempo necessário para fazer a verificação é imutável, ocorrem pequenas variâncias no intervalo entre tramas.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
