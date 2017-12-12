@@ -105,7 +105,7 @@ Qual o débito a que foi enviada a trama escolhida? Será que esse débito corre
 
 A trama escolhida foi enviada a 1.0 Mb/s. Visto tratar-se de uma trama que usa a norma IEEE 802.11g tem-se por defeito acesso a débitos até 54 Mb/s \cite{computer_networking}.
 
-Efetivamente, a razão pela qual o débito se encontra consideravelmente baixo em relação ao máximo permitido pode resultar de diferentes fatores. Nomeadamente, quando a distância entre o \textit{host} e o ponto de acesso (AP) aumenta, o \textit{signal-to-noise ratio} (SNR) aumenta e o bit error ratio (BER) também. Por forma a combater o declínio na qualidade da ligação, caso a distância assim o justifique, o débito a que a trama é transmitida pode ser diminuido por forma a aumentar o SNR e o BER. Deste modo, também por esta razão a frequência a que se encontra a operar a ligação seja relativamente baixa (2462 MHz) quando comparada com a frequência máxima que uma ligação 802.11g pode oferecer, ou seja, 5 GHz \cite{computer_networking} \cite{wiki:ber} \cite{wiki:snr}.
+Efetivamente, a razão pela qual o débito se encontra consideravelmente baixo em relação ao máximo permitido pode resultar de diferentes fatores. Nomeadamente, quando a distância entre o \textit{host} e o ponto de acesso (AP) aumenta, o \textit{signal-to-noise ratio} (SNR) diminui e o bit error ratio (BER) também. Por forma a combater o declínio na qualidade da ligação, caso a distância assim o justifique, o débito a que a trama é transmitida pode ser diminuido por forma a aumentar o SNR e a diminuir o BER. Deste modo, talvez por esta razão a frequência a que se encontra a operar a ligação seja relativamente baixa (2462 MHz) quando comparada com a frequência máxima que uma ligação 802.11g pode oferecer, ou seja, 5 GHz \cite{computer_networking} \cite{wiki:ber} \cite{wiki:snr}.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -365,7 +365,7 @@ Considere a trama de dados nº1054. Sabendo que o campo Frame Control contido no
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O campo Frame Control transporta diversos dados associados ao controlo, especificando a Protocol Version, Type e Subtype. Para além destas informações, tem ainda diversas flags, entre as quais é possível encontrar a textit{To AP} e a textit{From AP}.
+O campo Frame Control transporta diversos dados associados ao controlo, especificando a Protocol Version, Type e Subtype. Para além destas informações, tem ainda diversas flags, entre as quais é possível encontrar a \textit{To AP} e a \textit{From AP}.
 Pela análise destas últimas, é possível perceber a direcionalidade da trama. Depois de observado o Frame Control da trama de dados nº. 1054, verificou-se que:
 
 \begin{itemize}
@@ -374,7 +374,7 @@ Pela análise destas últimas, é possível perceber a direcionalidade da trama.
   \item From DS: 0
 \end{itemize}
 
-Com isto, conclui-se que a direcionalidade é para o textit{Distributed System}, ou seja, a infraestrutura que liga os múltiplos textit{APs}, logo a trama não é local à WLAN.
+Com isto, conclui-se que a direcionalidade é para o \textit{Distributed System}, ou seja, a infraestrutura que liga os múltiplos \textit{APs}, logo a trama não é local à WLAN.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -394,22 +394,22 @@ Para a trama de dados nº1054, transcreva os endereços MAC em uso, identificand
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Como os campos textit{To AP} e textit{From AP} são 1 e 0, respetivamente, então:
+Como os campos \textit{To AP} e \textit{From AP} são 1 e 0, respetivamente, então:
 
 \begin{itemize}
-  \item textbf{BSS Id:} corresponde ao AP
+  \item \textbf{BSS Id:} corresponde ao AP
 
-  \item textbf{STA address:} corresponde ao textit{host}
+  \item \textbf{STA address:} corresponde ao \textit{host}
 \end{itemize}
 
-Assim sendo, pode-se afirmar que os endereços textit{MAC} são:
+Assim sendo, pode-se afirmar que os endereços \textit{MAC} são:
 
 \begin{itemize}
-  \item textbf{STA:} a4:d1:d2:d1:fe:a8
+  \item \textbf{STA:} a4:d1:d2:d1:fe:a8
 
-  \item textbf{AP:} bc:14:01:1b:27:78
+  \item \textbf{AP:} bc:14:01:1b:27:78
 
-  \item textbf{Router:} bc:14:01:1b:27:76
+  \item \textbf{Router:} bc:14:01:1b:27:76
 \end{itemize}
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
@@ -430,8 +430,8 @@ Como interpreta a trama nº1060 face à sua direccionalidade e endereçamento MA
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O campo textit{To AP} e textit{From AP} é 0 e 1, respetivamente, estando por isso a trama a ser transmitida pela textit{edge} do sistema distribuído, no caso o textit{AP} com textit{MAC Address} textbf{bc:14:01:1b:27:76}, como se pode verificar pelo campo textit{BSS Id}.
-Este textit{AP} envia a trama para a o dispositivo cujo textit{MAC Address} é textbf{a4:d1:d2:d1:fe:a8}, visível no campo textit{STA Address}.
+O campo \textit{To AP} e \textit{From AP} é 0 e 1, respetivamente, estando por isso a trama a ser transmitida pela \textit{edge} do sistema distribuído, no caso o \textit{AP} com \textit{MAC Address} \textbf{bc:14:01:1b:27:76}, como se pode verificar pelo campo \textit{BSS Id}.
+Este \textit{AP} envia a trama para a o dispositivo cujo \textit{MAC Address} é \textbf{a4:d1:d2:d1:fe:a8}, visível no campo \textit{STA Address}.
 É, por isso, uma comunicação do sistema distribuído para a WLAN local.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
@@ -452,9 +452,9 @@ Que subtipo de tramas de controlo são transmitidas ao longo da transferência d
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-Vai-se proceder à análise da troca de dados, desde a textit{frame} 1050 até à 1060.
-Em 1050, é transmitido um textit{Beacon Frame}, anunciando a existência daquele textit{AP} aos textit{STA} ao seu alcance. Então, o textbf{STA} com textit{MAC} textbf{a4:d1:d2:d1:fe:a8} envia um textit{request-to-send} ao textit{AP}, ficando a trama ao nível da WLAN local. Recebido o sinal textit{clear-to-send}, é iniciada a troca de dados.
-Uma das tramas de maior importância é a 1059, em que é enviado um bloco textbf{ACK}, que permite a verificação de erros e transmissão de dados. De facto, devido às características das redes textit{Wireless}, como o meio de transmissão partilhado, é necessário um maior controlo de dados do que o na textit{Ethernet}, bem como estratégias de prevenção de colisões (implementadas, por exemplo, através de RTS-CTS).
+Vai-se proceder à análise da troca de dados, desde a \textit{frame} 1050 até à 1060.
+Em 1050, é transmitido um \textit{Beacon Frame}, anunciando a existência daquele \textit{AP} aos \textit{STA} ao seu alcance. Então, o \textbf{STA} com \textit{MAC} \textbf{a4:d1:d2:d1:fe:a8} envia um \textit{request-to-send} ao \textit{AP}, ficando a trama ao nível da WLAN local. Recebido o sinal \textit{clear-to-send}, é iniciada a troca de dados.
+Uma das tramas de maior importância é a 1059, em que é enviado um bloco \textbf{ACK}, que permite a verificação de erros e transmissão de dados. De facto, devido às características das redes \textit{Wireless}, como o meio de transmissão partilhado, é necessário um maior controlo de dados do que o na \textit{Ethernet}, bem como estratégias de prevenção de colisões (implementadas, por exemplo, através de RTS-CTS).
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -470,7 +470,7 @@ Uma das tramas de maior importância é a 1059, em que é enviado um bloco textb
   \begin{center}
   \includegraphics[scale=0.6]{./imagens/p17rts.png} 
   \end{center}
-  \caption{Envio de textit{RTS} na trama 1052.}
+  \caption{Envio de \textit{RTS} na trama 1052.}
   \label{fig:control_frame}
 \end{figure}
 
@@ -478,7 +478,7 @@ Uma das tramas de maior importância é a 1059, em que é enviado um bloco textb
   \begin{center}
   \includegraphics[scale=0.6]{./imagens/p17cts.png} 
   \end{center}
-  \caption{Envio de textit{CTS} no trama 1053.}
+  \caption{Envio de \textit{CTS} no trama 1053.}
   \label{fig:control_frame}
 \end{figure}
 
@@ -490,8 +490,8 @@ O uso de tramas Request To Send e Clear To Send, apesar de opcional, é comum pa
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-O textbf{STA} com textit{MAC} textbf{a4:d1:d2:d1:fe:a8} envia um textit{request-to-send} ao textit{AP} com textit{MAC} textbf{bc:14:01:1b:27:78}.
-Este tipo de pedidos é opcional, sendo mais utilizado quando os dados que serão enviados de seguida são de tamanho considerado grande. De facto, na situação em análise, devido ao estabelecer de comunicação, são transmitidos muitos dados.
+O \textbf{STA} com \textit{MAC} \textbf{a4:d1:d2:d1:fe:a8} envia um \textit{request-to-send} ao \textit{AP} com \textit{MAC} \textbf{bc:14:01:1b:27:78}.
+Este tipo de pedidos é opcional, sendo mais utilizado quando os dados que serão enviados de seguida são de tamanho considerável. De facto, na situação em análise, devido ao estabelecer de comunicação, são transmitidos muitos dados.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -499,7 +499,7 @@ Este tipo de pedidos é opcional, sendo mais utilizado quando os dados que serã
   \begin{center}
   \includegraphics[scale=0.6]{./imagens/p17tramas.png} 
   \end{center}
-  \caption{textit{RTS-CTS} e posterior troca de dados.}
+  \caption{\textit{RTS-CTS} e posterior troca de dados.}
   \label{fig:control_frame}
 \end{figure}
 
@@ -507,11 +507,15 @@ Este tipo de pedidos é opcional, sendo mais utilizado quando os dados que serã
 
 \section{Conclusões}
 
-\hspace{5mm} Neste trabalho exploraram-se diversas particularidades do protocolo 802.11. Estando num contexto de redes sem fios, o formato de tramas e as informações e controlos feitos são visivelmente superiores em complexidade, por comparação com as tramas textit{Ethernet}.
-Adquiriu-se compreensão acerca de textit{Beacons} e sua utilização nos sistemas, bem como a relação estabelecida entre os textit{STA} e os textit{AP}.
-Aumentou o conhecimento sobre o os métodos de deteção de erros e controlo de envio de dados, pelo estudo de textit{RTS-CTS}.
-O estudo do textit{probing} tornou mais evidente a necessidade deste tipo de comunicação, permitindo uma consolidação de conhecimentos.
-De facto, nas redes textit{Wireless} em particular, existe um enorme e necessário textit{overhead}, pelo facto deste meio de comunicação ser tão aberto e dinâmico, e foi interessante o estudo destas características.
+\hspace{5mm} Neste trabalho exploraram-se diversas particularidades do protocolo 802.11. Estando num contexto de redes sem fios, o formato de tramas e protocolos de controlo implementados são visivelmente mais complexos quando comparados com os das tramas \textit{Ethernet}.
+
+Adquiriu-se compreensão acerca de \textit{Beacons} e a sua utilização nos sistemas, bem como a relação estabelecida entre os \textit{STA} e os \textit{AP}.
+
+Aumentou o conhecimento sobre os métodos de deteção de erros e controlo de envio de dados, pelo estudo de \textit{RTS-CTS}.
+
+O estudo do \textit{probing} tornou mais evidente a necessidade deste tipo de comunicação, permitindo uma consolidação de conhecimentos.
+
+De facto, nas redes \textit{Wireless} em particular, existe um enorme e necessário \textit{overhead}, pelo facto do meio de comunicação usado (ar) ser concorrente e dinâmico, o que tornou relevante o estudo destas características.
 
 %BIBLIOGRAFIA
 \bibliographystyle{splncs}
