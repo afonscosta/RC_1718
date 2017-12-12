@@ -295,13 +295,19 @@ Identifique um probing request para o qual tenha havido um probing response. Fac
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-As tramas Probe Response estão endereçadas aos AP's DDSS, ZON-2770 e FON_ZON_FREE_INTERNET. 
+Identificou-se uma trama Probe Request na trama nº 1903. Escolheu-se esta visto que é a primeira trama Probe Request enviada pelo STA Apple d1:fe:a8. As tramas Probe Response recebidas estão endereçadas aos AP's DDSS, ZON-2770 e FON_ZON_FREE_INTERNET. 
 \par As tramas Probe Request são utilizadas quando a STA necessita de informações de uma outra estação ou quer determinar quais AP's estão em alcance. 
 \par As tramas Probe Response, como o nome indica, respondem às tramas Probe Request, enviando informação sobre as taxas de dados suportadas pelos AP's que as enviam, entre outras.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/request_response.png} 
+  \end{center}
+  \caption{Uma trama Probe Request (a vermelho) e as respetivas tramas Probe Response (a verde).}
+  \label{fig:probe_filter}
+\end{figure}
 
 \clearpage
 
