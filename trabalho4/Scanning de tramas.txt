@@ -22,3 +22,14 @@ SSID ZON-2770: intervalo de acordo com a trama: 0.102400 s
 SSID FON_ZON_FREE_INTERNET: intervalo de acordo com a trama: 0.102400 s
 
 Na prática, o valor do intervalo de tempo varia cerca de +0.0001 s relativamente ao intervalo previsto. Isto pode se dever ao facto que é necessário fazer deteção de erros antes de receber cada beacon.
+
+8) ZON-2770 Source address: HitronTe_1b:27:78 (bc:14:01:1b:27:78)
+   FON_ZON_FREE_INTERNET Source address: HitronTe_1b:27:79 (bc:14:01:1b:27:79)
+   DDSS Source address: Tp-LinkT_ee:f4:ca (f8:1a:67:ee:f4:ca)
+
+9) Supported rates 1, 2, 5.5, 11 [Mbit/s]
+   Extended Supported Rates 6, 12, 24, 48 [Mbit/sec]
+
+10) wlan.fc.type_subtype == 4 || wlan.fc.type_subtype == 5
+
+11) As tramas Probe Response estão endereçadas aos AP's DDSS, ZON-2770 e FON_ZON_FREE_INTERNET. As tramas Probe Request são utilizadas quando a STA necessita de informações de uma outra estação ou quer determinar quais AP's estão em alcance. As tramas Probe Response, como o nome indica, respondem às tramas Probe Request, enviando informação sobre as taxas de dados suportadas pelos AP's que as enviam, entre outras.

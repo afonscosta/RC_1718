@@ -213,7 +213,7 @@ Na prática, o valor do intervalo de tempo varia cerca de $ \pm $ 0.0001 s relat
   \includegraphics[scale=0.35]{imagens/FONZON_BI.png} 
   \end{center}
   \caption{Um exemplo de um intervalo real entre duas tramas beacon do mesmo AP, igual a 0.102383 s.}
-  \label{fig:zon_interval}
+  \label{fig:fonzon_interval}
 \end{figure}
 
 
@@ -225,10 +225,24 @@ Identifique e registe todos os endereços MAC usados nas tramas beacon enviadas 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
+Para identificar os endereços MAC das tramas beacon dos AP's, é necessário apenas observar o campo BSS Id de cada. Regista-se então:
+\begin{itemize}
+  \item ZON-2770 Source address: HitronTe_1b:27:78 (bc:14:01:1b:27:78)
+  \item FON_ZON_FREE_INTERNET Source address: HitronTe_1b:27:79 (bc:14:01:1b:27:79)
+  \item DDSS Source address: Tp-LinkT_ee:f4:ca (f8:1a:67:ee:f4:ca)
+\end{itemize}
 
+É de notar que, como se tratam de Management Frames, os campos Transmitter Address, Source Address e BSS Id coincidem.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/beacon_MAC.png} 
+  \end{center}
+  \caption{Exemplo do endereço MAC de um AP.}
+  \label{fig:beacon_mac}
+\end{figure}
 
 
 \clearpage
@@ -239,10 +253,17 @@ As tramas beacon anunciam que o AP pode suportar vários débitos de base assim 
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Os débitos base dos AP's são de 1, 2, 5.5 e 11 Mbps; Os \texit{extended supported rates} dos AP's são de 6, 12, 24 e 48 Mbps.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/beacon_rates.png} 
+  \end{center}
+  \caption{Exemplo dos débitos suportados por um AP.}
+  \label{fig:beacon_rates}
+\end{figure}
 
 
 \clearpage
@@ -253,11 +274,17 @@ Estabeleça um filtro Wireshark apropriado que lhe permita visualizar todas as t
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+Observando o campo Frame Control Field das tramas, conclui-se que as tramas probing request e probing response têm estes valores iguais a 4 e a 5, respetivamente. Assim, é possível aplicar o filtro \texttt{wlan.fc.type_subtype == 4 || wlan.fc.type_subtype == 5} para obter o resultado desejado.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
-
+\begin{figure}
+  \begin{center}
+  \includegraphics[scale=0.35]{imagens/probe_filter.png} 
+  \end{center}
+  \caption{Timeline do Wireshark após a aplicação do filtro.}
+  \label{fig:probe_filter}
+\end{figure}
 
 
 \clearpage
@@ -268,7 +295,9 @@ Identifique um probing request para o qual tenha havido um probing response. Fac
 
 \subsubsection{Resposta}\rule[-10pt]{0pt}{10pt}\\
 
-
+As tramas Probe Response estão endereçadas aos AP's DDSS, ZON-2770 e FON_ZON_FREE_INTERNET. 
+\par As tramas Probe Request são utilizadas quando a STA necessita de informações de uma outra estação ou quer determinar quais AP's estão em alcance. 
+\par As tramas Probe Response, como o nome indica, respondem às tramas Probe Request, enviando informação sobre as taxas de dados suportadas pelos AP's que as enviam, entre outras.
 
 \subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
@@ -313,7 +342,6 @@ Efetue um diagrama que ilustre a sequência de todas as tramas trocadas no proce
   \label{fig:diag_assoc_seq}
 \end{figure}
 
-\subsubsection{Realização}\rule[-10pt]{0pt}{10pt}\\
 
 
 
